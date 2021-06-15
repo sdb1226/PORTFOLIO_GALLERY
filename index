@@ -498,7 +498,6 @@
 
         .main_at2 {
             position: relative;
-            
             background-color: rgb(112, 112, 31);
         }
 
@@ -506,38 +505,49 @@
             margin: 0 auto;
             background-color: #FF486D;
             width: 1080px;
-            
             overflow: hidden;
         }
 
 
 
-.main_menu_title {
-    
-    height: 150px;
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-}
+        .main_menu_title,
+        .main_event_title {
 
-.main_menu_title > h2 {
-    font-size: 80px;
-}
+            height: 150px;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+        }
 
-.main_menu_circle_container {
-    
-    height: 370px;
-    background-color: #f7f7f7;
-}
+        .main_menu_title>h2,
+        .main_event_title>h2 {
+            font-size: 80px;
+        }
 
+        .main_menu_circle_container {
 
-
-
+            height: 370px;
+            background-color: #ffd9d9;
+        }
 
 
 
+
+
+
+        .main_at3 {
+            background-color: rgb(247, 247, 136);
+        }
+
+        .main_event {
+            margin: 0 auto;
+            background-color: #bd6879;
+            width: 1080px;
+            height: 500px;
+            overflow: hidden;
+        }
 
 
 
@@ -553,21 +563,83 @@
         }
 
         .ft_hd {
-            
-    background-color: #545454;
-            
+
+            background-color: #545454;
+
         }
 
         .ft_hd_container {
             margin: 0 auto;
             width: 1032px;
             height: 70px;
-            background-color: lightpink;
+            /* background-color: lightpink; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .ft_hd_container>li {
+            color: #ffffff;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .ft_md_container>li>select {
+            width: 172px;
+            height: 37px;
+            border: 1px solid #AAAAAA;
+        }
+
+
+
+
+
+        .ft_md {
+            height: 65px;
+            background-color: #ffffff;
+        }
+
+        .ft_md_container {
+            margin: 0 auto;
+            width: 1200px;
+            /* background-color: cyan; */
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .ft_md_container>li:not(.ft_md_container > li:nth-child(1), .ft_md_container > li:nth-child(7)) {
+            margin-left: -370px;
         }
 
         .ft_bd {
-            height: 270px;
-    background-color: #ffffff;
+
+            background-color: #ffffff;
+
+        }
+
+        .ft_bd_container {
+            margin: 0 auto;
+            width: 1200px;
+            height: 200px;
+            /* background-color: darkcyan; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .ft_bd_container>a {
+            margin-top: 30px;
+            width: 239px;
+            /* background-color: darkgrey; */
+
+        }
+
+        .ft_bd_container>span {
+            font-size: 13px;
+            color: #999999;
+
         }
     </style>
 </head>
@@ -686,8 +758,8 @@
                             <div class="photo">
                                 <div>
                                     <span>아이스<br>밀카<br>초콜릿</span>
-                                    
-                                    
+
+
                                 </div>
                             </div>
                             <div class="photo">
@@ -722,16 +794,76 @@
                     </div>
                 </div>
             </div>
+            <div class="main_at3">
+                <div class="main_event">
+                    <div class="main_event_title">
+                        <h2>EVENT</h2>
+                        <p>배스킨라빈스의 다양한 제품을 만나보세요!</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--main end-->
         <div class="footer">
             <div class="ft_hd">
-                <div class="ft_hd_container">
-
-                    
-                </div>
+                <ul class="ft_hd_container">
+                    <li onclick="location.href=''">점포개설문의</li>
+                    <li onclick="location.href=''">채용문의</li>
+                    <li onclick="location.href=''">윤리신고센터</li>
+                    <li onclick="location.href=''">이용약관</li>
+                    <li onclick="location.href=''">개인정보처리방침</li>
+                    <li onclick="location.href=''">영상정보처리기기운영관리방침</li>
+                    <li onclick="location.href=''">거래희망회사사전등록</li>
+                </ul>
             </div>
-            <div class="ft_bd"></div>
+            <div class="ft_md">
+                <ul class="ft_md_container">
+                    <li><img src="file:///D:/html5,css3,javascript/%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%B2%A0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4(20200218)/img/btn_happypoint.png"
+                            alt=""></li>
+                    <li><img src="file:///D:/html5,css3,javascript/%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%B2%A0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4(20200218)/img/btn_happymarket.png"
+                            alt=""></li>
+                    <li><img src="file:///D:/html5,css3,javascript/%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%B2%A0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4(20200218)/img/btn_spc_story.png"
+                            alt=""></li>
+                    <li><img src="file:///D:/html5,css3,javascript/%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%B2%A0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4(20200218)/img/btn_norton.gif"
+                            alt=""></li>
+                    <li><img src="file:///D:/html5,css3,javascript/%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%B2%A0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4(20200218)/img/btn_ccm.gif"
+                            alt=""></li>
+                    <li><img src="file:///D:/html5,css3,javascript/%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%B2%A0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4(20200218)/img/btn_ksa.png"
+                            alt=""></li>
+                    <li>
+                        <select>
+                            <optgroup label="Family Site">
+                                <option value="">Family Site</option>
+                                <option value="">배스킨 스쿨</option>
+                                <option value="">SPC그룹사이트</option>
+                                <option value="">SPC MAGAZINE</option>
+                                <option value="">BR코리아</option>
+                                <option value="">해피포인트카드</option>
+                                <option value="">파스쿠찌</option>
+                                <option value="">삼립</option>
+                                <option value="">파리바게트</option>
+                                <option value="">던킨도너츠</option>
+                            </optgroup>
+                        </select>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="ft_bd">
+                <div class="ft_bd_container">
+                    <a href="">
+                        <img src="file:///D:/html5,css3,javascript/%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%B2%A0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4(20200218)/img/baskinlogoblack.png"
+                            width="239px" alt="">
+                    </a>
+                    <span>
+                        사업자 등록번호 : 303-81-09535 비알코리아(주) 대표이사 김창대 서울특별시 서초구 남부순환로 2620(양재동 11-149번지)<br>
+                        TEL : 080-555-3131 개인정보관리책임자 : 김경우<br>
+                        Copyright ⓒ 2016 BRKOREA Company. All Rights Reserved.
+                    </span>
+                </div>
+
+            </div>
         </div>
         <!--footer end-->
     </div>
