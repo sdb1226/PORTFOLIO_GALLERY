@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .wrap {
+            position: relative;
+            /* background-color: darkcyan; */
+            min-width: 1200px;
+
+        }
+
+        .header {
+            position: fixed;
+            width: 100%;
+            border-bottom: 1px solid rgb(173, 173, 173);
+            transition: all 0.5s;
+            background-color: #dddddd;
+            z-index: 1;
+            
+        }
+
+
+
+        .hd_container {
+            margin: 0 72px;
+            /* background-color: thistle; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hd_container>a>img {
+            margin-left: 50px;
+        }
+
+        .hd_container>ul {
+            width: 420px;
+            /* background-color: tomato; */
+            height: 90px;
+            display: flex;
+
+            justify-content: space-evenly;
+        }
+
+        .hd_container>ul>li {
+            transition: all 0.2s;
+            line-height: 90px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            /* background-color: skyblue; */
+            cursor: pointer;
+
+        }
+
+        .hd_container>ul>li:hover {
+            border-bottom: 5px solid rgb(143, 143, 143);
+        }
+
+        .gone {
+            display: none;
+            background-color: aquamarine;
+        }
+
+        @media screen and (max-width: 768px) {
+            .hd_container>ul>li {
+                display: none;
+            }
+
+            .gone {
+                display: block;
+            }
+        }
+
+
+
+        .main {
+            margin: 0 auto;
+            width: 1080px;
+            /* background-color: #dddddd; */
+            overflow: hidden;
+            border-left: 1px solid rgb(173, 173, 173);
+            border-right: 1px solid rgb(173, 173, 173);
+        }
+
+        .main_dv1 {
+            margin-top: 120px;
+            height: 450px;
+            /* width: 100%; */
+            background-color: crimson;
+        }
+
+        .main_dv2 {
+            height: 450px;
+            background-color: rgb(168, 92, 107);
+        }
+
+
+
+
+
+        .footer {
+            background-color: sienna;
+        }
+
+        .ft_hd {
+            height: 44px;
+            background-color: #000000;
+        }
+
+        .ft_bd {
+            height: 130px;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header" id="header">
+            <div class="hd_container">
+                <a href="#">
+                    <img src="https://static.thenounproject.com/png/589743-200.png"
+                        height="60px" alt="">
+                </a>
+                <ul>
+                    <li class="gone">
+                        sddfgh
+                    </li>
+                    <li onclick="location.href=''">HOME</li>
+                    <li onclick="location.href=''">ABOUT</li>
+                    <li onclick="location.href=''">PORTFOLIO</li>
+                    <li onclick="location.href=''">CONTACT</li>
+
+                </ul>
+            </div>
+        </div>
+        <script>
+            const header = document.querySelector('#header');
+
+            function scrollFunc() {
+                if (pageYOffset >= 90) {
+                    header.classList.add('on');
+                    header.style.background = '#ffffff';
+                    header.style.transition = 'all 0.5s';
+
+                } else {
+                    header.classList.remove('on');
+                    header.style.background = '#dddddd';
+                }
+            }
+            window.addEventListener('scroll', scrollFunc);
+
+        </script>
+        <script>
+            $(function () {
+                var $header = $('#header'); //헤더를 변수에 넣기
+                var $page = $('.page-start'); //색상이 변할 부분
+                var $window = $(window);
+                var pageOffsetTop = $page.offset().top; //색상 변할 부분의 top값 구하기
+
+                $window.resize(function () { //반응형을 대비하여 리사이즈시 top값을 다시 계산
+                    pageOffsetTop = $page.offset().top;
+                });
+
+                $window.on('scroll', function () { //스크롤시
+                    var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
+                    $header.toggleClass('down', scrolled); //클래스 토글
+                });
+            });
+        </script>
+        <div class="main">
+            <div class="main_dv1">트로피카나</div>
+            <div class="main_dv2">사과톡톡</div>
+        </div>
+        <div class="footer">
+            <div class="ft_hd">푸터 u</div>
+            <div class="ft_bd"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
