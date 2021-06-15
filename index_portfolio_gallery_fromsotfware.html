@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프롬소트프웨어</title>
+
+    <!-- FontAwesome5, 구글 폰트(폰트, 아이콘) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <!-- Jquary, Swiper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        /* @media all and (max-width: 360px) {
+            .hd_menu_container {
+                display: none;
+            }
+        } */
+
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #141414;
+        }
+
+        .wrap {
+            position: relative;
+            overflow: hidden;
+            min-width: 1100px;
+            /* max-width: 1099px; */
+            /* border: 5px solid red; */
+        }
+
+        .header {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .header_container {
+            /* margin: 0 176px; */
+            margin: 0 110px;
+            height: 120px;
+            /* background-color: rgb(248, 248, 248); */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hd_menu_container {
+            /* background-color: rgb(241, 241, 241); */
+            font-size: 16px;
+        }
+
+        .hd_menu {
+            margin: 0 14px;
+            float: left;
+        }
+
+        .hd_menu>a {
+            color: #252525;
+        }
+
+        nav {
+            position: relative;
+            z-index: 100;
+            margin-top: 8px;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        .nv_mainmenu_container {
+            margin: 0 auto;
+            width: 1008px;
+            background-color: #141414;
+            display: flex;
+            justify-content: space-evenly;
+            height: 47px;
+        }
+
+        .nv_mainmenu {
+            position: relative;
+            z-index: 100;
+            line-height: 47px;
+            text-align: center;
+            width: 192px;
+            background-color: rgb(255, 255, 255);
+            transition: all 0.3s;
+            cursor: pointer;
+            color: #252525;
+            font-size: 19px;
+        }
+
+
+        .nv_submenu_container {
+            position: absolute;
+            top: 57px;
+            width: 192px;
+            display: none;
+            transition: all 0.5s;
+
+        }
+
+        .nv_submenu {
+            margin-bottom: 8px;
+            height: 47px;
+            line-height: 47px;
+            background-color: rgb(231, 231, 231);
+            font-size: 15px;
+        }
+
+        .nv_submenu:hover {
+            background-color: rgb(29, 29, 29);
+            color: rgb(231, 231, 231);
+        }
+
+
+        main {
+            margin: 10px auto;
+            width: 1220px;
+            background-color: rgb(255, 255, 255);
+            height: 3100px;
+        }
+
+        .main_company {
+            height: 720px;
+
+            background-color: #252525;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: auto 120%;
+            background-image: url(https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/6/9/a/69a717922a_50177368_jeu-elden-ring.jpg);
+        }
+
+        .footer {
+
+            background-color: rgb(255, 255, 255);
+        }
+
+        .ft_column_up {
+            height: 50px;
+            background-color: rgb(133, 219, 219);
+        }
+
+        .ft_column_down {
+            height: 102px;
+            background-color: rgb(27, 155, 155);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header id="wr-hd" class="header">
+            <div class="header_container">
+                <a href="">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Fromsoftware_logo.png" width="321px"
+                        alt="">
+                </a>
+                <ul class="hd_menu_container">
+                    <li class="hd_menu">
+                        <a href=""><i class="fas fa-globe"></i></a>
+                    </li>
+                    <li class="hd_menu">
+                        <a href="">News</a>
+                    </li>
+                    <li class="hd_menu">
+                        <a href="">Update</a>
+                    </li>
+                    <li class="hd_menu">
+                        <a href=""><i class="fas fa-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+        <nav>
+            <ul class="nv_mainmenu_container">
+                <li class="nv_mainmenu" onclick="p(1)">
+                    COMPANY&nbsp;<i class="fas fa-angle-down"></i>
+                    <div class="nv_submenu_container" id="mu_txt_g1">
+                        <div class="nv_submenu" onclick="location.href=''">
+                            About
+                        </div>
+                        <div class="nv_submenu" onclick="location.href=''">
+                            History
+                        </div>
+                        <div class="nv_submenu" onclick="location.href=''">
+                            Access
+                        </div>
+                    </div>
+
+                </li>
+                <li class="nv_mainmenu" onclick="p(2)">
+                    PRODUCTIONS&nbsp;<i class="fas fa-angle-down"></i>
+                    <div class="nv_submenu_container" id="mu_txt_g2">
+                        <div class="nv_submenu" onclick="location.href=''">All</div>
+                        <div class="nv_submenu" onclick="location.href=''">Platform</div>
+                        <div class="nv_submenu" onclick="location.href=''">Soundtrack</div>
+                        <div class="nv_submenu" onclick="location.href=''">Mobile Apps</div>
+                    </div>
+                </li>
+                <li class="nv_mainmenu" onclick="p(3)">
+                    PRESS RELEASE&nbsp;<i class="fas fa-angle-down"></i>
+                    <div class="nv_submenu_container" id="mu_txt_g3">
+                        <div class="nv_submenu" onclick="location.href=''">2021</div>
+                        <div class="nv_submenu" onclick="location.href=''">2020</div>
+                        <div class="nv_submenu" onclick="location.href=''">other</div>
+                    </div>
+                </li>
+                <li class="nv_mainmenu" onclick="p(4)">
+                    RECRUIT&nbsp;<i class="fas fa-angle-down"></i>
+                    <div class="nv_submenu_container" id="mu_txt_g4">
+                        <div class="nv_submenu" onclick="location.href=''">Corporate</div>
+                        <div class="nv_submenu" onclick="location.href=''">Portfolio</div>
+                    </div>
+                </li>
+                <li class="nv_mainmenu" onclick="p(5)">
+                    SUPPORTS&nbsp;<i class="fas fa-angle-down"></i>
+                    <div class="nv_submenu_container" id="mu_txt_g5">
+                        <div class="nv_submenu" onclick="location.href=''">FAQ</div>
+                        <div class="nv_submenu" onclick="location.href=''">Contact</div>
+                    </div>
+                </li>
+                <script>
+                    function p(nb) {
+                        mu_txt_g1.style.display = "none";
+                        mu_txt_g2.style.display = "none";
+                        mu_txt_g3.style.display = "none";
+                        mu_txt_g4.style.display = "none";
+                        mu_txt_g5.style.display = "none";
+                        this["mu_txt_g" + nb].style.display = "block";
+                        // this["mu_txt_g" + nb].style.background = "yellow";
+                    }
+                </script>
+            </ul>
+        </nav>
+        <main>
+            <div class="main_company"></div>
+        </main>
+        <footer class="footer">
+            <div class="ft_column_up"></div>
+            <div class="ft_column_down"></div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
