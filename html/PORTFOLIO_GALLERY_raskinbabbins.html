@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>래스킨바빈스</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="img/icon_baskicon.png">
+
+    <!-- FontAwesome5, 구글 폰트(폰트, 아이콘) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <!-- Jquary, Swiper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <style>
+        @font-face {
+            src: url(../font/배스킨라빈스\ B.ttf);
+            font-family: 'brb';
+        }
+
+        @font-face {
+            src: url(../font/배스킨라빈스\ R.ttf);
+            font-family: 'brr';
+        }
+
+        @font-face {
+            src: url(../font/NanumGothic.ttf);
+            font-family: 'nanumgo';
+        }
+
+        @font-face {
+            src: url(../font/NanumSquareRoundR.ttf);
+            font-family: 'NanumSquareRoundr';
+        }
+
+        @font-face {
+            src: url(../font/NanumSquareRoundB.ttf);
+            font-family: 'NanumSquareRoundb';
+        }
+
+        @font-face {
+            src: url(../font/NanumSquareRoundEB.ttf);
+            font-family: 'NanumSquareRoundeb';
+        }
+
+        @font-face {
+            src: url(../font/NanumSquareRoundL.ttf);
+            font-family: 'NanumSquareRoundl';
+        }
+
+
+        @font-face {
+            src: url(../font/Maplestory\ Bold.ttf);
+            font-family: 'maple_b';
+        }
+
+        @font-face {
+            src: url(../font/Maplestory\ Light.ttf);
+            font-family: 'maple_l';
+        }
+
+
+        /* font-family: 'Gothic A1', sans-serif; */
+
+
+
+        @media only screen and (max-width: 640px) {
+            .wrap {
+                width: 100%;
+                background-color: aqua;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        li {
+            list-style: none;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background: #fff6e6;
+        }
+
+        .wrap {
+            position: relative;
+            overflow: hidden;
+            background: #f7f7f7;
+            min-width: 1100px;
+        }
+
+        .header {
+            border-top: 4px solid #DF3E9C;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .logoandlogincontainer {
+            margin: 0 74px;
+            height: 100px;
+            /* background-color: rgb(150, 150, 150); */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logincontainer {
+            margin-right: 50px;
+            /* background-color: darkturquoise; */
+        }
+
+        .logincontain {
+            margin: 0 12px;
+            float: left;
+        }
+
+        .logincontain>a {
+            font-size: 15px;
+            font-family: 'NanumSquareRoundr';
+            color: #454545;
+        }
+
+        .logincontain:nth-child(4)>a>i {
+            color: #DF3E9C;
+        }
+
+
+        .nav {
+            position: relative;
+            z-index: 100;
+            background-color: #1F4C9A;
+        }
+
+        .nav_mainmenu_container {
+            margin: 0 auto;
+            width: 1056px;
+            /* margin: 0 152px; */
+            /* background-color: darkslategray; */
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav_mainmenu {
+            height: 48px;
+            line-height: 48px;
+            font-family: 'NanumSquareRoundeb';
+            font-weight: bold;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            cursor: default;
+        }
+
+        .backboard {
+            position: absolute;
+            left: 0;
+            top: 48px;
+            width: 100%;
+            height: 0;
+            /* background-color: #fafafade; */
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: all 0.5s;
+
+        }
+
+        .nav_mainmenu_container:hover .backboard {
+            height: 210px;
+        }
+
+        .backboard_container {
+            margin: 0 auto;
+            width: 1056px;
+            /* margin: 0 152px; */
+            /* background-color: aqua; */
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .backboard_submenu {
+            /* background-color: rgb(204, 204, 83); */
+            font-family: 'NanumSquareRoundl';
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .backboard_submenu_box {
+            height: 28px;
+            line-height: 28px;
+        }
+
+
+
+        .backboard_submenu_container:nth-child(2),
+        .backboard_submenu_container:nth-child(3),
+        .backboard_submenu_container:nth-child(4),
+        .backboard_submenu_container:nth-child(5) {
+            margin-top: 19px;
+        }
+
+
+
+        .nav_mainmenu:nth-child(1),
+        .backboard_submenu_container:nth-child(1) {
+            width: 256px;
+        }
+
+        .nav_mainmenu:nth-child(2),
+        .backboard_submenu_container:nth-child(2) {
+            width: 130px;
+        }
+
+        .nav_mainmenu:nth-child(3),
+        .nav_mainmenu:nth-child(5),
+        .backboard_submenu_container:nth-child(3),
+        .backboard_submenu_container:nth-child(5) {
+            width: 127px;
+        }
+
+        .nav_mainmenu:nth-child(4),
+        .backboard_submenu_container:nth-child(4) {
+            width: 80px;
+        }
+
+        .backboard_submenu_icepic {
+            cursor: pointer;
+        }
+
+        .backboard_submenu>a {
+            color: #454545;
+        }
+
+        .backboard_submenu>a:hover {
+            color: #DF3E9C;
+        }
+
+
+
+
+
+        .main {
+            background-color: blue;
+        }
+
+        .main_at1 {
+            background-color: #FFF3DB;
+        }
+
+        .main_fotm_container {
+            margin: 0 auto;
+            width: 1080px;
+            position: relative;
+            height: 720px;
+            /* background-color: yellow; */
+            /* */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* */
+        }
+
+
+
+
+        .fotm {
+            /* float: left;
+            margin-left: 40px; */
+            /* */
+            position: absolute;
+            left: 60px;
+            /* */
+
+
+            width: 420px;
+            height: 720px;
+            /* background-color: yellowgreen; */
+            background-image: url(https://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?v=210201);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100% auto;
+
+        }
+
+        .fotm_info {
+            /* float: right; */
+            /* */
+            position: absolute;
+            right: 40px;
+            /* */
+
+            width: 610px;
+            height: 720px;
+            /* background-color: #e4c6d7; */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            letter-spacing: -0.05em;
+        }
+
+
+
+
+
+        .fotm_info>p {
+            margin-top: 140px;
+            font-family: 'NanumSquareRoundr';
+            font-size: 36px;
+            color: #FF486D;
+        }
+
+        .fotm_info>p>b {
+            font-family: 'NanumSquareRoundeb';
+        }
+
+        .fotm_info>b:nth-child(2) {
+            font-family: 'NanumSquareRoundeb';
+            font-size: 70px;
+            color: #381F12;
+            font-weight: 800;
+
+        }
+
+        .fotm_info>span {
+            font-family: 'NanumSquareRoundr';
+            font-size: 18px;
+            color: #000000;
+            letter-spacing: -0.05em;
+
+        }
+
+
+        .fotm_info>input {
+            margin: 0 auto;
+            width: 168px;
+            height: 41px;
+            background-color: #381F12;
+            color: #fff;
+            border: none;
+            font-family: 'NanumSquareRoundb';
+            font-size: 16px;
+            border-radius: 20px;
+            transition: all 0.6s;
+            cursor: pointer;
+        }
+
+        .fotm_info>input:hover {
+            color: #381F12;
+            background-color: rgb(207, 207, 207);
+        }
+
+        input:focus {
+            outline: none;
+
+        }
+
+        .photo_container {
+            margin-bottom: 120px;
+            height: 140px;
+            /* background-color: rgb(228, 202, 99); */
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        .photo {
+            width: 138px;
+            height: 138px;
+            border: 1px solid rgba(56, 31, 18, 0.5);
+            border-radius: 100%;
+            background-color: #ffffff;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .index_photo_container>.photo:nth-child(1) {
+            background-position: top 12px center;
+            background-size: 90%;
+            background-repeat: no-repeat;
+            background-image: url(https://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?v=210201);
+        }
+
+
+        .index_photo_container>.photo:nth-child(2) {
+            background-position: center center;
+            background-size: 115%;
+            background-repeat: no-repeat;
+            background-image: url(https://www.baskinrobbins.co.kr/upload/product/1682940751.png);
+        }
+
+        .index_photo_container>.photo:nth-child(3) {
+            background-position: center center;
+            background-size: 115%;
+            background-repeat: no-repeat;
+            background-image: url(https://www.baskinrobbins.co.kr/upload/product/1682940945.png);
+        }
+
+        .index_photo_container>.photo:nth-child(4) {
+            background-position: center center;
+            background-size: 115%;
+            background-repeat: no-repeat;
+            background-image: url(https://www.baskinrobbins.co.kr/upload/product/1682941049.png);
+        }
+
+        .photo>div {
+            position: absolute;
+            z-index: 0;
+            left: 140px;
+            width: 138px;
+            height: 138px;
+            background-color: #381f1283;
+            transition: all 0.4s;
+            border-radius: 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        .photo:nth-child(1)>div {
+            background-image: url(../img/fotm_txt01.png);
+            background-size: 37.5%;
+        }
+
+        .photo:nth-child(2)>div {
+            background-image: url(../img/fotm_txt02.png);
+            background-size: 50%;
+        }
+
+
+        .photo:nth-child(3)>div {
+            background-image: url(../img/fotm_txt03.png);
+            background-size: 37.5%;
+
+        }
+
+        .photo:nth-child(4)>div {
+            background-image: url(../img/fotm_txt04.png);
+            background-size: 50%;
+
+        }
+
+
+        .photo:hover>div {
+            left: 0;
+        }
+
+        .photo>div>span {
+            cursor: default;
+            line-height: 46px;
+            color: cornsilk;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .main_at2 {
+            position: relative;
+            background-color: rgb(112, 112, 31);
+        }
+
+        .main_menu {
+            margin: 0 auto;
+            background-color: #FF486D;
+            width: 1080px;
+            overflow: hidden;
+        }
+
+
+
+        .main_menu_title,
+        .main_event_title {
+
+            height: 150px;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+
+        .main_menu_title>h2,
+        .main_event_title>h2 {
+            font-size: 80px;
+        }
+
+        .main_menu_circle_container {
+
+            height: 370px;
+            background-color: #ffd9d9;
+        }
+
+
+
+
+
+
+        .main_at3 {
+            background-color: rgb(247, 247, 136);
+        }
+
+        .main_event {
+            margin: 0 auto;
+            background-color: #bd6879;
+            width: 1080px;
+            height: 500px;
+            overflow: hidden;
+        }
+
+
+
+
+
+
+
+
+
+
+        .footer {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .ft_hd {
+
+            background-color: #545454;
+
+        }
+
+        .ft_hd_container {
+            margin: 0 auto;
+            width: 1032px;
+            height: 70px;
+            /* background-color: lightpink; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .ft_hd_container>li {
+            color: #ffffff;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .ft_md_container>li>select {
+            width: 172px;
+            height: 37px;
+            border: 1px solid #AAAAAA;
+        }
+
+
+
+
+
+        .ft_md {
+            height: 65px;
+            background-color: #ffffff;
+        }
+
+        .ft_md_container {
+            margin: 0 auto;
+            width: 1200px;
+            /* background-color: cyan; */
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .ft_md_container>li:not(.ft_md_container > li:nth-child(1), .ft_md_container > li:nth-child(7)) {
+            margin-left: -370px;
+        }
+
+        .ft_bd {
+
+            background-color: #ffffff;
+
+        }
+
+        .ft_bd_container {
+            margin: 0 auto;
+            width: 1200px;
+            height: 200px;
+            /* background-color: darkcyan; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .ft_bd_container>a {
+            margin-top: 30px;
+            width: 239px;
+            /* background-color: darkgrey; */
+
+        }
+
+        .ft_bd_container>span {
+            font-size: 13px;
+            color: #999999;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logoandlogincontainer">
+                <a href="#">
+                    <img src="https://logos-download.com/wp-content/uploads/2016/04/Baskin-Robbins-logo_2.png"
+                        width="239px" height="auto" alt="">
+                </a>
+                <ul class="logincontainer">
+                    <li class="logincontain"><a href="">로그인&#183;회원가입</a></li>
+                    <li class="logincontain"><a href="">고객센터</a></li>
+                    <li class="logincontain"><a href="">CONTACT US</a></li>
+                    <li class="logincontain"><a href=""><i class="fas fa-search"></i></a></li>
+                </ul>
+                <!--logincontainer end-->
+            </div>
+            <!--logoandlogincontainer end-->
+            <div class="nav">
+                <ul class="nav_mainmenu_container">
+                    <li class="nav_mainmenu">FLAVOR OF THE MONTH</li>
+                    <li class="nav_mainmenu">MENU</li>
+                    <li class="nav_mainmenu">EVENT</li>
+                    <li class="nav_mainmenu">STORE</li>
+                    <li class="nav_mainmenu">ABOUT</li>
+                    <li class="backboard">
+                        <div class="backboard_container">
+                            <ul class="backboard_submenu_container">
+                                <li class="backboard_submenu backboard_submenu_icepic"
+                                    onclick="location.href='raskinbabbins.html'">
+                                    <img src="https://www.baskinrobbins.co.kr/assets/images/common/flavor/img_monthly_fom.png?v=20210201"
+                                        height="210px;" alt="">
+                                </li>
+
+                            </ul>
+
+                            <ul class="backboard_submenu_container">
+                                <li class="backboard_submenu backboard_submenu_box">
+                                    <a href="">아이스크림</a>
+                                </li>
+                                <li class="backboard_submenu backboard_submenu_box">
+                                    <a href="">아이스크림 케이크</a>
+                                </li>
+                                <li class="backboard_submenu backboard_submenu_box">
+                                    <a href="">커피</a>
+                                </li>
+
+                                <li class="backboard_submenu backboard_submenu_box">
+                                    <a href="">음료</a>
+                                </li>
+
+                                <li class="backboard_submenu backboard_submenu_box">
+                                    <a href="">디저트</a>
+                                </li>
+                            </ul>
+
+                            <ul class="backboard_submenu_container">
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">진행 중인 이벤트</a></li>
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">당첨자 발표</a></li>
+
+                            </ul>
+
+                            <ul class="backboard_submenu_container">
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">매장찾기</a></li>
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">고객센터</a></li>
+                            </ul>
+
+                            <ul class="backboard_submenu_container">
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">공지사항</a></li>
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">보도자료</a></li>
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">채용정보</a></li>
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">점포개설문의</a></li>
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <!--nav_mainmenu_container end-->
+            </div>
+            <!--nav end-->
+            <script>
+                const nav = document.querySelector('.nav');
+                const navTopOffset = nav.offsetTop;
+                window.addEventListener('scroll', e => {
+
+                    if (window.pageYOffset >= navTopOffset) {
+                        nav.style.position = 'fixed';
+                        nav.style.top = 0;
+                        nav.style.left = 0;
+                        nav.style.right = 0;
+                    } else {
+                        nav.style.position = '';
+                        nav.style.top = '';
+                    }
+                });
+            </script>
+
+        </div>
+        <!--header end-->
+        <div class="main">
+            <div class="main_at1">
+                <div class="main_fotm_container">
+                    <div class="fotm">
+
+                    </div>
+                    <!--wallpaper end-->
+                    <div class="fotm_info">
+                        <p>먼저 만나는 _월<b>&nbsp;이달의 맛</b></p>
+                        <b>nnn</b>
+                        <span>aASaskjkj<br>jjhjhjkAASS</span>
+                        <input value="이달의 맛 맛보기" type="button" onclick="location.href=''">
+                        <div class="photo_container index_photo_container">
+                            <div class="photo">
+                                <div>
+                                    <span>아이스<br>밀카<br>초콜릿</span>
+
+
+                                </div>
+                            </div>
+                            <div class="photo">
+                                <div>
+                                    <!-- 누가봐도밀카초콜릿케이크 -->
+                                </div>
+                            </div>
+                            <div class="photo">
+                                <div>
+                                    <!-- 아이스밀카쉐이크 -->
+                                </div>
+                            </div>
+                            <div class="photo">
+                                <div>
+                                    <!-- 밀카초콜릿샌드 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--main_wallpaper end-->
+            </div>
+            <!--main_cont end-->
+            <div class="main_at2">
+                <div class="main_menu">
+                    <div class="main_menu_title">
+                        <h2>MENU</h2>
+                        <p>배스킨라빈스의 다양한 제품을 만나보세요!</p>
+                    </div>
+                    <div class="main_menu_circle_container">
+
+                    </div>
+                </div>
+            </div>
+            <div class="main_at3">
+                <div class="main_event">
+                    <div class="main_event_title">
+                        <h2>EVENT</h2>
+                        <p>배스킨라빈스의 다양한 제품을 만나보세요!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--main end-->
+        <div class="footer">
+            <div class="ft_hd">
+                <ul class="ft_hd_container">
+                    <li onclick="location.href=''">점포개설문의</li>
+                    <li onclick="location.href=''">채용문의</li>
+                    <li onclick="location.href=''">윤리신고센터</li>
+                    <li onclick="location.href=''">이용약관</li>
+                    <li onclick="location.href=''">개인정보처리방침</li>
+                    <li onclick="location.href=''">영상정보처리기기운영관리방침</li>
+                    <li onclick="location.href=''">거래희망회사사전등록</li>
+                </ul>
+            </div>
+            <div class="ft_md">
+                <ul class="ft_md_container">
+                    <li><img src="file:///D:/html5,css3,javascript/%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%B2%A0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4(20200218)/img/btn_happypoint.png"
+                            alt=""></li>
+                    <li><img src="file:///D:/html5,css3,javascript/%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%B2%A0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4(20200218)/img/btn_happymarket.png"
+                            alt=""></li>
+                    <li><img src="file:///D:/html5,css3,javascript/%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%B2%A0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4(20200218)/img/btn_spc_story.png"
+                            alt=""></li>
+                    <li><img src="file:///D:/html5,css3,javascript/%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%B2%A0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4(20200218)/img/btn_norton.gif"
+                            alt=""></li>
+                    <li><img src="file:///D:/html5,css3,javascript/%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%B2%A0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4(20200218)/img/btn_ccm.gif"
+                            alt=""></li>
+                    <li><img src="file:///D:/html5,css3,javascript/%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%B2%A0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4(20200218)/img/btn_ksa.png"
+                            alt=""></li>
+                    <li>
+                        <select>
+                            <optgroup label="Family Site">
+                                <option value="">Family Site</option>
+                                <option value="">배스킨 스쿨</option>
+                                <option value="">SPC그룹사이트</option>
+                                <option value="">SPC MAGAZINE</option>
+                                <option value="">BR코리아</option>
+                                <option value="">해피포인트카드</option>
+                                <option value="">파스쿠찌</option>
+                                <option value="">삼립</option>
+                                <option value="">파리바게트</option>
+                                <option value="">던킨도너츠</option>
+                            </optgroup>
+                        </select>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="ft_bd">
+                <div class="ft_bd_container">
+                    <a href="">
+                        <img src="file:///D:/html5,css3,javascript/%ED%8F%AC%ED%86%A0%ED%8F%B4%EB%A6%AC%EC%98%A4%20%EB%B2%A0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4(20200218)/img/baskinlogoblack.png"
+                            width="239px" alt="">
+                    </a>
+                    <span>
+                        사업자 등록번호 : 303-81-09535 비알코리아(주) 대표이사 김창대 서울특별시 서초구 남부순환로 2620(양재동 11-149번지)<br>
+                        TEL : 080-555-3131 개인정보관리책임자 : 김경우<br>
+                        Copyright ⓒ 2016 BRKOREA Company. All Rights Reserved.
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <!--footer end-->
+    </div>
+    <!--wrap end-->
+</body>
+
+</html>

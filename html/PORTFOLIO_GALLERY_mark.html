@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리메이크마크저민</title>
+    <!-- https://markjerminmanagement.co.uk/ -->
+
+    <!-- Jquary, Swiper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- FontAwesome5, 구글 폰트(폰트, 아이콘) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgb(255, 231, 214);
+        }
+
+        .wrap {
+            position: relative;
+            overflow: hidden;
+            background-color: darkgray;
+            /* min-width: 1100px; */
+        }
+
+        .header {
+            position: relative;
+            z-index: 100;
+            /* background: lightcoral; */
+            transition: all 0.4s;
+        }
+
+        .header_container {
+            margin: 0 auto;
+            max-width: 1200px;
+            height: 150px;
+            /* display: block; */
+            /* background-color: rgb(131, 255, 93); */
+            
+        }
+
+        .empty {
+            position: relative;
+            width: 1040px;
+            float: left;
+            height: 150px;
+            /* background-color: burlywood; */
+        }
+
+        .menu {
+            position: relative;
+            width: 150px;
+            float: right;
+            height: 150px;
+            /* background-color: rgb(131, 82, 18); */
+        }
+
+        .fa-bars {
+            position: absolute;
+            left: 55px;
+            top: 55px;
+            color: #fff;
+            font-size: 40px;
+            cursor: pointer;
+            display: block;
+        }
+
+
+
+
+        .main {
+            position: relative;
+            top: -150px;
+            background-color: rgb(55, 54, 141);
+        }
+
+  
+
+
+
+
+        .swiper-container {
+            width: 100vw;
+            height: 100vh;
+            background-color: #000000;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-pagination {
+            margin-bottom: 8%;
+        }
+
+
+
+        .slide_1 {
+            height: 282px;
+            /* background-color: lawngreen; */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .slide_img1 {
+            /* background-size: auto 100vh; */
+            background-size: 100vw;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-image: url(https://wallpaperaccess.com/full/1876762.gif);
+            backdrop-filter: 0.6;
+        }
+
+        .slide_img2 {
+            /* background-size: auto 100vh; */
+            background-size: 100vw;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-image: url(https://cdn.statically.io/img/wallpaperaccess.com/full/723262.gif);
+        }
+
+        .button_container {
+            margin: 0 auto;
+            width: 620px;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .slide_1_button {
+            width: 300px;
+            height: 63px;
+            background-color: #ad9964;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            color: #cfcfcf;
+            font-family: 'Gothic A1', sans-serif;
+        }
+
+
+
+        .footer {
+            height: 270px;
+            background-color: rgb(33, 79, 80);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header_container">
+                <div class="empty"></div>
+                <div class="menu">
+                    <i onclick="menuopen()" id="fabars" class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide_img1">
+                        <div class="slide_1">
+                            <img src="https://markjerminmanagement.co.uk/app/themes/mark-jermin-management/dist/images/logo.svg"
+                                width="500vw" alt="">
+                            <div class="button_container">
+                                <input type="button" class="slide_1_button" value="소개" name="" id="">
+                                <input type="button" class="slide_1_button" value="정보" name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide_img2">
+                        <div class="slide_1">
+                            <img src="https://markjerminmanagement.co.uk/app/themes/mark-jermin-management/dist/images/voices.png"
+                                width="500vw" alt="">
+                            <div class="button_container">
+                                <input type="button" class="slide_1_button" value="기타" name="" id="">
+                                <input type="button" class="slide_1_button" value="성우" name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">3</div>
+                    <div class="swiper-slide">4</div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+
+
+            </div>
+            <style>
+                .swiper-pagination-bullet {
+                    width: 12px;
+                    height: 12px;
+                    text-align: center;
+                    font-size: 12px;
+                    color: #000;
+                    opacity: 1;
+                    border: 2px solid #ffffff;
+                    background-color: #313131;
+                }
+
+                .swiper-pagination-bullet-active {
+                    color: #fff;
+                    background-color: #f1f1f1;
+                }
+            </style>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    slidesPerGroup: 1,
+
+
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+</body>
+
+</html>
