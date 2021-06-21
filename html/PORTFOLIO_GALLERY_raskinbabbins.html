@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>래스킨바빈스</title>
     <!-- 파비콘 -->
-    <link rel="shortcut icon" href="img/icon_baskicon.png">
+    <link rel="shortcut icon" href="../img/icon_baskicon.png">
 
     <!-- FontAwesome5, 구글 폰트(폰트, 아이콘) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
@@ -67,7 +67,6 @@
             font-family: 'NanumSquareRoundl';
         }
 
-
         @font-face {
             src: url(../font/Maplestory\ Bold.ttf);
             font-family: 'maple_b';
@@ -78,10 +77,7 @@
             font-family: 'maple_l';
         }
 
-
         /* font-family: 'Gothic A1', sans-serif; */
-
-
 
         @media only screen and (max-width: 640px) {
             .wrap {
@@ -99,7 +95,6 @@
 
         li {
             list-style: none;
-
         }
 
         a {
@@ -117,9 +112,11 @@
             min-width: 1100px;
         }
 
+        /* 헤더 구간 시작 */
+
         .header {
-            border-top: 4px solid #DF3E9C;
-            background-color: rgb(255, 255, 255);
+            border-top: 3px solid #DF3E9C;
+            background-color: #ffffff;
         }
 
         .logoandlogincontainer {
@@ -144,18 +141,17 @@
         .logincontain>a {
             font-size: 15px;
             font-family: 'NanumSquareRoundr';
-            color: #454545;
+            color: #381F12;
         }
 
         .logincontain:nth-child(4)>a>i {
             color: #DF3E9C;
         }
 
-
         .nav {
             position: relative;
             z-index: 100;
-            background-color: #1F4C9A;
+            background-color: #DF3E9C
         }
 
         .nav_mainmenu_container {
@@ -175,7 +171,7 @@
             font-size: 20px;
             color: #fff;
             text-align: center;
-            cursor: default;
+            cursor: pointer;
         }
 
         .backboard {
@@ -184,10 +180,10 @@
             top: 48px;
             width: 100%;
             height: 0;
-            /* background-color: #fafafade; */
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: #ffffff;
             transition: all 0.5s;
-
+            box-shadow: 0 10px 20px #381F1266;
+            border-bottom: 1px solid #381F12;
         }
 
         .nav_mainmenu_container:hover .backboard {
@@ -218,16 +214,12 @@
             line-height: 28px;
         }
 
-
-
         .backboard_submenu_container:nth-child(2),
         .backboard_submenu_container:nth-child(3),
         .backboard_submenu_container:nth-child(4),
         .backboard_submenu_container:nth-child(5) {
             margin-top: 19px;
         }
-
-
 
         .nav_mainmenu:nth-child(1),
         .backboard_submenu_container:nth-child(1) {
@@ -256,23 +248,25 @@
         }
 
         .backboard_submenu>a {
-            color: #454545;
+            color: #381F12;
+            font-weight: normal;
         }
 
         .backboard_submenu>a:hover {
             color: #DF3E9C;
+            border-bottom: 1px solid #DF3E9C;
         }
 
-
-
-
+        /* 헤더 구간 종료, 메인 구간 시작 */
 
         .main {
-            background-color: blue;
+            background-color: #ffffff;
         }
 
+        /* 메인 1: 이달의 맛 구간 시작 */
+
         .main_at1 {
-            background-color: #FFF3DB;
+            background-image: linear-gradient(135deg, #ea5e9e 10%, #fabb00 50%, #10a956 100%);
         }
 
         .main_fotm_container {
@@ -280,7 +274,7 @@
             width: 1080px;
             position: relative;
             height: 720px;
-            /* background-color: yellow; */
+            /* background-image: linear-gradient(135deg, #ea5e9e 10%, #fabb00 50%, #10a956 100%); */
             /* */
             display: flex;
             align-items: center;
@@ -288,18 +282,9 @@
             /* */
         }
 
-
-
-
         .fotm {
             /* float: left;
             margin-left: 40px; */
-            /* */
-            position: absolute;
-            left: 60px;
-            /* */
-
-
             width: 420px;
             height: 720px;
             /* background-color: yellowgreen; */
@@ -307,7 +292,10 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: 100% auto;
-
+            /* */
+            position: absolute;
+            left: 60px;
+            /* */
         }
 
         .fotm_info {
@@ -316,7 +304,6 @@
             position: absolute;
             right: 40px;
             /* */
-
             width: 610px;
             height: 720px;
             /* background-color: #e4c6d7; */
@@ -326,10 +313,6 @@
             justify-content: space-around;
             letter-spacing: -0.05em;
         }
-
-
-
-
 
         .fotm_info>p {
             margin-top: 140px;
@@ -347,7 +330,6 @@
             font-size: 70px;
             color: #381F12;
             font-weight: 800;
-
         }
 
         .fotm_info>span {
@@ -355,15 +337,13 @@
             font-size: 18px;
             color: #000000;
             letter-spacing: -0.05em;
-
         }
-
 
         .fotm_info>input {
             margin: 0 auto;
             width: 168px;
             height: 41px;
-            background-color: #381F12;
+            background-color: #e7423e;
             color: #fff;
             border: none;
             font-family: 'NanumSquareRoundb';
@@ -374,13 +354,17 @@
         }
 
         .fotm_info>input:hover {
-            color: #381F12;
-            background-color: rgb(207, 207, 207);
+            /* box-shadow: 0 10px 20px #ffffffe0; */
+
+            -moz-box-shadow: 0 0 20px 3px #ffffffe0;
+            -webkit-box-shadow: 0 0 20px 5px #ffffffe0;
+            box-shadow: 0 0 20px 5px #ffffffe0;
+            /* color: #381F12;
+            background-color: #68615e; */
         }
 
         input:focus {
             outline: none;
-
         }
 
         .photo_container {
@@ -390,18 +374,16 @@
             display: flex;
             align-items: center;
             justify-content: space-evenly;
-
         }
 
         .photo {
             width: 138px;
             height: 138px;
-            border: 1px solid rgba(56, 31, 18, 0.5);
+            border: 1px solid #381F1280;
             border-radius: 100%;
             background-color: #ffffff;
             position: relative;
             overflow: hidden;
-
         }
 
         .index_photo_container>.photo:nth-child(1) {
@@ -411,35 +393,34 @@
             background-image: url(https://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?v=210201);
         }
 
-
         .index_photo_container>.photo:nth-child(2) {
             background-position: center center;
             background-size: 115%;
             background-repeat: no-repeat;
-            background-image: url(https://www.baskinrobbins.co.kr/upload/product/1682940751.png);
+            background-image: url(http://www.baskinrobbins.co.kr/upload/product/1680660542.png);
         }
 
         .index_photo_container>.photo:nth-child(3) {
             background-position: center center;
             background-size: 115%;
             background-repeat: no-repeat;
-            background-image: url(https://www.baskinrobbins.co.kr/upload/product/1682940945.png);
+            background-image: url(http://www.baskinrobbins.co.kr/upload/product/1609896003.png);
         }
 
         .index_photo_container>.photo:nth-child(4) {
             background-position: center center;
             background-size: 115%;
             background-repeat: no-repeat;
-            background-image: url(https://www.baskinrobbins.co.kr/upload/product/1682941049.png);
+            background-image: url(http://www.baskinrobbins.co.kr/upload/product/1688518948.png);
         }
 
         .photo>div {
             position: absolute;
             z-index: 0;
-            left: 140px;
+            left: 138px;
             width: 138px;
             height: 138px;
-            background-color: #381f1283;
+            background-color: #ffffff83;
             transition: all 0.4s;
             border-radius: 100%;
             background-position: center center;
@@ -456,65 +437,47 @@
             background-size: 50%;
         }
 
-
         .photo:nth-child(3)>div {
             background-image: url(../img/fotm_txt03.png);
             background-size: 37.5%;
-
         }
 
         .photo:nth-child(4)>div {
             background-image: url(../img/fotm_txt04.png);
             background-size: 50%;
-
         }
 
-
         .photo:hover>div {
-            left: 0;
+            left: -1px;
         }
 
         .photo>div>span {
             cursor: default;
             line-height: 46px;
-            color: cornsilk;
+            color: rgb(77, 74, 66);
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        /* 메인 1: 이달의 맛 구간 종료, 메인 2: 메뉴 구간 시작,*/
 
         .main_at2 {
             position: relative;
-            background-color: rgb(112, 112, 31);
+            /* background-color: rgb(112, 112, 31); */
         }
 
         .main_menu {
             margin: 0 auto;
-            background-color: #FF486D;
+            /* background-color: #FF486D; */
             width: 1080px;
             overflow: hidden;
         }
 
-
-
         .main_menu_title,
-        .main_event_title {
-
+        .main_event_title,
+        .main_store_title,
+        .main_order_title,
+        .main_sns_title {
             height: 150px;
-            background-color: blue;
+            /* background-color: blue; */
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -522,20 +485,95 @@
         }
 
         .main_menu_title>h2,
-        .main_event_title>h2 {
-            font-size: 80px;
+        .main_event_title>h2,
+        .main_store_title>h2,
+        .main_order_title>h2,
+        .main_sns_title>h2 {
+            font-size: 40px;
+            font-family: 'Paytone One', sans-serif;
         }
 
         .main_menu_circle_container {
-
             height: 370px;
-            background-color: #ffd9d9;
+            /* background-color: #ffd9d9; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
+        .circle_group {
+            margin: 0 7px;
+            /* background-color: blueviolet; */
+            text-align: center;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
 
+        .circle {
+            width: 176px;
+            height: 176px;
+            background-color: #faf9eb;
+            border-radius: 100%;
+            transition: all 0.5s;
+        }
 
+        .circle_group:nth-child(1) .circle {
+            background-position: center center;
+            background-size: 68%;
+            background-repeat: no-repeat;
+            background-image: url(https://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?v=210201);
+        }
 
+        .circle_group:nth-child(2) .circle {
+            background-position: center center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url(http://www.baskinrobbins.co.kr/upload/product/1680660542.png);
+        }
 
+        .circle_group:nth-child(3) .circle {
+            background-position: center center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url(http://www.baskinrobbins.co.kr/upload/product/1609896003.png);
+        }
+
+        .circle_group:nth-child(4) .circle {
+            background-position: center center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url(https://www.baskinrobbins.co.kr/upload/product/1619857592.png);
+        }
+
+        .circle_group:nth-child(5) .circle {
+            background-position: center center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-image: url(http://www.baskinrobbins.co.kr/upload/product/1688518948.png);
+        }
+
+        .circle_group>b {
+            font-family: 'Quicksand';
+            font-size: 18px;
+            font-weight: bold;
+            cursor: default;
+        }
+
+        .circle_group>p {
+            font-size: 15px;
+            font-family: 'NanumSquareRoundl';
+            cursor: default;
+        }
+
+        .circle_group>a {
+            font-family: 'Quicksand';
+            font-size: 13px;
+            color: #6A6A6A;
+        }
+
+        /* 메인 2: 메뉴 구간 종료, 메인 3: 이벤트 구간 시작 */
 
         .main_at3 {
             background-color: rgb(247, 247, 136);
@@ -543,10 +581,89 @@
 
         .main_event {
             margin: 0 auto;
-            background-color: #bd6879;
-            width: 1080px;
+            /* background-color: #bd6879; */
+            /* width: 1080px; */
+            width: 960px;
             height: 500px;
             overflow: hidden;
+        }
+
+
+        .main_event_container {
+            height: 370px;
+            /* background-color: #d15794; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+        /* 슬라이드 기본 */
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+
+
+
+        .main_event_container {
+
+            /* width: 1080px; */
+            width: 960px;
+            height: 320px;
+            /* background-color: fuchsia; */
+        }
+
+        .swiper-event-slide {
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .swiper-event-slide>div {
+            width: fit-content;
+            height: fit-content;
+            /* background-color: wheat; */
+        }
+
+        .swiper-event-slide>div>img {
+            cursor: pointer;
+            width: 213px;
+            height: 213px;
+            border-radius: 20px;
+        }
+
+        .swiper-event-slide>div>p {
+            cursor: default;
+        }
+
+        .swiper-event-slide>div>.p_event_due {
+            font-size: 12px;
+        }
+
+        .swiper-event-slide>div>.p_event_info {
+            font-size: 18px;
         }
 
 
@@ -557,15 +674,55 @@
 
 
 
+
+
+
+
+
+
+
+        .main_at4 {
+            background-color: rgb(59, 79, 105);
+        }
+
+        .main_store {
+            margin: 0 auto;
+            background-color: #a5374d;
+            width: 1080px;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .main_at5 {
+            background-color: rgb(94, 191, 255);
+        }
+
+        .main_order {
+            margin: 0 auto;
+            background-color: #ccb876;
+            width: 1080px;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .main_at6 {
+            background-color: rgb(99, 99, 43);
+        }
+
+        .main_sns {
+            margin: 0 auto;
+            background-color: #b46f7d;
+            width: 1080px;
+            height: 500px;
+            overflow: hidden;
+        }
 
         .footer {
             background-color: rgb(255, 255, 255);
         }
 
         .ft_hd {
-
             background-color: #545454;
-
         }
 
         .ft_hd_container {
@@ -590,10 +747,6 @@
             border: 1px solid #AAAAAA;
         }
 
-
-
-
-
         .ft_md {
             height: 65px;
             background-color: #ffffff;
@@ -614,9 +767,7 @@
         }
 
         .ft_bd {
-
             background-color: #ffffff;
-
         }
 
         .ft_bd_container {
@@ -626,20 +777,18 @@
             /* background-color: darkcyan; */
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
         }
 
         .ft_bd_container>a {
             margin-top: 30px;
             width: 239px;
             /* background-color: darkgrey; */
-
         }
 
         .ft_bd_container>span {
             font-size: 13px;
             color: #999999;
-
         }
     </style>
 </head>
@@ -650,11 +799,11 @@
             <div class="logoandlogincontainer">
                 <a href="#">
                     <img src="https://logos-download.com/wp-content/uploads/2016/04/Baskin-Robbins-logo_2.png"
-                        width="239px" height="auto" alt="">
+                        width="329px" height="auto" alt="">
                 </a>
                 <ul class="logincontainer">
                     <li class="logincontain"><a href="">로그인&#183;회원가입</a></li>
-                    <li class="logincontain"><a href="">고객센터</a></li>
+                    <li class="logincontain"><a href="../PORTFOLIO_GALLERY_main.html">고객센터</a></li>
                     <li class="logincontain"><a href="">CONTACT US</a></li>
                     <li class="logincontain"><a href=""><i class="fas fa-search"></i></a></li>
                 </ul>
@@ -673,10 +822,9 @@
                             <ul class="backboard_submenu_container">
                                 <li class="backboard_submenu backboard_submenu_icepic"
                                     onclick="location.href='raskinbabbins.html'">
-                                    <img src="https://www.baskinrobbins.co.kr/assets/images/common/flavor/img_monthly_fom.png?v=20210201"
+                                    <img src="http://www.baskinrobbins.co.kr/assets/images/common/flavor/img_monthly_fom.jpg?v=20210601-1"
                                         height="210px;" alt="">
                                 </li>
-
                             </ul>
 
                             <ul class="backboard_submenu_container">
@@ -689,11 +837,9 @@
                                 <li class="backboard_submenu backboard_submenu_box">
                                     <a href="">커피</a>
                                 </li>
-
                                 <li class="backboard_submenu backboard_submenu_box">
                                     <a href="">음료</a>
                                 </li>
-
                                 <li class="backboard_submenu backboard_submenu_box">
                                     <a href="">디저트</a>
                                 </li>
@@ -702,7 +848,6 @@
                             <ul class="backboard_submenu_container">
                                 <li class="backboard_submenu backboard_submenu_box"><a href="">진행 중인 이벤트</a></li>
                                 <li class="backboard_submenu backboard_submenu_box"><a href="">당첨자 발표</a></li>
-
                             </ul>
 
                             <ul class="backboard_submenu_container">
@@ -745,10 +890,7 @@
         <div class="main">
             <div class="main_at1">
                 <div class="main_fotm_container">
-                    <div class="fotm">
-
-                    </div>
-                    <!--wallpaper end-->
+                    <div class="fotm"></div>
                     <div class="fotm_info">
                         <p>먼저 만나는 _월<b>&nbsp;이달의 맛</b></p>
                         <b>nnn</b>
@@ -757,9 +899,7 @@
                         <div class="photo_container index_photo_container">
                             <div class="photo">
                                 <div>
-                                    <span>아이스<br>밀카<br>초콜릿</span>
-
-
+                                    <span>오버<br>더<br>레인보우</span>
                                 </div>
                             </div>
                             <div class="photo">
@@ -790,7 +930,36 @@
                         <p>배스킨라빈스의 다양한 제품을 만나보세요!</p>
                     </div>
                     <div class="main_menu_circle_container">
-
+                        <div class="circle_group">
+                            <div class="circle"></div>
+                            <b>ICE CREAM</b>
+                            <p>아이스크림의 기준은?<br>배스킨라빈스!</p>
+                            <a href="">more&nbsp;&nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                        <div class="circle_group">
+                            <div class="circle"></div>
+                            <b>ICE CREAM CAKE</b>
+                            <p>아이 어른 모두 좋아하는<br>아이스크림을 케이크 하나로!</p>
+                            <a href="">more&nbsp;&nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                        <div class="circle_group">
+                            <div class="circle"></div>
+                            <b>BEVERAGE</b>
+                            <p>아이스크림으로 즐기는<br>배스킨라빈스만의 음료</p>
+                            <a href="">more&nbsp;&nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                        <div class="circle_group">
+                            <div class="circle"></div>
+                            <b>COFFEE</b>
+                            <p>배스킨라빈스만의<br>부드러운 촉감과 달콤한 풍미!</p>
+                            <a href="">more&nbsp;&nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                        <div class="circle_group">
+                            <div class="circle"></div>
+                            <b>DESSERT</b>
+                            <p>아이스크림을 더<br>재미있고 간편히 즐기는 방법!</p>
+                            <a href="">more&nbsp;&nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -798,7 +967,136 @@
                 <div class="main_event">
                     <div class="main_event_title">
                         <h2>EVENT</h2>
-                        <p>배스킨라빈스의 다양한 제품을 만나보세요!</p>
+                        <p>배스킨라빈스와 함께하는 다양한 혜택과 이벤트</p>
+                    </div>
+                    <div class="swiper-container main_event_container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-event-slide">
+                                <div onclick="location.href=''">
+                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
+                                    <p class="p_event_due">상시진행</p>
+                                    <p class="p_event_info">1-32</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="swiper-slide swiper-event-slide">
+                                <div onclick="location.href=''">
+                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
+                                    <p class="p_event_due">2-32</p>
+                                    <p class="p_event_info">1-32</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="swiper-slide swiper-event-slide">
+                                <div onclick="location.href=''">
+                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
+                                    <p class="p_event_due">2-32</p>
+                                    <p class="p_event_info">1-32</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="swiper-slide swiper-event-slide">
+                                <div onclick="location.href=''">
+                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
+                                    <p class="p_event_due">2-32</p>
+                                    <p class="p_event_info">1-32</p>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide swiper-event-slide">
+                                <div onclick="location.href=''">
+                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
+                                    <p class="p_event_due">2-32</p>
+                                    <p class="p_event_info">1-32</p>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="swiper-slide swiper-event-slide">
+                                <div onclick="location.href=''">
+                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
+                                    <p class="p_event_due">2-32</p>
+                                    <p class="p_event_info">1-32</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="swiper-slide swiper-event-slide">
+                                <div onclick="location.href=''">
+                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
+                                    <p class="p_event_due">2-32</p>
+                                    <p class="p_event_info">1-32</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="swiper-slide swiper-event-slide">
+                                <div onclick="location.href=''">
+                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
+                                    <p class="p_event_due">2-32</p>
+                                    <p class="p_event_info">1-32</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <script>
+                        var swiper = new Swiper('.main_event_container', {
+                            slidesPerView: 4,
+                            spaceBetween: 0,
+                            // slidesPerGroup: 1,
+
+
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            },
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="main_at4">
+                <div class="main_store">
+                    <div class="main_store_title">
+                        <h2>STORE</h2>
+                        <p>다양한 즐거움과 새로움! 우리동네 배스킨라빈스!
+
+                            내 주변 가장 가까운 베스킨라빈스 매장을 찾아보세요!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_at5">
+                <div class="main_order">
+                    <div class="main_order_title">
+                        <h2>HAPPY DELIVERY & ORDER</h2>
+                        <p>주문에서 결제/배송까지 간편하게!
+                            배스킨라빈스 모바일 사전주문 & 배달서비스</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_at6">
+                <div class="main_sns">
+                    <div class="main_sns_title">
+                        <h2>SNS</h2>
+                        <p>배스킨라빈스의 즐거움을 다같이 나누고 싶다면?</p>
                     </div>
                 </div>
             </div>
