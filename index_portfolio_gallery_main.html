@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
     <title>포토폴리오 갤러리 메인</title>
     <link rel="shortcut icon" href="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/pf_logo_b.png?raw=true">
 
@@ -51,7 +52,7 @@
 
         body {
             background-color: rgb(255, 255, 255);
-
+            -webkit-text-size-adjust: none;
         }
 
         .wrap {
@@ -75,7 +76,7 @@
 
 
         .hd_container {
-            margin: 0 72px;
+            margin: 0 74px;
             /* background-color: thistle; */
             display: flex;
             align-items: center;
@@ -83,7 +84,7 @@
         }
 
         .hd_container>a>img {
-            margin-left: 80px;
+            margin-left: 70px;
         }
 
         .hd_container>ul {
@@ -92,6 +93,7 @@
             height: 90px;
             display: flex;
             justify-content: space-evenly;
+            
         }
 
         .hd_container>ul>li {
@@ -103,26 +105,34 @@
             color: #444444;
             /* background-color: skyblue; */
             cursor: pointer;
-
         }
 
-        .hd_container>ul>li:hover {
+        .hd_container>ul>li:hover:not(.gone) {
             border-bottom: 5px solid rgb(143, 143, 143);
         }
 
         .gone {
             display: none;
-            background-color: aquamarine;
+            /* background-color: aquamarine; */
         }
 
-        @media screen and (max-width: 768px) {
-            .hd_container>ul>li {
+        @media screen and (max-width: 1200px) {
+
+            .hd_container>ul {
+                width: 90px;
+            }
+
+            .hd_container>ul>li:not(.gone) {
                 display: none;
             }
 
             .gone {
                 display: block;
             }
+        }
+
+        .gone > i {
+            font-size: 30px;
         }
 
 
@@ -137,10 +147,10 @@
         }
 
         .port_title {
-            margin: 120px auto 0 auto;
+            margin: 120px auto 30px auto;
             width: 540px;
             height: 80px;
-            /* background-color: aquamarine; */
+            /* background-color: rgb(1, 112, 75); */
             text-align: center;
             line-height: 80px;
             cursor: default;
@@ -157,30 +167,27 @@
         } */
 
         .main_dv1 {
-
             height: 450px;
-            /* width: 100%; */
-            /* background-color: crimson; */
             display: flex;
             align-items: center;
             justify-content: center;
+            background-color: crimson;
         }
 
         .main_dv1>div {
             width: 1030px;
             height: 400px;
-            /* background-color: aquamarine; */
+            background-color: aquamarine;
             position: relative;
         }
 
-        .dv1_pic {
+        .dv_pic {
             position: absolute;
-            left: 10px;
-            top: 8px;
+            left: 32px;
+            top: 32px;
             cursor: pointer;
-            width: 680px;
-            height: 384px;
-            border-radius: 10px;
+            width: 595px;
+            height: 336px;
             /* background-color: cyan; */
             background-image: url(https://i.ytimg.com/vi/zjVr9F-fXIQ/maxresdefault.jpg);
             background-position: center center;
@@ -189,22 +196,17 @@
             transition: all 0.5s;
         }
 
-        /* .dv1_pic:hover {
-            background-size: 120% auto;
-            
-        } */
-
-        .main_dv1>div>span {
+        .main_dv1>div>span, .main_dv2>div>span, .main_dv3>div>span, .main_dv4>div>span, .main_dv5>div>span {
             position: absolute;
-            right: 55px;
-            top: 30px;
+            right: 32px;
+            top: 32px;
             display: flex;
-            height: 340px;
+            width: 301px;
+            height: 336px;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
             background-color: darkcyan;
-
         }
 
         .main_dv2 {
@@ -234,6 +236,7 @@
             width: 1030px;
             height: 400px;
             background-color: rgb(143, 141, 250);
+            position: relative;
         }
 
         .main_dv4 {
@@ -249,6 +252,22 @@
             width: 1030px;
             height: 400px;
             background-color: rgb(162, 167, 97);
+            position: relative;
+        }
+
+        .main_dv5 {
+            height: 450px;
+            background-color: rgb(211, 142, 39);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main_dv5>div {
+            width: 1030px;
+            height: 400px;
+            background-color: rgb(64, 92, 48);
+            position: relative;
         }
 
 
@@ -267,24 +286,25 @@
 
         .ft_hd_container {
             margin: 0 auto;
-            width: 1026px;
+            width: 1080px;
             /* background-color: cadetblue; */
             height: 52px;
         }
 
         .ft_hd_container>input {
-            margin: 8px 0 0 8px;
+            margin: 8px 0 0 40px;
             float: left;
             width: 210px;
             height: 36px;
-            border: 4px solid #999999;
+            border: 4px solid #a1a1a19f;
             border-radius: 3px;
-            background-color: #c4c4c4;
+            background-color: #eeeeee;
             outline: 0;
-
+            text-indent: 3px;
         }
 
         .ft_hd_container>ul {
+            margin-right: 30px;
             float: right;
             height: 52px;
         }
@@ -320,13 +340,16 @@
                         width="65px" height="65px" alt="">
                 </a>
                 <ul>
-                    <li class="gone">
-                        sddfgh
-                    </li>
+                    
                     <li onclick="location.href='#'">HOME</li>
                     <li onclick="location.href='#about'">ABOUT</li>
+                    
                     <li onclick="location.href=''">PORTFOLIO</li>
                     <li onclick="location.href='#CONTACT'">CONTACT</li>
+                    <li class="gone">
+                        <i class="fas fa-bars"></i>
+                    </li>
+                    
 
                 </ul>
             </div>
@@ -356,7 +379,7 @@
             </div>
             <div class="main_dv main_dv1">
                 <div>
-                    <div class="dv1_pic" onclick="window.open('html/PORTFOLIO_GALLERY_raskinbabbins.html')"></div>
+                    <div class="dv_pic" onclick="window.open('html/PORTFOLIO_GALLERY_raskinbabbins.html')"></div>
                     <span>
                         <h2>배스킨라빈스</h2>
                         <p>제작기간 2021. 02. 26 ~ </p>
@@ -366,20 +389,42 @@
             </div>
             <div class="main_dv main_dv2">
                 <div>
-                    <div>
-                        <a href="html/PORTFOLIO_GALLERY_fromsotfware.html" target="_blank">프롬소프</a>
-                    </div>
-
+                    <div class="dv_pic" onclick="window.open('html/PORTFOLIO_GALLERY_fromsotfware.html')"></div>
+                    <span>
+                        <h2>프롬소트프웨어</h2>
+                        <p>제작기간 2021. 02. 26 ~ </p>
+                        <span>jkjllkjkljklkljkl</span>
+                    </span>
                 </div>
             </div>
             <div class="main_dv main_dv3">
                 <div>
-                    <a href="html/PORTFOLIO_GALLERY_mark.html" target="_blank">마크저민</a>
+                    <div class="dv_pic" onclick="window.open('html/PORTFOLIO_GALLERY_mark.html')"></div>
+                    <span>
+                        <h2>로-파이 채널</h2>
+                        <p>제작기간 2021. 02. 26 ~ </p>
+                        <span>jkjllkjkljklkljkl</span>
+                    </span>
                 </div>
             </div>
             <div class="main_dv main_dv4">
                 <div>
-                    <a href="html/text.html" target="_blank">트로피카나</a>
+                    <div class="dv_pic" onclick="window.open('html/text.html')"></div>
+                    <span>
+                        <h2>텍스트</h2>
+                        <p>제작기간 2021. 02. 26 ~ </p>
+                        <span>jkjllkjkljklkljkl</span>
+                    </span>
+                </div>
+            </div>
+            <div class="main_dv main_dv5">
+                <div>
+                    <div class="dv_pic" onclick="window.open('html/yellowbox.html')"></div>
+                    <span>
+                        <h2>옐로박스</h2>
+                        <p>제작기간 2021. 02. 26 ~ </p>
+                        <span>jkjllkjkljklkljkl</span>
+                    </span>
                 </div>
             </div>
         </div>
