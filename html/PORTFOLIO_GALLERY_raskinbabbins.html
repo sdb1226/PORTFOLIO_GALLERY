@@ -480,7 +480,7 @@
             /* background-color: blue; */
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: center;
             text-align: center;
         }
 
@@ -489,8 +489,17 @@
         .main_store_title>h2,
         .main_order_title>h2,
         .main_sns_title>h2 {
-            font-size: 40px;
+            font-size: 42px;
             font-family: 'Paytone One', sans-serif;
+        }
+
+        .main_menu_title>p,
+        .main_event_title>p,
+        .main_store_title>p,
+        .main_order_title>p,
+        .main_sns_title>p {
+            font-size: 19px;
+            font-family: 'Gothic A1', sans-serif;
         }
 
         .main_menu_circle_container {
@@ -691,7 +700,27 @@
             width: 1080px;
             height: 500px;
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+
+        .main_store_inner_l {
+            width: 450px;
+            height: 345px;
+            background-color: #10a956;
+        }
+
+        .main_store_inner_r {
+            width: 450px;
+            height: 345px;
+            background-color: #b6c0bb;
+        }
+
+
+
+
+
 
         .main_at5 {
             background-color: rgb(94, 191, 255);
@@ -745,6 +774,7 @@
             width: 172px;
             height: 37px;
             border: 1px solid #AAAAAA;
+            text-indent: 5px;
         }
 
         .ft_md {
@@ -821,7 +851,7 @@
                         <div class="backboard_container">
                             <ul class="backboard_submenu_container">
                                 <li class="backboard_submenu backboard_submenu_icepic"
-                                    onclick="location.href='raskinbabbins.html'">
+                                    onclick="location.href='#'">
                                     <img src="http://www.baskinrobbins.co.kr/assets/images/common/flavor/img_monthly_fom.jpg?v=20210601-1"
                                         height="210px;" alt="">
                                 </li>
@@ -892,7 +922,7 @@
                 <div class="main_fotm_container">
                     <div class="fotm"></div>
                     <div class="fotm_info">
-                        <p>먼저 만나는 _월<b>&nbsp;이달의 맛</b></p>
+                        <p>먼저 만나는 <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/num_8.png?raw=true" width="90px">월<b>&nbsp;이달의 맛</b></p>
                         <b>nnn</b>
                         <span>aASaskjkj<br>jjhjhjkAASS</span>
                         <input value="이달의 맛 맛보기" type="button" onclick="location.href=''">
@@ -1075,12 +1105,15 @@
             </div>
             <div class="main_at4">
                 <div class="main_store">
-                    <div class="main_store_title">
-                        <h2>STORE</h2>
-                        <p>다양한 즐거움과 새로움! 우리동네 배스킨라빈스!
-
-                            내 주변 가장 가까운 베스킨라빈스 매장을 찾아보세요!</p>
+                    <div class="main_store_inner_l">
+                        <div class="main_store_title">
+                            <h2>STORE</h2>
+                            <p>다양한 즐거움과 새로움! 우리동네 배스킨라빈스!
+                                <br>내 주변 가장 가까운 베스킨라빈스 매장을 찾아보세요!</p>
+                        </div>
                     </div>
+                    <div class="main_store_inner_r"></div>
+                    
                 </div>
             </div>
             <div class="main_at5">
@@ -1088,7 +1121,7 @@
                     <div class="main_order_title">
                         <h2>HAPPY DELIVERY & ORDER</h2>
                         <p>주문에서 결제/배송까지 간편하게!
-                            배스킨라빈스 모바일 사전주문 & 배달서비스</p>
+                            <br>배스킨라빈스 모바일 사전주문 & 배달서비스</p>
                     </div>
                 </div>
             </div>
