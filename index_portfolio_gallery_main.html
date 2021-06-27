@@ -93,7 +93,7 @@
             height: 90px;
             display: flex;
             justify-content: space-evenly;
-            
+
         }
 
         .hd_container>ul>li {
@@ -131,7 +131,7 @@
             }
         }
 
-        .gone > i {
+        .gone>i {
             font-size: 30px;
         }
 
@@ -196,7 +196,11 @@
             transition: all 0.5s;
         }
 
-        .main_dv1>div>span, .main_dv2>div>span, .main_dv3>div>span, .main_dv4>div>span, .main_dv5>div>span {
+        .main_dv1>div>span,
+        .main_dv2>div>span,
+        .main_dv3>div>span,
+        .main_dv4>div>span,
+        .main_dv5>div>span {
             position: absolute;
             right: 32px;
             top: 32px;
@@ -207,6 +211,11 @@
             justify-content: space-around;
             align-items: center;
             background-color: darkcyan;
+        }
+
+        .btn {
+            width: 123px;
+            height: 46px;
         }
 
         .main_dv2 {
@@ -340,16 +349,16 @@
                         width="65px" height="65px" alt="">
                 </a>
                 <ul>
-                    
+
                     <li onclick="location.href='#'">HOME</li>
                     <li onclick="location.href='#about'">ABOUT</li>
-                    
+
                     <li onclick="location.href=''">PORTFOLIO</li>
                     <li onclick="location.href='#CONTACT'">CONTACT</li>
                     <li class="gone">
                         <i class="fas fa-bars"></i>
                     </li>
-                    
+
 
                 </ul>
             </div>
@@ -379,31 +388,50 @@
             </div>
             <div class="main_dv main_dv1">
                 <div>
-                    <div class="dv_pic" onclick="window.open('html/PORTFOLIO_GALLERY_raskinbabbins.html')"></div>
+                    <div class="dv_pic"></div>
                     <span>
                         <h2>배스킨라빈스</h2>
                         <p>제작기간 2021. 02. 26 ~ </p>
-                        <span>jkjllkjkljklkljkl</span>
+                        <span>
+                            <button class="btn" id="btn1"
+                                onclick="window.open('html/Mobile-PORTFOLIO_GALLERY_baskin.html')"
+                                value="hjhjh">모바일</button>
+                            <button class="btn" id="btn2"
+                                onclick="window.open('html/PORTFOLIO_GALLERY_raskinbabbins.html')" value="jhkjhk">PC
+                                데스크탑</button>
+                        </span>
                     </span>
                 </div>
             </div>
             <div class="main_dv main_dv2">
                 <div>
-                    <div class="dv_pic" onclick="window.open('html/PORTFOLIO_GALLERY_fromsotfware.html')"></div>
+                    <div class="dv_pic"></div>
                     <span>
                         <h2>프롬소트프웨어</h2>
                         <p>제작기간 2021. 02. 26 ~ </p>
-                        <span>jkjllkjkljklkljkl</span>
+                        <span>
+                            <button class="btn" id="btn3" onclick="window.open('')" value="hjhjh">모바일</button>
+                            <button class="btn" id="btn4"
+                                onclick="window.open('html/PORTFOLIO_GALLERY_fromsotfware.html')"
+                                value="jhkjhk">PC</button>
+                        </span>
                     </span>
                 </div>
             </div>
             <div class="main_dv main_dv3">
                 <div>
-                    <div class="dv_pic" onclick="window.open('html/PORTFOLIO_GALLERY_mark.html')"></div>
+                    <div class="dv_pic"></div>
                     <span>
                         <h2>로-파이 채널</h2>
                         <p>제작기간 2021. 02. 26 ~ </p>
-                        <span>jkjllkjkljklkljkl</span>
+                        <b>심신을 안정시키는 채널</b>
+                        <span>
+                            <span>
+                                <button class="btn" id="btn5" onclick="window.open('')" value="hjhjh">모바일</button>
+                                <button class="btn" id="btn6" onclick="window.open('html/PORTFOLIO_GALLERY_mark.html')"
+                                    value="jhkjhk">PC</button>
+                            </span>
+                        </span>
                     </span>
                 </div>
             </div>
@@ -411,9 +439,9 @@
                 <div>
                     <div class="dv_pic" onclick="window.open('html/text.html')"></div>
                     <span>
-                        <h2>텍스트</h2>
+                        <h2>훈스파이</h2>
                         <p>제작기간 2021. 02. 26 ~ </p>
-                        <span>jkjllkjkljklkljkl</span>
+                        <span>주거지 근처의 파이 가게 웹사이트를 </span>
                     </span>
                 </div>
             </div>
@@ -434,13 +462,16 @@
                     <input type="text" name="" id="">
                     <ul>
                         <li>
-                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
                         </li>
                         <li>
-                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
                         </li>
                     </ul>
                 </div>
