@@ -54,6 +54,10 @@
 
         body {
             background-color: #141414;
+            background-image: url(https://www.4gamer.net/games/463/G046388/20210611017/SS/012.jpg);
+            background-position: center center;
+            background-size: 100%;
+            background-repeat: no-repeat;
         }
 
         .wrap {
@@ -68,6 +72,10 @@
 
         .header {
             background-color: rgb(255, 255, 255);
+            background-image: url(https://c.tenor.com/eT65efTNamoAAAAj/bonfire-darksouls.gif);
+            background-position: 100px bottom center;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
         }
 
         .header_container {
@@ -98,7 +106,7 @@
             position: relative;
             z-index: 100;
             margin-top: 8px;
-            background-color: rgb(241, 241, 241);
+            background-color: rgb(255, 255, 255);
 
         }
 
@@ -116,7 +124,7 @@
             z-index: 100;
             line-height: 47px;
             text-align: center;
-            background-color: rgb(255, 255, 255);
+            /* background-color: rgb(238, 238, 238); */
             transition: all 0.3s;
             cursor: pointer;
             color: #252525;
@@ -132,7 +140,6 @@
 
             display: none;
             transition: all 0.5s;
-
         }
 
         .nv_submenu {
@@ -144,6 +151,32 @@
             font-size: 15px;
         }
 
+
+        .nv_mainmenu:nth-child(1),
+        .nv_mainmenu:nth-child(1)>.nv_submenu_container>.nv_submenu {
+            width: 171px;
+        }
+
+        .nv_mainmenu:nth-child(2),
+        .nv_mainmenu:nth-child(2)>.nv_submenu_container>.nv_submenu {
+            width: 204px;
+        }
+
+        .nv_mainmenu:nth-child(3),
+        .nv_mainmenu:nth-child(3)>.nv_submenu_container>.nv_submenu {
+            width: 208px;
+        }
+
+        .nv_mainmenu:nth-child(4),
+        .nv_mainmenu:nth-child(4)>.nv_submenu_container>.nv_submenu {
+            width: 168px;
+        }
+
+        .nv_mainmenu:nth-child(5),
+        .nv_mainmenu:nth-child(5)>.nv_submenu_container>.nv_submenu {
+            width: 173px;
+        }
+
         .nv_submenu:hover {
             background-color: rgb(29, 29, 29);
             color: rgb(231, 231, 231);
@@ -151,13 +184,15 @@
 
 
         main {
-            margin: 80px auto;
+            /* margin: 80px auto; */
+            margin: 0 auto;
             width: 1220px;
             background-color: rgb(255, 255, 255);
             height: 3100px;
         }
 
         .main_company {
+            margin: 80px auto;
             height: 720px;
 
             background-color: #252525;
