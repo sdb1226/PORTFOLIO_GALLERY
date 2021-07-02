@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
@@ -185,22 +186,28 @@
             position: absolute;
             left: 32px;
             top: 32px;
-            cursor: pointer;
+            cursor: default;
             width: 595px;
             height: 336px;
-            /* background-color: cyan; */
-            background-image: url(https://i.ytimg.com/vi/zjVr9F-fXIQ/maxresdefault.jpg);
+            background-color: rgba(0, 255, 255, 0.479);
+            /* background-image: url(https://i.ytimg.com/vi/zjVr9F-fXIQ/maxresdefault.jpg);
             background-position: center center;
             background-size: 100% auto;
-            background-repeat: no-repeat;
-            transition: all 0.5s;
+            background-repeat: no-repeat; */
         }
 
-        .main_dv1>div>span,
-        .main_dv2>div>span,
-        .main_dv3>div>span,
-        .main_dv4>div>span,
-        .main_dv5>div>span {
+        .dv_pic>iframe {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .main_dv1>div>.pan,
+        .main_dv2>div>.pan,
+        .main_dv3>div>.pan,
+        .main_dv4>div>.pan,
+        .main_dv5>div>.pan {
             position: absolute;
             right: 32px;
             top: 32px;
@@ -210,7 +217,7 @@
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            background-color: darkcyan;
+            /* background-color: darkcyan; */
         }
 
         .btn {
@@ -266,7 +273,7 @@
 
         .main_dv5 {
             height: 450px;
-            background-color: rgb(211, 142, 39);
+            background-color: #405c30;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -275,7 +282,7 @@
         .main_dv5>div {
             width: 1030px;
             height: 400px;
-            background-color: rgb(64, 92, 48);
+            background-color: #e4b12c;
             position: relative;
         }
 
@@ -350,11 +357,11 @@
                 </a>
                 <ul>
 
-                    <li onclick="location.href='#'">HOME</li>
+                    <li onclick="location.href='html/Mobile-PORTFOLIO_GALLERY_main.html'">HOME</li>
                     <li onclick="location.href='#about'">ABOUT</li>
 
                     <li onclick="location.href=''">PORTFOLIO</li>
-                    <li onclick="location.href='#CONTACT'">CONTACT</li>
+                    <li onclick="location.href='#'">CONTACT</li>
                     <li class="gone">
                         <i class="fas fa-bars"></i>
                     </li>
@@ -371,6 +378,7 @@
                     header.classList.add('on');
                     header.style.background = '#faf9eb';
                     header.style.transition = 'all 0.5s';
+
                     // header.style.color = '#fff';
 
                 } else {
@@ -388,71 +396,95 @@
             </div>
             <div class="main_dv main_dv1">
                 <div>
-                    <div class="dv_pic"></div>
-                    <span>
-                        <h2>배스킨라빈스</h2>
-                        <p>제작기간 2021. 02. 26 ~ </p>
+                    <div class="dv_pic">
+                        <iframe src="html/PORTFOLIO_GALLERY_raskinbabbins.html" frameborder="0" width="595" height="auto" 
+                            allowfullscreen></iframe>
+
+                    </div>
+                    <div class="pan">
+                        <h2>&#91;배스킨라빈스&#93;</h2>
+                        <p>제작기간 2021. 04. 22 ~ </p>
+                        <p>제작사유</p>
                         <span>
                             <button class="btn" id="btn1"
                                 onclick="window.open('html/Mobile-PORTFOLIO_GALLERY_baskin.html')"
                                 value="hjhjh">모바일</button>
                             <button class="btn" id="btn2"
-                                onclick="window.open('html/PORTFOLIO_GALLERY_raskinbabbins.html')" value="jhkjhk">PC
-                                데스크탑</button>
+                                onclick="window.open('html/PORTFOLIO_GALLERY_raskinbabbins.html')"
+                                value="jhkjhk">PC/데스크탑</button>
                         </span>
-                    </span>
+                    </div>
                 </div>
             </div>
             <div class="main_dv main_dv2">
                 <div>
-                    <div class="dv_pic"></div>
-                    <span>
-                        <h2>프롬소트프웨어</h2>
-                        <p>제작기간 2021. 02. 26 ~ </p>
+                    <div class="dv_pic">
+                        <iframe src="html/PORTFOLIO_GALLERY_fromsotfware.html" width="595" height="auto" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="pan">
+                        <h2>&#91;프롬소트프웨어&#93;</h2>
+                        <p>제작기간 2021. 06. 06 ~ </p>
+                        <p>제작사유</p>
                         <span>
                             <button class="btn" id="btn3" onclick="window.open('')" value="hjhjh">모바일</button>
                             <button class="btn" id="btn4"
                                 onclick="window.open('html/PORTFOLIO_GALLERY_fromsotfware.html')"
-                                value="jhkjhk">PC</button>
+                                value="jhkjhk">PC/데스크탑</button>
                         </span>
-                    </span>
+                    </div>
                 </div>
             </div>
             <div class="main_dv main_dv3">
                 <div>
-                    <div class="dv_pic"></div>
-                    <span>
-                        <h2>로-파이 채널</h2>
-                        <p>제작기간 2021. 02. 26 ~ </p>
-                        <b>심신을 안정시키는 채널</b>
+                    <div class="dv_pic">
+                        <iframe src="html/PORTFOLIO_GALLERY_mark.html" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="pan">
+                        <h2>&#91;로-파이 채널&#93;</h2>
+                        <p>제작기간 2021. 03. 17 ~ </p>
+                        <p>심신을 안정하는 채널</p>
                         <span>
-                            <span>
-                                <button class="btn" id="btn5" onclick="window.open('')" value="hjhjh">모바일</button>
-                                <button class="btn" id="btn6" onclick="window.open('html/PORTFOLIO_GALLERY_mark.html')"
-                                    value="jhkjhk">PC</button>
-                            </span>
+                            <button class="btn" id="btn5" onclick="window.open('')" value="hjhjh">모바일</button>
+                            <button class="btn" id="btn6" onclick="window.open('html/PORTFOLIO_GALLERY_mark.html')"
+                                value="jhkjhk">PC/데스크탑</button>
                         </span>
-                    </span>
+                    </div>
                 </div>
             </div>
             <div class="main_dv main_dv4">
                 <div>
-                    <div class="dv_pic" onclick="window.open('html/text.html')"></div>
-                    <span>
-                        <h2>훈스파이</h2>
-                        <p>제작기간 2021. 02. 26 ~ </p>
-                        <span>주거지 근처의 파이 가게 웹사이트를 </span>
-                    </span>
+                    <div class="dv_pic">
+                        <iframe src="html/PORTFOLIO_GALLERY_hoonspie.html" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="pan">
+                        <h2>&#91;훈스파이&#93;</h2>
+                        <p>제작기간 2021. 06. 16 ~ </p>
+                        <p>집 근처의 파이가게
+                            <a href="https://www.hoonspie.com/">https://www.hoonspie.com/</a>
+                        </p>
+                        <span>
+                            <button class="btn" id="btn7" onclick="window.open('')" value="hjhjh">모바일</button>
+                            <button class="btn" id="btn8" onclick="window.open('html/PORTFOLIO_GALLERY_hoonspie.html')"
+                                value="jhkjhk">PC/데스크탑</button>
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="main_dv main_dv5">
                 <div>
-                    <div class="dv_pic" onclick="window.open('html/yellowbox.html')"></div>
-                    <span>
-                        <h2>옐로박스</h2>
-                        <p>제작기간 2021. 02. 26 ~ </p>
-                        <span>jkjllkjkljklkljkl</span>
-                    </span>
+                    <div class="dv_pic">
+                        <iframe src="html/yellowbox.html" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="pan">
+                        <h2>&#91;YELLOW-BOX&#93;</h2>
+                        <p>제작기간 2021. 06. 23 ~ </p>
+                        <p>제작사유</p>
+                        <span>
+                            <button class="btn" id="btn9" onclick="window.open('')" value="hjhjh">모바일</button>
+                            <button class="btn" id="btn10" onclick="window.open('html/yellowbox.html')"
+                                value="jhkjhk">PC/데스크탑</button>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
