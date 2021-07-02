@@ -24,6 +24,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
 
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
     <!-- Jquary, Swiper -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -77,7 +81,12 @@
             font-family: 'maple_l';
         }
 
+
+
         /* font-family: 'Gothic A1', sans-serif; */
+        /* font-family: 'Black Han Sans', sans-serif; */
+        /* font-family: 'Cute Font', cursive; */
+        /* font-family: 'Do Hyeon', sans-serif; */
 
         @media only screen and (max-width: 640px) {
             .wrap {
@@ -146,12 +155,13 @@
 
         .logincontain:nth-child(4)>a>i {
             color: #DF3E9C;
+            /* color: #1f4c9a; */
         }
 
         .nav {
             position: relative;
             z-index: 100;
-            background-color: #DF3E9C
+            background-color: #DF3E9C;
         }
 
         .nav_mainmenu_container {
@@ -266,7 +276,7 @@
         /* 메인 1: 이달의 맛 구간 시작 */
 
         .main_at1 {
-            background-image: linear-gradient(135deg, #ea5e9e 10%, #fabb00 50%, #10a956 100%);
+            background-image: linear-gradient(145deg, #efedee 30%, #ffec00 80%);
         }
 
         .main_fotm_container {
@@ -282,13 +292,29 @@
             /* */
         }
 
+        @keyframes fotmupdown {
+            from {
+                /* top: 5px; */
+                transform: translateY(5px);
+            }
+
+            to {
+                /* bottom: 5px; */
+                transform: translateY(-5px);
+                
+                
+            }
+        }
+
         .fotm {
             /* float: left;
             margin-left: 40px; */
+            
             width: 420px;
-            height: 720px;
+            /* height: 720px; */
+            height: 680px;
             /* background-color: yellowgreen; */
-            background-image: url(https://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?v=210201);
+            background-image: url(http://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?ver=210701);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: 100% auto;
@@ -298,11 +324,83 @@
             /* */
         }
 
+        .fotm::after {
+            content: '';
+            position: relative;
+            
+        }
+
+        .fotm img {
+            width: 508px;
+            height: 167px;
+            /* background-color: blanchedalmond; */
+            position: absolute;
+            left: -34px;
+            top: 30%;
+        }
+
+        /* .fotm .straw {
+            position: absolute;
+            right: 10px;
+            top: 70px;
+            width: 120px;
+            height: 120px;
+            background-color: rgb(216, 53, 47);
+            z-index: 500;
+        }
+
+        .fotm .vanillaice {
+            position: absolute;
+            right: 10px;
+            top: 220px;
+            width: 120px;
+            height: 120px;
+            background-color: rgb(244, 255, 196);
+            z-index: 500;
+        }
+
+        .fotm .melon {
+            position: absolute;
+            left: 10px;
+            bottom: 220px;
+            width: 120px;
+            height: 120px;
+            background-color: rgb(112, 240, 133);
+            z-index: 500;
+        }
+
+        .fotm .yellowsome {
+            position: absolute;
+            right: 10px;
+            bottom: 70px;
+            width: 120px;
+            height: 120px;
+            background-color: rgb(221, 210, 54);
+            z-index: 500;
+        } */
+
+        
+
+
+
+
+        .fotm_anima {
+            animation: fotmupdown 1.5s ease infinite;
+            animation-timing-function: linear;
+            /* animation-delay: 2s; */
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+
+
+
+
+
         .fotm_info {
             /* float: right; */
             /* */
             position: absolute;
-            right: 40px;
+            right: 15px;
             /* */
             width: 610px;
             height: 720px;
@@ -312,31 +410,36 @@
             flex-direction: column;
             justify-content: space-around;
             letter-spacing: -0.05em;
+            cursor: default;
         }
 
         .fotm_info>p {
             margin-top: 140px;
-            font-family: 'NanumSquareRoundr';
+            /* font-family: 'NanumSquareRoundr'; */
+            font-family: 'Do Hyeon', sans-serif;
             font-size: 36px;
-            color: #FF486D;
+            color: #dabb49;
         }
 
         .fotm_info>p>b {
-            font-family: 'NanumSquareRoundeb';
+            /* font-family: 'NanumSquareRoundeb'; */
+            font-family: 'Do Hyeon', sans-serif;
         }
 
         .fotm_info>b:nth-child(2) {
-            font-family: 'NanumSquareRoundeb';
+            font-family: 'Black Han Sans', sans-serif;
             font-size: 70px;
-            color: #381F12;
-            font-weight: 800;
+            color: #f5a300;
+            font-weight: 450;
         }
 
         .fotm_info>span {
             font-family: 'NanumSquareRoundr';
             font-size: 18px;
-            color: #000000;
+            font-weight: 300;
+            color: #fff;
             letter-spacing: -0.05em;
+            
         }
 
         .fotm_info>input {
@@ -390,7 +493,7 @@
             background-position: top 12px center;
             background-size: 90%;
             background-repeat: no-repeat;
-            background-image: url(https://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?v=210201);
+            background-image: url(http://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?ver=210701);
         }
 
         .index_photo_container>.photo:nth-child(2) {
@@ -420,11 +523,18 @@
             left: 138px;
             width: 138px;
             height: 138px;
-            background-color: #ffffff83;
+            background-color: #805500c9;
             transition: all 0.4s;
             border-radius: 100%;
             background-position: center center;
             background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Black Han Sans', sans-serif;
+            color: #f5a300;
+            font-size: 30px;
+            font-weight: 200;
         }
 
         .photo:nth-child(1)>div {
@@ -473,8 +583,6 @@
 
         .main_menu_title,
         .main_event_title,
-        .main_store_title,
-        .main_order_title,
         .main_sns_title {
             height: 150px;
             /* background-color: blue; */
@@ -482,7 +590,22 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
+            cursor: default;
         }
+
+        .main_store_title,
+        .main_order_title {
+            width: 420px;
+            height: 240px;
+            /* border: 1px solid rgb(154, 154, 255); */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+            cursor: default;
+        }
+
+
 
         .main_menu_title>h2,
         .main_event_title>h2,
@@ -500,6 +623,26 @@
         .main_sns_title>p {
             font-size: 19px;
             font-family: 'Gothic A1', sans-serif;
+        }
+
+        .main_menu_title>p:nth-child(3),
+        .main_event_title>p:nth-child(3),
+        .main_store_title>p:nth-child(3),
+        .main_order_title>p:nth-child(3),
+        .main_sns_title>p:nth-child(3) {
+            font-size: 14px;
+            font-family: 'Gothic A1', sans-serif;
+        }
+
+        .main_store_title>button,
+        .main_order_title>button {
+            margin: 0 auto;
+            border-radius: 45px;
+            width: 155px;
+            height: 43px;
+            border: 2px solid #fff;
+            outline: none;
+            background-color: #1f4c9a;
         }
 
         .main_menu_circle_container {
@@ -523,7 +666,8 @@
         .circle {
             width: 176px;
             height: 176px;
-            background-color: #faf9eb;
+            /* background-color: #faf9eb; */
+            background-color: #fff67c;
             border-radius: 100%;
             transition: all 0.5s;
         }
@@ -532,7 +676,7 @@
             background-position: center center;
             background-size: 68%;
             background-repeat: no-repeat;
-            background-image: url(https://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?v=210201);
+            background-image: url(http://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?ver=210701);
         }
 
         .circle_group:nth-child(2) .circle {
@@ -585,7 +729,7 @@
         /* 메인 2: 메뉴 구간 종료, 메인 3: 이벤트 구간 시작 */
 
         .main_at3 {
-            background-color: rgb(247, 247, 136);
+            background-color: #ffffff;
         }
 
         .main_event {
@@ -648,6 +792,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+            /* background-color: wheat; */
         }
 
         .swiper-event-slide>div {
@@ -676,6 +821,18 @@
         }
 
 
+        .main_event_container .swiper-button-next::after,
+        .main_event_container .swiper-button-prev::after {
+            display: none;
+        }
+
+        .swiper-button-next>i,
+        .swiper-button-prev>i {
+            font-size: 2em;
+            color: #d66fa9;
+        }
+
+
 
 
 
@@ -691,31 +848,46 @@
 
 
         .main_at4 {
-            background-color: rgb(59, 79, 105);
+            /* background-color: rgb(71, 117, 60); */
+            background-color: none;
         }
 
         .main_store {
             margin: 0 auto;
-            background-color: #a5374d;
+            /* background-color: #a5374d; */
             width: 1080px;
-            height: 500px;
+            height: 380px;
             overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        .main_store_inner_l {
+        .main_store_inner_l,
+        .main_order_inner_l {
             width: 450px;
-            height: 345px;
+            height: 300px;
             background-color: #10a956;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
         }
 
-        .main_store_inner_r {
+        .main_store_inner_r,
+        .main_order_inner_r {
             width: 450px;
-            height: 345px;
-            background-color: #b6c0bb;
+            height: 300px;
+            background-color: #b8c6ed;
+            background-image: linear-gradient(125deg, #efedee 40%, #ffec00 80%);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
         }
+
 
 
 
@@ -723,15 +895,19 @@
 
 
         .main_at5 {
-            background-color: rgb(94, 191, 255);
+            /* background-color: rgb(94, 191, 255); */
+            background-color: none;
         }
 
         .main_order {
             margin: 0 auto;
-            background-color: #ccb876;
+            /* background-color: #ccb876; */
             width: 1080px;
-            height: 500px;
+            height: 370px;
             overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .main_at6 {
@@ -811,7 +987,7 @@
         }
 
         .ft_bd_container>a {
-            margin-top: 30px;
+            margin-top: 5px;
             width: 239px;
             /* background-color: darkgrey; */
         }
@@ -829,7 +1005,7 @@
             <div class="logoandlogincontainer">
                 <a href="#">
                     <img src="https://logos-download.com/wp-content/uploads/2016/04/Baskin-Robbins-logo_2.png"
-                        width="329px" height="auto" alt="">
+                        width="329px" height="auto" alt="홈">
                 </a>
                 <ul class="logincontainer">
                     <li class="logincontain"><a href="">로그인&#183;회원가입</a></li>
@@ -851,7 +1027,7 @@
                         <div class="backboard_container">
                             <ul class="backboard_submenu_container">
                                 <li class="backboard_submenu backboard_submenu_icepic" onclick="location.href='#'">
-                                    <img src="http://www.baskinrobbins.co.kr/assets/images/common/flavor/img_monthly_fom.jpg?v=20210601-1"
+                                    <img src="http://www.baskinrobbins.co.kr/assets/images/common/flavor/img_monthly_fom.png?v=210701"
                                         height="210px;" alt="">
                                 </li>
                             </ul>
@@ -913,37 +1089,50 @@
                     }
                 });
             </script>
+            <!-- <script>
+                $(window).scroll(function(){
+                    $('.nav').css('left', 0-$(this).scrollLeft());
+                });
+            </script> -->
 
         </div>
         <!--header end-->
         <div class="main">
             <div class="main_at1">
                 <div class="main_fotm_container">
-                    <div class="fotm"></div>
+                    <div class="fotm fotm_anima">
+                        
+                            <img src="http://www.baskinrobbins.co.kr/assets/images/flavoer/ice_material.png?ver=210701" alt="">
+                        
+                        <!-- <div class="straw">1</div>
+                        <div class="vanillaice">2</div>
+                        <div class="melon">3</div>
+                        <div class="yellowsome">4</div> -->
+                    </div>
                     <div class="fotm_info">
                         <p>먼저 만나는 <b>8</b>월<b>&nbsp;이달의 맛</b></p>
-                        <b>nnn</b>
-                        <span>aASaskjkj<br>jjhjhjkAASS</span>
+                        <b>꿀.바.망</b>
+                        <span>허니망고 아이스크림과<br>바나나 아이스크림 속에<br>망고 다이스가 쏙쏙!</span>
                         <input value="이달의 맛 맛보기" type="button" onclick="location.href=''">
                         <div class="photo_container index_photo_container">
                             <div class="photo">
                                 <div>
-                                    <span>오버<br>더<br>레인보우</span>
+                                    꿀 바 망
                                 </div>
                             </div>
                             <div class="photo">
                                 <div>
-                                    <!-- 누가봐도밀카초콜릿케이크 -->
+                                    
                                 </div>
                             </div>
                             <div class="photo">
                                 <div>
-                                    <!-- 아이스밀카쉐이크 -->
+                                   
                                 </div>
                             </div>
                             <div class="photo">
                                 <div>
-                                    <!-- 밀카초콜릿샌드 -->
+                                    꿀 바 망
                                 </div>
                             </div>
                         </div>
@@ -1002,7 +1191,7 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide swiper-event-slide">
                                 <div onclick="location.href=''">
-                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
+                                    <img src="http://www.baskinrobbins.co.kr/upload/event/image/1609897104.jpg" alt="">
                                     <p class="p_event_due">상시진행</p>
                                     <p class="p_event_info">1-32</p>
                                 </div>
@@ -1012,7 +1201,7 @@
 
                             <div class="swiper-slide swiper-event-slide">
                                 <div onclick="location.href=''">
-                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
+                                    <img src="http://www.baskinrobbins.co.kr/upload/event/image/1630631151.jpg" alt="">
                                     <p class="p_event_due">2-32</p>
                                     <p class="p_event_info">1-32</p>
                                 </div>
@@ -1022,7 +1211,7 @@
 
                             <div class="swiper-slide swiper-event-slide">
                                 <div onclick="location.href=''">
-                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
+                                    <img src="http://www.baskinrobbins.co.kr/upload/event/image/1639297260.png" alt="">
                                     <p class="p_event_due">2-32</p>
                                     <p class="p_event_info">1-32</p>
                                 </div>
@@ -1032,7 +1221,7 @@
 
                             <div class="swiper-slide swiper-event-slide">
                                 <div onclick="location.href=''">
-                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
+                                    <img src="http://www.baskinrobbins.co.kr/upload/event/image/1625114283.png" alt="">
                                     <p class="p_event_due">2-32</p>
                                     <p class="p_event_info">1-32</p>
                                 </div>
@@ -1041,7 +1230,7 @@
 
                             <div class="swiper-slide swiper-event-slide">
                                 <div onclick="location.href=''">
-                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
+                                    <img src="http://www.baskinrobbins.co.kr/upload/event/image/1570702843.png" alt="">
                                     <p class="p_event_due">2-32</p>
                                     <p class="p_event_info">1-32</p>
                                 </div>
@@ -1052,17 +1241,7 @@
 
                             <div class="swiper-slide swiper-event-slide">
                                 <div onclick="location.href=''">
-                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
-                                    <p class="p_event_due">2-32</p>
-                                    <p class="p_event_info">1-32</p>
-                                </div>
-
-                            </div>
-
-
-                            <div class="swiper-slide swiper-event-slide">
-                                <div onclick="location.href=''">
-                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
+                                    <img src="http://www.baskinrobbins.co.kr/upload/event/image/1578277305.png" alt="">
                                     <p class="p_event_due">2-32</p>
                                     <p class="p_event_info">1-32</p>
                                 </div>
@@ -1072,16 +1251,22 @@
 
                             <div class="swiper-slide swiper-event-slide">
                                 <div onclick="location.href=''">
-                                    <img src="http://grim9595.dothome.co.kr/img/1654921836%201.png" alt="">
+                                    <img src="http://www.baskinrobbins.co.kr/upload/event/images/banner_delivery.png"
+                                        alt="">
                                     <p class="p_event_due">2-32</p>
                                     <p class="p_event_info">1-32</p>
                                 </div>
 
                             </div>
+
                         </div>
                         <!-- <div class="swiper-pagination"></div> -->
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next">
+                            <i class="far fa-arrow-alt-circle-right"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="far fa-arrow-alt-circle-left"></i>
+                        </div>
                     </div>
                     <script>
                         var swiper = new Swiper('.main_event_container', {
@@ -1105,22 +1290,30 @@
             <div class="main_at4">
                 <div class="main_store">
                     <div class="main_store_inner_l">
+
+                    </div>
+                    <div class="main_store_inner_r">
                         <div class="main_store_title">
                             <h2>STORE</h2>
-                            <p>다양한 즐거움과 새로움! 우리동네 배스킨라빈스!
-                                <br>내 주변 가장 가까운 베스킨라빈스 매장을 찾아보세요!</p>
+                            <p><b>다양한 즐거움과 새로움! 우리동네 배스킨라빈스!</b></p>
+                            <p>내 주변 가장 가까운 베스킨라빈스 매장을 찾아보세요!</p>
+                            <button id="" class="" onclick="">매장찾기<i class="fas fa-search"></i></button>
                         </div>
                     </div>
-                    <div class="main_store_inner_r"></div>
-
                 </div>
             </div>
             <div class="main_at5">
                 <div class="main_order">
-                    <div class="main_order_title">
-                        <h2>HAPPY DELIVERY & ORDER</h2>
-                        <p>주문에서 결제/배송까지 간편하게!
-                            <br>배스킨라빈스 모바일 사전주문 & 배달서비스</p>
+                    <div class="main_order_inner_l">
+                        <div class="main_order_title">
+                            <h2>HAPPY DELIVERY&<br>ORDER</h2>
+                            <p><b>주문에서 결제/배송까지 간편하게!</b></p>
+                            <p>배스킨라빈스 모바일 사전주문 & 배달서비스</p>
+                            <button id="" class="" onclick="">매장찾기<i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="main_order_inner_r">
+
                     </div>
                 </div>
             </div>
