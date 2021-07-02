@@ -54,10 +54,7 @@
 
         body {
             background-color: #141414;
-            background-image: url(https://www.4gamer.net/games/463/G046388/20210611017/SS/012.jpg);
-            background-position: center center;
-            background-size: 100%;
-            background-repeat: no-repeat;
+
         }
 
         .wrap {
@@ -72,10 +69,10 @@
 
         .header {
             background-color: rgb(255, 255, 255);
-            background-image: url(https://c.tenor.com/eT65efTNamoAAAAj/bonfire-darksouls.gif);
+            /* background-image: url(https://c.tenor.com/eT65efTNamoAAAAj/bonfire-darksouls.gif);
             background-position: 100px bottom center;
             background-size: auto 100%;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat; */
         }
 
         .header_container {
@@ -202,6 +199,22 @@
             background-image: url(https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/ER_KEY%20ART.jpg?raw=true);
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         .footer {
 
             background-color: rgb(255, 255, 255);
@@ -229,7 +242,7 @@
                 </a>
                 <ul class="hd_menu_container">
                     <li class="hd_menu">
-                        <a href="../PORTFOLIO_GALLERY_main.html"><i class="fas fa-globe"></i></a>
+                        <a href="../index.html"><i class="fas fa-globe"></i></a>
                     </li>
                     <li class="hd_menu">
                         <a href="">News</a>
@@ -307,6 +320,57 @@
         </nav>
         <main>
             <div class="main_company"></div>
+
+
+            <div id="maingames" class="main_games">
+                <div class="main_games_container">
+                    <div id="maingamesslide" class="main_games_slide"></div>
+                </div>
+            </div>
+            <style>
+                .main_games {
+                    background-color: cornflowerblue;
+                }
+
+                .main_games_container {
+                    margin: 0 auto;
+                    width: 1178px;
+                    height: 720px;
+                    position: relative;
+                    background-color: cyan;
+                    z-index: 100;
+                }
+
+                .main_games_slide {
+                    position: absolute;
+                    left: 200px;
+                    width: 746px;
+                    height: 720px;
+                    border: 1px solid rgb(51, 255, 0);
+                    background-image: linear-gradient(110deg, #056db398 74%, #ffee0000 50%);
+                }
+            </style>
+            <script>
+                const maingamesslide = document.querySelector('#maingamesslide');
+                function scrollFunc() {
+                    if (pageYOffset >= 130) {
+                        maingamesslide.classList.add('on');
+                        maingamesslide.style.position = 'absolute';
+                        maingamesslide.style.top = 0;
+                        maingamesslide.style.left = 0;
+                        maingamesslide.style.right = 100;
+                        maingamesslide.style.transform = transitionX(200);
+
+                    } else {
+                        maingames.classList.remove('on');
+                        maingamesslide.style.position = '';
+                        maingamesslide.style.top = 0;
+                        maingamesslide.style.left = 0;
+                        maingamesslide.style.right = 0;
+                    }
+                }
+                window.addEventListener('scroll', scrollFunc);
+            </script>
         </main>
         <footer class="footer">
             <div class="ft_column_up"></div>
