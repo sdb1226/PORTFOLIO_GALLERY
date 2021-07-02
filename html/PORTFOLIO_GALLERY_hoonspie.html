@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>훈스파이</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        @media screen and (min-width: 640px) {
+            .wrap_inner_l {
+                height: 200px;
+            }
+
+            .wrap_inner_r {
+                height: 200px;
+            }
+        }
+
+        body {
+            background: #ffffff;
+            background-position: center center;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+        }
+
+        .wrap {
+            position: relative;
+            overflow: hidden;
+            min-width: 1343px;
+        }
+
+        .wrap_inner {
+            margin: 0 auto;
+            width: 1343px;
+            height: 1920px;
+            /* background-color: rgb(87, 35, 35); */
+            /* border: 3px solid red; */
+        }
+
+        .wrap_inner_l {
+            float: left;
+            width: 358px;
+            height: 1920px;
+            /* background-color: sienna; */
+            /* border: 2px solid #fff; */
+            border-left: 2px solid #c2c2c2;
+            border-right: 2px solid #c2c2c2;
+        }
+
+        .logo {
+            height: 180px;
+            background-color: #ff0000;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .logo i {
+            font-size: 17px;
+            color: #fff;
+            cursor: default;
+        }
+
+        .info {
+            height: 280px;
+            background-color: #000000;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            position: relative;
+            cursor: default;
+        }
+
+        .info_tape {
+            position: absolute;
+            /* left: 111px; */
+            width: 100px;
+            height: 100px;
+            background-image: url(https://www.freeiconspng.com/thumbs/tape-png/tape-png-0.png);
+            background-position: center center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .info_tape1 {
+            top: -50px;
+            left: 135px;
+            transform: rotate(-45deg);
+            /* All browsers support */
+            /* -moz-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -ms-transform: rotate(90deg); */
+        }
+
+        .info_tape2 {
+            bottom: -50px;
+            right: 125px;
+            transform: rotate(135deg);
+            /* All browsers support */
+            /* -moz-transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -ms-transform: rotate(90deg); */
+        }
+
+        .input {
+            height: 80px;
+            background-color: #ce7777;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .info>p {
+            color: snow;
+        }
+
+        .info_b {
+            font-size: 22px;
+        }
+
+        .info_s {
+            font-size: 13px;
+        }
+
+        .input input {
+            width: 243px;
+            height: 33px;
+            text-indent: 8px;
+        }
+
+        .hd_ad {
+            height: 358px;
+            background-color: springgreen;
+            background-image: url(https://static.wixstatic.com/media/81d82f_ce5fe77372964327957546c51aed653c~mv2_d_4032_3024_s_4_2.jpg/v1/fill/w_1270,h_692,al_c,q_85,usm_0.66_1.00_0.01/81d82f_ce5fe77372964327957546c51aed653c~mv2_d_4032_3024_s_4_2.webp);
+            background-size: auto 100%;
+            background-position: center center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .hd_ad>button {
+            width: 270px;
+            height: 60px;
+            color: #342216;
+            border: 3px dashed rgb(255, 255, 255);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hd_ad>button:hover {
+            background: #342216;
+            color: #fff;
+        }
+
+        .contact {
+            height: 70px;
+            background-color: #35803f;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .sns_box {
+            height: 40px;
+            background-color: #000000;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .sns_box>a>i {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+        }
+
+        .address {
+            height: 128px;
+            background-color: #223d3d;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .orderyes {
+            height: 120px;
+            background-color: #b15a5a;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .wrap_inner_r {
+            float: right;
+            width: 949px;
+            height: 1920px;
+            background-color: blue;
+            /* border: 2px solid #fff; */
+            border-left: 2px solid #c2c2c2;
+            border-right: 2px solid #c2c2c2;
+        }
+
+        .main {
+            height: 720px;
+            background-color: orange;
+            background-image: url(https://static.wixstatic.com/media/81d82f_ce5fe77372964327957546c51aed653c~mv2_d_4032_3024_s_4_2.jpg/v1/fill/w_1270,h_692,al_c,q_85,usm_0.66_1.00_0.01/81d82f_ce5fe77372964327957546c51aed653c~mv2_d_4032_3024_s_4_2.webp);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .footer {
+            height: 120px;
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="wrap_inner">
+            <div class="wrap_inner_l">
+                <div class="logo">
+                    <a href="#">
+                        <h2>
+                            <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/image.png?raw=true"
+                                width="234px" alt="">
+                        </h2>
+                    </a>
+                    <i>- HAND MADE MEAT PIE -</i>
+                </div>
+                <div class="info">
+                    <div class="info_tape info_tape1"></div>
+                    <div class="info_tape info_tape2"></div>
+                    <p class="info_b">
+                        <b>파이 안에 요리를 담다</b>
+                    </p>
+                    <p class="info_s">
+                        '요리'라는 단어는 군것질, 인스턴트 식품,
+                        <br>간식 등의 음식엔 어울리지 않습니다.
+                        <br>청결한 조리장소에서 엄선된 재료를
+                        <br>사용하여 만드는 사람의 신념과
+                        <br>정성을 접시 위에 담아낸 작품을
+                        <br>저희는 '요리'라고 부릅니다.
+                        <br><br>훈스파이는 그런 요리를 파이 안에 담았습니다.
+                    </p>
+                </div>
+                <div class="input">
+                    주문 가능합니다
+                </div>
+                <div class="hd_ad">
+                    <button onclick="location.href='../PORTFOLIO_GALLERY_main.html'">home</button>
+                    <button>about</button>
+                    <button>menu</button>
+                    <button>location</button>
+                </div>
+                <div class="contact">
+                    <a href="#">CONTACT</a>
+                </div>
+                <div class="sns_box">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="address"></div>
+                <div class="orderyes"></div>
+            </div>
+            <div class="wrap_inner_r">
+                <div class="main"></div>
+                <div class="footer"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

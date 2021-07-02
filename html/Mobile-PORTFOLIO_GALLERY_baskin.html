@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile_wireframe</title>
+    <link rel="shortcut icon" href="../img/icon_baskicon_m.jpg">
+
+    <!-- FontAwesome5, 구글 폰트(폰트, 아이콘) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background: rgb(255, 145, 237);
+            font-size: 1rem;
+        }
+
+
+
+        .wrap {
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+            max-width: 360px;
+            width: 360px;
+            background-color: rgb(255, 16, 223);
+        }
+
+        .mobile_screen_frame {
+            width: 360px;
+            height: 640px;
+            border: 1px solid red;
+            position: fixed;
+            top: 0;
+            z-index: 200;
+        }
+
+
+
+        .header {
+            background-color: #ffffff;
+            position: relative;
+            z-index: 100;
+        }
+
+        .hd_container {
+            margin: 0 30px;
+            height: 60px;
+            /* background-color: thistle; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        
+
+        .nav {
+            position: absolute;
+            right: 0px;
+            top: 0;
+            width: 260px;
+            height: 432px;
+            background-color: beige;
+            z-index: -1;
+            border-radius: 20px 0 0 20px;
+        }
+
+        .hd_container > a:hover ~ .nav {
+            left: 260px;
+        }
+
+        .main {
+
+            background-color: darkviolet;
+
+        }
+
+        .fotm {
+            background-image: linear-gradient(135deg, #ffec00 3%,  #efedee 10%, #dabb49 50%);
+        }
+
+        .main_fotm_container {
+            margin: 0 auto;
+            width: 300px;
+            height: 180px;
+            position: relative;
+            border: 1px solid cornsilk;
+            /* background-color: cyan; */
+        }
+
+        @keyframes fotmupdown {
+            from {
+                /* top: 5px; */
+                transform: translateY(2px);
+            }
+
+            to {
+                /* bottom: 5px; */
+                transform: translateY(-2px);
+
+
+            }
+        }
+
+        .fotm_pic {
+            width: 135px;
+            height: 160px;
+            /* background-color: crimson; */
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 98;
+            background-image: url(https://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?v=210201);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 90% auto;
+
+            animation: fotmupdown 1.5s ease infinite;
+            animation-timing-function: linear;
+            /* animation-delay: 2s; */
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+
+        .fotm_pic::after {
+            content: '';
+            position: relative;
+            z-index: 98;
+        }
+
+        .fotm_pic>img {
+            position: absolute;
+            left: -5.5px;
+            top: 20px;
+            width: 146px;
+            height: 49px;
+            /* background-color: darkgoldenrod; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .fotm_pic>div>a {
+            font-size: 8px;
+        }
+
+        .fotm_info {
+            width: 159px;
+            height: 160px;
+            background-color: darkblue;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .main_1 {
+            height: 400px;
+            background-color: darkgoldenrod;
+        }
+
+        .main_2 {
+            height: 500px;
+            background-color: rgb(63, 11, 184);
+        }
+
+        .main_3 {
+            height: 600px;
+            background-color: rgb(11, 184, 103);
+        }
+
+
+
+        .footer {
+            height: 120px;
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <!-- <div class="mobile_screen_frame"></div> -->
+        <div class="header">
+            <div class="hd_container">
+                <a href="#">
+                    <img src="https://lh3.googleusercontent.com/proxy/BkLSbyQH6Xy-r1qU7gYuKA-My1WKKpESSxWU5AVQPz8rAtcx7ZpnKuIaN7Wb7CsMvuEuaGwA45C2r7Htrh2LePCuugwcvoIq19EmcwtZupuN5gXQEr8pG8UuZFKN1Q"
+                        width="67px" height="auto" alt="">
+                </a>
+                <a href="PORTFOLIO_GALLERY_raskinbabbins.html"><i class="fas fa-bars"></i></a>
+            </div>
+            
+        </div>
+        <div class="nav"></div>
+        <div class="main">
+            <div class="fotm">
+                <div class="main_fotm_container">
+                    <div class="fotm_pic">
+                        <img src="http://www.baskinrobbins.co.kr/assets/images/flavoer/ice_material.png?ver=210701" alt="">
+                    </div>
+                    <div class="fotm_info"></div>
+                </div>
+                <div class="main_1"></div>
+                <div class="main_2"></div>
+                <div class="main_3"></div>
+            </div>
+
+        </div>
+        <div class="footer">
+            hghj
+        </div>
+    </div>
+</body>
+
+</html>
