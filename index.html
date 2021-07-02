@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
@@ -11,6 +9,9 @@
     <link rel="stylesheet" href="https://sdb1226.github.io/PORTFOLIO_GALLERY/">
     <link rel="stylesheet" href="index_mobile.html">
     <link rel="shortcut icon" href="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/pf_logo_b.png?raw=true">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- FontAwesome5, 구글 폰트(폰트, 아이콘) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
@@ -33,11 +34,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- css -->
-    <!-- <link rel="stylesheet" href="css/PORTFOLIO_GALLERY_main.css"> -->
-
-    <!-- <script src="js/.."></script> -->
+    <script src="javascript/js.js"></script>
+    
     <style>
         * {
             box-sizing: border-box;
@@ -63,7 +61,6 @@
             overflow: hidden;
             /* background-color: darkcyan; */
             min-width: 1200px;
-
         }
 
         .header {
@@ -75,8 +72,6 @@
             z-index: 1;
             /* box-shadow: 0 10px 20px rgba(0,0,0,0.19); */
         }
-
-
 
         .hd_container {
             margin: 0 74px;
@@ -96,7 +91,6 @@
             height: 90px;
             display: flex;
             justify-content: space-evenly;
-
         }
 
         .hd_container>ul>li {
@@ -120,7 +114,6 @@
         }
 
         @media screen and (max-width: 1200px) {
-
             .hd_container>ul {
                 width: 90px;
             }
@@ -137,8 +130,6 @@
         .gone>i {
             font-size: 30px;
         }
-
-
 
         .main {
             margin: 0 auto;
@@ -289,16 +280,12 @@
         }
 
 
-
-
-
         .footer {
             border-top: 1px solid #adadad;
             background-color: sienna;
         }
 
         .ft_hd {
-
             background-color: #5f5f5f;
         }
 
@@ -330,24 +317,26 @@
         .ft_hd_container>ul>li {
             margin: 10px 16px 0 0;
             float: left;
-
-
         }
 
         .ft_hd_container>ul>li>a {
             color: #8b8b8b;
         }
 
-
-
         .ft_bd {
             height: 116px;
-            background-color: chartreuse;
+            background-color: rgb(199, 199, 199);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ft_bd a {
+            color: #fff;
+            font-weight: bold;
         }
     </style>
-
 </head>
-
 <body>
     <div class="wrap">
         <div class="header" id="header">
@@ -358,31 +347,24 @@
                         width="65px" height="65px" alt="">
                 </a>
                 <ul>
-
-                    <li onclick="location.href='index_mobile.html'">HOME</li>
-                    <li onclick="location.href='#about'">ABOUT</li>
-
-                    <li onclick="location.href=''">PORTFOLIO</li>
+                    <li onclick="location.href='#'">HOME</li>
+                    <li onclick="location.href='#'">ABOUT</li>
+                    <li onclick="location.href='#'">PORTFOLIO</li>
                     <li onclick="location.href='#'">CONTACT</li>
                     <li class="gone">
                         <i class="fas fa-bars"></i>
                     </li>
-
-
                 </ul>
             </div>
         </div>
         <script>
             const header = document.querySelector('#header');
-
             function scrollFunc() {
                 if (pageYOffset >= 90) {
                     header.classList.add('on');
                     header.style.background = '#faf9eb';
                     header.style.transition = 'all 0.5s';
-
                     // header.style.color = '#fff';
-
                 } else {
                     header.classList.remove('on');
                     header.style.background = '#ffffff';
@@ -391,7 +373,6 @@
             }
             window.addEventListener('scroll', scrollFunc);
         </script>
-
         <div class="main">
             <div class="port_title">
                 Portfolio
@@ -399,20 +380,17 @@
             <div class="main_dv main_dv1">
                 <div>
                     <div class="dv_pic">
-                        <iframe src="html/index_01baskin.html" frameborder="0" width="595" height="auto" 
+                        <iframe src="html/index_01baskin.html" frameborder="0" width="595" height="auto"
                             allowfullscreen></iframe>
-
                     </div>
                     <div class="pan">
                         <h2>&#91;배스킨라빈스&#93;</h2>
                         <p>제작기간 2021. 04. 22 ~ </p>
                         <p>제작사유</p>
                         <span>
-                            <button class="btn" id="btn1"
-                                onclick="window.open('html/index_01mobile_baskin.html')"
+                            <button class="btn" id="btn1" onclick="window.open('html/index_01mobile_baskin.html')"
                                 value="hjhjh">모바일</button>
-                            <button class="btn" id="btn2"
-                                onclick="window.open('html/index_01baskin.html')"
+                            <button class="btn" id="btn2" onclick="window.open('html/index_01baskin.html')"
                                 value="jhkjhk">PC/데스크탑</button>
                         </span>
                     </div>
@@ -421,7 +399,8 @@
             <div class="main_dv main_dv2">
                 <div>
                     <div class="dv_pic">
-                        <iframe src="html/index_02fromsoft.html" width="595" height="auto" frameborder="0" allowfullscreen></iframe>
+                        <iframe src="html/index_02fromsoft.html" width="595" height="auto" frameborder="0"
+                            allowfullscreen></iframe>
                     </div>
                     <div class="pan">
                         <h2>&#91;프롬소트프웨어&#93;</h2>
@@ -429,8 +408,7 @@
                         <p>제작사유</p>
                         <span>
                             <button class="btn" id="btn3" onclick="window.open('')" value="hjhjh">모바일</button>
-                            <button class="btn" id="btn4"
-                                onclick="window.open('html/index_02fromsoft.html')"
+                            <button class="btn" id="btn4" onclick="window.open('html/index_02fromsoft.html')"
                                 value="jhkjhk">PC/데스크탑</button>
                         </span>
                     </div>
@@ -496,9 +474,6 @@
                     <input type="text" name="" id="">
                     <ul>
                         <li>
-                            <a href="index_mobile.html">모바일 버전으로 전환</a>
-                        </li>
-                        <li>
                             <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li>
@@ -512,12 +487,11 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
-            <div class="ft_bd"></div>
+            <div class="ft_bd">
+                <a href="index_mobile.html">모바일 버전으로 전환</a>
+            </div>
         </div>
     </div>
-
 </body>
-
 </html>
