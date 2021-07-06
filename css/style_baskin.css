@@ -261,8 +261,6 @@ body {
     to {
         /* bottom: 5px; */
         transform: translateY(-5px);
-
-
     }
 }
 
@@ -631,6 +629,7 @@ input:focus {
     background-color: #fff67c;
     border-radius: 100%;
     transition: all 0.5s;
+    
 }
 
 .circle_group:nth-child(1) .circle {
@@ -667,6 +666,8 @@ input:focus {
     background-repeat: no-repeat;
     background-image: url(http://www.baskinrobbins.co.kr/upload/product/1609980688.png);
 }
+
+
 
 .circle_group>b {
     font-family: 'Quicksand';
@@ -933,13 +934,46 @@ input:focus {
 
 /* 로그인 */
 #baskin-login {
-    height: 1740px;
+    background-color: #ffffff;
 }
+
+#baskin-login_title {
+    margin: 0 auto;
+    width: 600px;
+    height: 280px;
+    border-bottom: 3px solid #e5e5e5;
+    /* background-color: #dd6060; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#baskin-login_title h2 {
+    font-size: 35px;
+    font-family: 'Paytone One', sans-serif;
+
+}
+
+/* .baskin-login_idpwbox {
+    
+    background-color: blue;
+} */
+
+.baskin-login_idpwbox_container {
+    margin: 0 auto;
+    width: 600px;
+    height: 730px;
+    /* background-color: coral; */
+}
+
+
+
 
 /* 메뉴-아이스크림 */
 
 #baskin-menu-icecream_title {
-    height: 300px;
+    height: 250px;
     background-color: coral;
     display: flex;
     align-items: center;
@@ -958,10 +992,7 @@ input:focus {
 #baskin-menu-icecream_fotm {
     height: 640px;
     background-color: darkblue;
-    background-image: url(http://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?ver=210701);
-    background-position: left top 140px;
-    background-repeat: no-repeat;
-    background-size: 90%;
+    
 
 }
 
