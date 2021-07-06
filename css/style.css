@@ -27,7 +27,7 @@ body {
 .header {
     position: fixed;
     width: 100%;
-    border-bottom: 1px solid #adadad;
+    border-bottom: 2px solid #adadad;
     transition: all 0.5s;
     background-color: #ffffff;
     z-index: 1;
@@ -97,12 +97,12 @@ body {
     width: 1080px;
     background-color: #faf9eb;
     overflow: hidden;
-    border-left: 1px solid #adadad;
-    border-right: 1px solid #adadad;
+    border-left: 2px solid #adadad;
+    border-right: 2px solid #adadad;
 }
 
 .port_title {
-    margin: 149px auto 30px auto;
+    margin: 189px auto 70px auto;
     width: 540px;
     height: 80px;
     /* background-color: rgb(1, 112, 75); */
@@ -136,11 +136,22 @@ body {
     cursor: default;
     width: 595px;
     height: 336px;
-    background-color: rgba(0, 255, 255, 0.479);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* background-image: url(https://i.ytimg.com/vi/zjVr9F-fXIQ/maxresdefault.jpg);
     background-position: center center;
     background-size: 100% auto;
     background-repeat: no-repeat; */
+}
+
+.dv_pic_b {
+    background-color: #000;
+}
+
+.dv_pic_r {
+    background-color: #ff0000;
 }
 
 .dv_pic>iframe {
