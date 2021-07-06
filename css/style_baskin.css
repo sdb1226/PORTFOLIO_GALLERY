@@ -931,24 +931,49 @@ input:focus {
 
 
 
-
-
+/* 로그인 */
+#baskin-login {
+    height: 1740px;
+}
 
 /* 메뉴-아이스크림 */
 
 #baskin-menu-icecream_title {
     height: 300px;
     background-color: coral;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
+
+#baskin-menu-icecream_title h1 {
+    font-size: 94px;
+    font-family: 'Paytone One', sans-serif;
+
+}
+
+
 
 #baskin-menu-icecream_fotm {
     height: 640px;
     background-color: darkblue;
+    background-image: url(http://www.baskinrobbins.co.kr/assets/images/flavoer/ice_img.png?ver=210701);
+    background-position: left top 140px;
+    background-repeat: no-repeat;
+    background-size: 90%;
 
 }
 
 #baskin-menu-icecream_fotm_slide {
     height: 400px;
+    background-color: #dabb49;
+}
+
+
+#baskin-menu-icecream_flavor_list {
+    height: 600px;
+    background-color: burlywood;
 }
 
 
