@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-    <title>포토폴리오 갤러리 메인</title>
+    <title>포토폴리오 갤러리-포트폴리오</title>
     <link rel="stylesheet" href="https://sdb1226.github.io/PORTFOLIO_GALLERY/">
     <link rel="stylesheet" href="index_mobile.html">
     <link rel="shortcut icon" href="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/pf_logo_b.png?raw=true">
-    
+
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -34,8 +35,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/js.js"></script>
+    <script src="javascript/js.js"></script>
+
 </head>
+
 <body>
     <div class="wrap">
         <div class="header" id="header">
@@ -56,7 +59,23 @@
                 </ul>
             </div>
         </div>
-        
+        <script>
+            const header = document.querySelector('#header');
+
+            function scrollFunc() {
+                if (pageYOffset >= 178.5) {
+                    header.classList.add('on');
+                    header.style.background = '#e4b12c';
+
+                    // header.style.color = '#fff';
+                } else {
+                    header.classList.remove('on');
+                    header.style.background = '#ffffff';
+                    // header.style.color = '#444444';
+                }
+            }
+            window.addEventListener('scroll', scrollFunc);
+        </script>
         <div class="main">
             <div class="port_title">
                 Portfolio
@@ -182,4 +201,5 @@
         </div>
     </div>
 </body>
+
 </html>
