@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="javascript/js.js"></script>
+    <script src="js/js.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -56,22 +56,7 @@
                 </ul>
             </div>
         </div>
-        <script>
-            const header = document.querySelector('#header');
-            function scrollFunc() {
-                if (pageYOffset >= 178.5) {
-                    header.classList.add('on');
-                    header.style.background = '#e4b12c';
-                    
-                    // header.style.color = '#fff';
-                } else {
-                    header.classList.remove('on');
-                    header.style.background = '#ffffff';
-                    // header.style.color = '#444444';
-                }
-            }
-            window.addEventListener('scroll', scrollFunc);
-        </script>
+        
         <div class="main">
             <div class="port_title">
                 Portfolio
