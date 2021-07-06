@@ -68,7 +68,7 @@
 
 
         .header {
-            background-color: rgb(255, 255, 255);
+            background-color: #ffffff;
             /* background-image: url(https://c.tenor.com/eT65efTNamoAAAAj/bonfire-darksouls.gif);
             background-position: 100px bottom center;
             background-size: auto 100%;
@@ -79,19 +79,19 @@
             /* margin: 0 176px; */
             margin: 0 110px;
             height: 120px;
-            /* background-color: rgb(248, 248, 248); */
+            /* background-color: #dadada; */
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
 
         .hd_menu_container {
-            /* background-color: rgb(241, 241, 241); */
+            /* background-color: #f1f1f1; */
             font-size: 16px;
         }
 
         .hd_menu {
-            margin: 0 14px;
+            margin: 0 10px;
             float: left;
         }
 
@@ -102,75 +102,173 @@
         nav {
             position: relative;
             z-index: 100;
-            margin-top: 8px;
-            background-color: rgb(255, 255, 255);
+            margin-top: 5px;
+            background-color: #ffffff;
 
         }
 
         .nv_mainmenu_container {
             margin: 0 auto;
-            width: 1088px;
-            /* background-color: #141414; */
+            width: 1100px;
+            /* background-color: #58a832; */
             display: flex;
-            justify-content: space-evenly;
+            align-items: center;
+            justify-content: space-between;
             height: 47px;
         }
 
         .nv_mainmenu {
             position: relative;
             z-index: 100;
-            line-height: 47px;
+            height: 47px;
             text-align: center;
-            /* background-color: rgb(238, 238, 238); */
+            /* background-color: #c02d2d; */
             transition: all 0.3s;
             cursor: pointer;
             color: #252525;
             font-size: 19px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
         }
+
+        .backboard {
+            position: absolute;
+            left: 0;
+            top: 47px;
+            width: 100%;
+            height: 0;
+            color: #fff;
+            overflow: hidden;
+            transition: all 0.5s;
+        }
+
+        .backboard_container {
+            margin: 0 auto;
+            width: 1200px;
+            height: 100%;
+            background-color: cornflowerblue;
+        }
+
+        #bakbo1 {
+            background-image: url(https://lh3.googleusercontent.com/proxy/L6QU1ZfeLS--bpnSTvsUkBdQTqvZFo38zXjB5kW2gWRWjtVwn08pDX5TMDJyXzpEGfjQNk1xHT8Li3CM5X1f6LgH5cKFn1qupfO2gHIYcVRhBNROwTppOO_CjBBezm7w7RE);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100%;
+            background-color: #fff;
+        }
+
+        
+
+        .nv_mainmenu:nth-child(1):hover~#bakbo1 {
+            /* height: 170px; */
+            /* background-color: rgb(58, 78, 116); */
+            height: 250px;
+        }
+
+        #bakbo2 {
+            background-color: #ffffff;
+        }
+
+        .nv_mainmenu:nth-child(2):hover~#bakbo2 {
+            /* height: 222px; */
+            height: 250px;
+        }
+
+        #bakbo3 {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .nv_mainmenu:nth-child(3):hover~#bakbo3 {
+            /* height: 170px; */
+            height: 250px;
+        }
+
+        #bakbo4 {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .nv_mainmenu:nth-child(4):hover~#bakbo4 {
+            /* height: 115px; */
+            height: 250px;
+        }
+
+        #bakbo5 {
+            background-color: #ffffff;
+        }
+
+        .nv_mainmenu:nth-child(5):hover~#bakbo5 {
+            /* height: 115px; */
+            height: 250px;
+        }
+
+        .nv_mainmenu:nth-child(1):hover #mu_txt_g1>.nv_submenu,
+        .nv_mainmenu:nth-child(2):hover #mu_txt_g2>.nv_submenu,
+        .nv_mainmenu:nth-child(3):hover #mu_txt_g3>.nv_submenu,
+        .nv_mainmenu:nth-child(4):hover #mu_txt_g4>.nv_submenu,
+        .nv_mainmenu:nth-child(5):hover #mu_txt_g5>.nv_submenu {
+            height: 47px;
+        }
+
+        .nv_mainmenu:hover .nv_submenu_container {
+            /* padding-top: 10px; */
+            border: 1px solid #ffffff;
+        }
+
+        .nv_mainmenu:hover .nv_submenu {
+            /* padding-top: 10px; */
+            border: 1px solid rgb(255, 255, 255);
+        }
+
 
 
 
 
         .nv_submenu_container {
             position: absolute;
-            top: 57px;
-
-            display: none;
+            top: 47px;
+            overflow: hidden;
             transition: all 0.5s;
         }
 
         .nv_submenu {
-            margin-bottom: 8px;
+            
             width: fit-content;
-            height: 47px;
-            line-height: 47px;
+            height: 0;
             background-color: rgb(231, 231, 231);
             font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition: all 0.5s;
         }
 
 
         .nv_mainmenu:nth-child(1),
-        .nv_mainmenu:nth-child(1)>.nv_submenu_container>.nv_submenu {
+        #mu_txt_g1>.nv_submenu {
             width: 171px;
+            /* background-color: lightgreen; */
         }
 
         .nv_mainmenu:nth-child(2),
-        .nv_mainmenu:nth-child(2)>.nv_submenu_container>.nv_submenu {
+        #mu_txt_g2>.nv_submenu {
             width: 204px;
         }
 
         .nv_mainmenu:nth-child(3),
-        .nv_mainmenu:nth-child(3)>.nv_submenu_container>.nv_submenu {
+        #mu_txt_g3>.nv_submenu {
             width: 208px;
         }
 
         .nv_mainmenu:nth-child(4),
-        .nv_mainmenu:nth-child(4)>.nv_submenu_container>.nv_submenu {
+        #mu_txt_g4>.nv_submenu {
             width: 168px;
         }
 
         .nv_mainmenu:nth-child(5),
-        .nv_mainmenu:nth-child(5)>.nv_submenu_container>.nv_submenu {
+        #mu_txt_g5>.nv_submenu {
             width: 173px;
         }
 
@@ -260,7 +358,7 @@
         <nav>
             <ul class="nv_mainmenu_container">
                 <li class="nv_mainmenu" onclick="p(1)">
-                    COMPANY&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
+                    COMPANY&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
                     <div class="nv_submenu_container" id="mu_txt_g1">
                         <div class="nv_submenu" onclick="location.href=''">
                             About
@@ -272,10 +370,9 @@
                             Access
                         </div>
                     </div>
-
                 </li>
                 <li class="nv_mainmenu" onclick="p(2)">
-                    PRODUCTIONS&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
+                    PRODUCTIONS&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
                     <div class="nv_submenu_container" id="mu_txt_g2">
                         <div class="nv_submenu" onclick="location.href=''">All</div>
                         <div class="nv_submenu" onclick="location.href=''">Platform</div>
@@ -284,7 +381,7 @@
                     </div>
                 </li>
                 <li class="nv_mainmenu" onclick="p(3)">
-                    PRESS RELEASE&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
+                    PRESS RELEASE&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
                     <div class="nv_submenu_container" id="mu_txt_g3">
                         <div class="nv_submenu" onclick="location.href=''">2021</div>
                         <div class="nv_submenu" onclick="location.href=''">2020</div>
@@ -292,20 +389,32 @@
                     </div>
                 </li>
                 <li class="nv_mainmenu" onclick="p(4)">
-                    RECRUIT&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
+                    RECRUIT&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
                     <div class="nv_submenu_container" id="mu_txt_g4">
                         <div class="nv_submenu" onclick="location.href=''">Corporate</div>
                         <div class="nv_submenu" onclick="location.href=''">Portfolio</div>
                     </div>
                 </li>
                 <li class="nv_mainmenu" onclick="p(5)">
-                    SUPPORTS&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
+                    SUPPORTS&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
                     <div class="nv_submenu_container" id="mu_txt_g5">
                         <div class="nv_submenu" onclick="location.href=''">FAQ</div>
                         <div class="nv_submenu" onclick="location.href=''">Contact</div>
                     </div>
                 </li>
+                <li class="backboard" id="bakbo1">
+                    <div class="backboard_container">
+                        
+                    </div>
+                </li>
+                <li class="backboard" id="bakbo2">2</li>
+                <li class="backboard" id="bakbo3">3</li>
+                <li class="backboard" id="bakbo4">4</li>
+                <li class="backboard" id="bakbo5">5</li>
                 <script>
+
+                </script>
+                <!-- <script>
                     function p(nb) {
                         mu_txt_g1.style.display = "none";
                         mu_txt_g2.style.display = "none";
@@ -313,9 +422,9 @@
                         mu_txt_g4.style.display = "none";
                         mu_txt_g5.style.display = "none";
                         this["mu_txt_g" + nb].style.display = "block";
-                        // this["mu_txt_g" + nb].style.background = "yellow";
                     }
-                </script>
+                </script> -->
+
             </ul>
         </nav>
         <main>
@@ -352,6 +461,7 @@
             </style>
             <script>
                 const maingamesslide = document.querySelector('#maingamesslide');
+
                 function scrollFunc() {
                     if (pageYOffset >= 130) {
                         maingamesslide.classList.add('on');
