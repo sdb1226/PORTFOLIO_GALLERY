@@ -4,18 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>배스킨라빈스_메인페이지</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-    <!-- 소스파일 -->
-    <link rel="stylesheet" href="../css/style_baskin.css">
-    <script src="../js/js_baskin.js"></script>
-
-    <!-- 파비콘 -->
+    <title>포토폴리오 갤러리-포트폴리오</title>
     <link rel="stylesheet" href="https://sdb1226.github.io/PORTFOLIO_GALLERY/">
-    <link rel="stylesheet" href="index_01mobile_baskin.html">
-    <link rel="shortcut icon"
-        href="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/icon_baskicon.png?raw=true">
+    <link rel="stylesheet" href="index_mobile.html">
+    <link rel="shortcut icon" href="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/pf_logo_b.png?raw=true">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- FontAwesome5, 구글 폰트(폰트, 아이콘) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
@@ -32,428 +29,179 @@
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
-
     <!-- Jquary, Swiper -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="javascript/js.js"></script>
+
 </head>
 
 <body>
     <div class="wrap">
-        <div class="header" id="header-main">
-            <div class="logoandlogincontainer">
-                <a href="index_01baskin.html">
-                    <img src="https://logos-download.com/wp-content/uploads/2016/04/Baskin-Robbins-logo_2.png"
-                        width="314px" height="auto" alt="홈">
+        <div class="header" id="header">
+            <div class="hd_container">
+                <a href="#">
+                    <img id="logob"
+                        src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/pf_logo_b.png?raw=true"
+                        width="65px" height="65px" alt="">
                 </a>
-                <ul class="logincontainer">
-                    <li class="logincontain"><a href="index_01baskin-login.html">로그인&#183;회원가입</a></li>
-                    <li class="logincontain"><a href="">고객센터</a></li>
-                    <li class="logincontain"><a href="">CONTACT US</a></li>
-                    <li class="logincontain"><a href=""><i class="fas fa-search"></i></a></li>
-                </ul>
-                <!--logincontainer end-->
-            </div>
-            <!--logoandlogincontainer end-->
-            <div class="nav">
-                <ul class="nav_mainmenu_container">
-                    <li class="nav_mainmenu">FLAVOR OF THE MONTH</li>
-                    <li class="nav_mainmenu">MENU</li>
-                    <li class="nav_mainmenu">EVENT</li>
-                    <li class="nav_mainmenu">STORE</li>
-                    <li class="nav_mainmenu">ABOUT</li>
-                    <li class="backboard">
-                        <div class="backboard_container">
-                            <ul class="backboard_submenu_container">
-                                <li class="backboard_submenu backboard_submenu_icepic" onclick="location.href='#'">
-                                    <img src="http://www.baskinrobbins.co.kr/assets/images/common/flavor/img_monthly_fom.png?v=210701"
-                                        height="210px;" alt="">
-                                </li>
-                            </ul>
-
-                            <ul class="backboard_submenu_container">
-                                <li class="backboard_submenu backboard_submenu_box">
-                                    <a href="index_01baskin-icecream.html">아이스크림</a>
-                                </li>
-                                <li class="backboard_submenu backboard_submenu_box">
-                                    <a href="">아이스크림 케이크</a>
-                                </li>
-                                <li class="backboard_submenu backboard_submenu_box">
-                                    <a href="">커피</a>
-                                </li>
-                                <li class="backboard_submenu backboard_submenu_box">
-                                    <a href="">음료</a>
-                                </li>
-                                <li class="backboard_submenu backboard_submenu_box">
-                                    <a href="">디저트</a>
-                                </li>
-                            </ul>
-
-                            <ul class="backboard_submenu_container">
-                                <li class="backboard_submenu backboard_submenu_box"><a href="">진행 중인 이벤트</a></li>
-                                <li class="backboard_submenu backboard_submenu_box"><a href="">당첨자 발표</a></li>
-                            </ul>
-
-                            <ul class="backboard_submenu_container">
-                                <li class="backboard_submenu backboard_submenu_box"><a href="">매장찾기</a></li>
-                                <li class="backboard_submenu backboard_submenu_box"><a href="">고객센터</a></li>
-                            </ul>
-
-                            <ul class="backboard_submenu_container">
-                                <li class="backboard_submenu backboard_submenu_box"><a href="">공지사항</a></li>
-                                <li class="backboard_submenu backboard_submenu_box"><a href="">보도자료</a></li>
-                                <li class="backboard_submenu backboard_submenu_box"><a href="">채용정보</a></li>
-                                <li class="backboard_submenu backboard_submenu_box"><a href="">점포개설문의</a></li>
-                                <li class="backboard_submenu backboard_submenu_box"><a href="">CONTACT US</a></li>
-                            </ul>
-                        </div>
+                <ul>
+                    <li onclick="location.href='#'">HOME</li>
+                    <li onclick="location.href='#'">ABOUT</li>
+                    <li onclick="location.href='#'">PORTFOLIO</li>
+                    <li onclick="location.href='#'">CONTACT</li>
+                    <li class="gone">
+                        <i class="fas fa-bars"></i>
                     </li>
                 </ul>
-                <!--nav_mainmenu_container end-->
             </div>
-            <!--nav end-->
-            <script>
-                const nav = document.querySelector('.nav');
-                const navTopOffset = nav.offsetTop;
-                window.addEventListener('scroll', e => {
-
-                    if (window.pageYOffset >= navTopOffset) {
-                        nav.style.position = 'fixed';
-                        nav.style.top = 0;
-                        nav.style.left = 0;
-                        nav.style.right = 0;
-                    } else {
-                        nav.style.position = '';
-                        nav.style.top = '';
-                    }
-                });
-            </script>
-            <!-- <script>
-                $(window).scroll(function(){
-                    $('.nav').css('left', 0-$(this).scrollLeft());
-                });
-            </script> -->
-
         </div>
-        <!--header end-->
+        <script>
+            const header = document.querySelector('#header');
+
+            function scrollFunc() {
+                if (pageYOffset > 130) {
+                    header.classList.add('on');
+                    header.style.background = '#ffffffea';
+
+                    // header.style.color = '#fff';
+                } else {
+                    header.classList.remove('on');
+                    header.style.background = '#ffffff';
+                    // header.style.color = '#444444';
+                }
+            }
+            window.addEventListener('scroll', scrollFunc);
+        </script>
         <div class="main">
-            <div id="baskin-mainpage_1" class="main_at1">
-                <div class="main_fotm_container">
-                    <div class="fotm fotm_anima">
-
-                        <img src="http://www.baskinrobbins.co.kr/assets/images/flavoer/ice_material.png?ver=210701"
-                            alt="">
-
-                        <!-- <div class="straw">1</div>
-                        <div class="vanillaice">2</div>
-                        <div class="melon">3</div>
-                        <div class="yellowsome">4</div> -->
-                    </div>
-                    <div class="fotm_info">
-                        <p>먼저 만나는 <b>8</b>월<b>&nbsp;이달의 맛</b></p>
-                        <b>꿀.바.망</b>
-                        <span>허니망고 아이스크림과<br>바나나 아이스크림 속에<br>망고 다이스가 쏙쏙!</span>
-                        <input value="이달의 맛 맛보기" type="button" onclick="location.href=''">
-                        <div class="photo_container index_photo_container">
-                            <div class="photo">
-                                <div>
-                                    꿀.바.망
-                                </div>
-                            </div>
-                            <div class="photo">
-                                <div>
-                                    꿀바망<br>미니언즈<br>케이크
-                                </div>
-                            </div>
-                            <div class="photo">
-                                <div>
-                                    허니<br>망고<br>라떼
-                                </div>
-                            </div>
-                            <div class="photo">
-                                <div>
-                                    아이스<br>마카롱<br>꿀바망
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--main_wallpaper end-->
+            <div class="port_title">
+                Portfolio
             </div>
-            <!--main_cont end-->
-            <div id="baskin-mainpage_2" class="main_at2">
-                <div class="main_menu">
-                    <div class="main_menu_title">
-                        <h2>MENU</h2>
-                        <p>배스킨라빈스의 다양한 제품을 만나보세요!</p>
+            <div class="main_dv main_dv1">
+                <div>
+                    <div class="dv_pic">
+                        <img src="https://lh3.googleusercontent.com/proxy/SLaSnMGKlxotir8kbhqA0QbqAWfxGFeYkugO5-LuZREbmjxuqyjVRFTjFqpng8t4f0nHmrK9IrptD9HZUAv_kPX8K6ozCck8nXuPCEiFRFIxhs8eTFlEuWNSNbjGYfbx1TfQDTOs"
+                            width="424px" alt="">
                     </div>
-                    <div class="main_menu_circle_container">
-                        <div class="circle_group">
-                            <div class="circle"></div>
-                            <b>ICE CREAM</b>
-                            <p>아이스크림의 기준은?<br>배스킨라빈스!</p>
-                            <a href="index_01baskin-icecream.html">more&nbsp;&nbsp;&nbsp;<i
-                                    class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                        <div class="circle_group">
-                            <div class="circle"></div>
-                            <b>ICE CREAM CAKE</b>
-                            <p>아이 어른 모두 좋아하는<br>아이스크림을 케이크 하나로!</p>
-                            <a href="">more&nbsp;&nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                        <div class="circle_group">
-                            <div class="circle"></div>
-                            <b>BEVERAGE</b>
-                            <p>아이스크림으로 즐기는<br>배스킨라빈스만의 음료</p>
-                            <a href="">more&nbsp;&nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                        <div class="circle_group">
-                            <div class="circle"></div>
-                            <b>COFFEE</b>
-                            <p>배스킨라빈스만의<br>부드러운 촉감과 달콤한 풍미!</p>
-                            <a href="">more&nbsp;&nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                        <div class="circle_group">
-                            <div class="circle"></div>
-                            <b>DESSERT</b>
-                            <p>아이스크림을 더<br>재미있고 간편히 즐기는 방법!</p>
-                            <a href="">more&nbsp;&nbsp;&nbsp;<i class="fas fa-long-arrow-alt-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="baskin-mainpage_3" class="main_at3">
-                <div class="main_event">
-                    <div class="main_event_title">
-                        <h2>EVENT</h2>
-                        <p>배스킨라빈스와 함께하는 다양한 혜택과 이벤트</p>
-                    </div>
-                    <div class="swiper-container main_event_container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide swiper-event-slide">
-                                <div onclick="location.href=''">
-                                    <img src="http://www.baskinrobbins.co.kr/upload/event/image/1609980948.png" alt="">
-                                    <p class="p_event_due">온라인 이벤트</p>
-                                    <p class="p_event_info">7월 이달의 맛의 사진을<br>인스타그램에 올려주세요!</p>
-                                    <p class="p_event_date">2021-07-01~2021-07-31</p>
-                                </div>
-
-                            </div>
-
-
-                            <div class="swiper-slide swiper-event-slide">
-                                <div onclick="location.href=''">
-                                    <img src="http://www.baskinrobbins.co.kr/upload/event/image/1630631151.jpg" alt="">
-                                    <p class="p_event_due">스토어 이벤트</p>
-                                    <p class="p_event_info">KT 멤버십 고객이라면<br>누구나 파인트 30% 할인!</p>
-                                    <p class="p_event_date">상시진행</p>
-                                </div>
-
-                            </div>
-
-
-                            <div class="swiper-slide swiper-event-slide">
-                                <div onclick="location.href=''">
-                                    <img src="http://www.baskinrobbins.co.kr/upload/event/image/1639297260.png" alt="">
-                                    <p class="p_event_due">스토어 이벤트</p>
-                                    <p class="p_event_info">제휴 할인 카드 혜택 안내</p>
-                                    <p class="p_event_date">상시진행</p>
-                                </div>
-
-                            </div>
-
-
-                            <div class="swiper-slide swiper-event-slide">
-                                <div onclick="location.href=''">
-                                    <img src="http://www.baskinrobbins.co.kr/upload/event/image/1625114283.png" alt="">
-                                    <p class="p_event_due">스토어 이벤트</p>
-                                    <p class="p_event_info">현대카드 M포인트 50% 사용</p>
-                                    <p class="p_event_date">2021-07-01~2021-12-31</p>
-                                </div>
-                            </div>
-
-
-                            <div class="swiper-slide swiper-event-slide">
-                                <div onclick="location.href=''">
-                                    <img src="http://www.baskinrobbins.co.kr/upload/event/image/1570702843.png" alt="">
-                                    <p class="p_event_due">온라인 이벤트</p>
-                                    <p class="p_event_info">한글날 기념 무료 글꼴 공개!<br>배스킨라빈스체</p>
-                                    <p class="p_event_date">상시진행</p>
-                                </div>
-
-                            </div>
-
-
-
-                            <div class="swiper-slide swiper-event-slide">
-                                <div onclick="location.href=''">
-                                    <img src="http://www.baskinrobbins.co.kr/upload/event/image/1578277305.png" alt="">
-                                    <p class="p_event_due">스토어 이벤트</p>
-                                    <p class="p_event_info">1회용 컵 사용 줄이기 안내</p>
-                                    <p class="p_event_date">상시진행</p>
-                                </div>
-
-                            </div>
-
-
-                            <div class="swiper-slide swiper-event-slide">
-                                <div onclick="location.href=''">
-                                    <img src="http://www.baskinrobbins.co.kr/upload/event/images/banner_delivery.png"
-                                        alt="">
-                                    <p class="p_event_due">스토어 이벤트</p>
-                                    <p class="p_event_info">해피오더 딜리버리로<br>간편하게 주문하세요!</p>
-                                    <p class="p_event_date">상시진행</p>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- <div class="swiper-pagination"></div> -->
-                        <div class="swiper-button-next">
-                            <i class="far fa-arrow-alt-circle-right"></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class="far fa-arrow-alt-circle-left"></i>
-                        </div>
-                    </div>
-                    <script>
-                        var swiper = new Swiper('.main_event_container', {
-                            slidesPerView: 4,
-                            spaceBetween: 0,
-                            // slidesPerGroup: 1,
-
-
-                            pagination: {
-                                el: '.swiper-pagination',
-                                clickable: true,
-                            },
-                            navigation: {
-                                nextEl: '.swiper-button-next',
-                                prevEl: '.swiper-button-prev',
-                            },
-                        });
-                    </script>
-                </div>
-            </div>
-            <div id="baskin-mainpage_4" class="main_at4">
-                <div class="main_store">
-                    <div class="main_store_inner_l">
-
-                    </div>
-                    <div class="main_store_inner_r">
+                    <div class="pan">
                         <div class="line_column_top"></div>
                         <div class="line_column_bottom"></div>
                         <div class="line_row_left"></div>
                         <div class="line_row_right"></div>
-
-                        <div class="main_store_title">
-                            <h2>STORE</h2>
-                            <p><b>다양한 즐거움과 새로움! 우리동네 배스킨라빈스!</b></p>
-                            <p>내 주변 가장 가까운 베스킨라빈스 매장을 찾아보세요!</p>
-                            <button id="" class="" onclick="">매장찾기<i class="fas fa-search"></i></button>
-                        </div>
+                        <h2>&#91;배스킨라빈스&#93;</h2>
+                        <p>제작기간 2021. 04. 22 ~ </p>
+                        <p>제작사유</p>
+                        <span>
+                            <button class="btn" id="btn1" onclick="window.open('html/index_01mobile_baskin.html')"
+                                value="hjhjh">모바일</button>
+                            <button class="btn" id="btn2" onclick="window.open('html/index_01baskin.html')"
+                                value="jhkjhk">PC/데스크탑</button>
+                        </span>
                     </div>
                 </div>
             </div>
-            <div id="baskin-mainpage_5" class="main_at5">
-                <div class="main_order">
-                    <div class="main_order_inner_l">
-
+            <div class="main_dv main_dv2">
+                <div>
+                    <div class="dv_pic">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Fromsoftware_logo.png"
+                            width="356px" alt="">
                     </div>
-                    <div class="main_order_inner_r">
-                        <div class="line_column_top"></div>
-                        <div class="line_column_bottom"></div>
-                        <div class="line_row_left"></div>
-                        <div class="line_row_right"></div>
-                        <div class="main_order_title">
-                            <h2>HAPPY DELIVERY&<br>ORDER</h2>
-                            <p><b>주문에서 결제/배송까지 간편하게!</b></p>
-                            <p>배스킨라빈스 모바일 사전주문 & 배달서비스</p>
-                            <button id="" class="" onclick="">매장찾기<i class="fas fa-search"></i></button>
-                        </div>
+                    <div class="pan">
+                        <h2>&#91;프롬&nbsp;소프트웨어&#93;</h2>
+                        <p>제작기간 2021. 06. 06 ~ </p>
+                        <p>일본의 게임소프트웨어 개발사</p>
+                        <span>
+                            <button class="btn" id="btn3" onclick="window.open('')" value="hjhjh">모바일</button>
+                            <button class="btn" id="btn4" onclick="window.open('html/index_02fromsoft.html')"
+                                value="jhkjhk">PC/데스크탑</button>
+                        </span>
                     </div>
                 </div>
             </div>
-            <div id="baskin-mainpage_6" class="main_at6">
-                <div class="main_sns">
-                    <div class="main_sns_title">
-                        <h2>SNS</h2>
-                        <p>배스킨라빈스의 즐거움을 다같이 나누고 싶다면?</p>
+            <div class="main_dv main_dv3">
+                <div>
+                    <div class="dv_pic dv_pic_b">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABMlBMVEUAAAD////o6OgoKCj7+/sAqu8+Pj4ApN+45/tsbGz2AJIcAA/tAI382u3yAI8AsPUAtfj/9fva8v0Ar/BmAD3tI5MAjcAAFByM0/cAu//tAIn71OntAIXt+f4ALz/H7fz3n9DcAIPKAXn6uN04ACGcnJxyAEP96PX/AJptyPQAeaUAwP8NAAcnABPnyNl2xuakAGHydraFAE/6U6yTAE+XW3yinKBSACcAZ4wAHCYzLkb7yeSb2/sAERcZIycAFSYmAA0mCxwnGSFLueYAW3vkMJXn2OHkS6BtAED/o9ScwtEAIzKKAFKagpCPmJwAnNkbND8uEybILYEtV2flhblPoMFPT06hT335r9gAOU4hFiWog5vaH4ktABf/0vEASWk8e5bRnLtbhpgAQFZWADPL4ucJ/6bgAAADj0lEQVR4nO3a+1/SUBjH8WESNmggm10IkCF4CShTKggLi8zsfjWt7Kb9//9CrF3YYKtsBwRfn/dvO7zcw5fjtucckCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDJVa3VzjjutS+OrHB8875Vtd20Rx78fg9NoXVKun5tqqcTeyj09ME0feuRVfR67KoxsqhvP3IdirIq34i4zERjIs8e7LEyN2sXTUfVfHdIzy6Yh+plkZVWlRNJuKisL0UCE6ZEXisnk1BzBzyNCTVlyxVwyAnXltdHnlBzXYOG+aRqRCrKO+ZhShVabrF+s3yrUDg/uoQlOWHN4MzGk3K5/KLReGqMV5/Vn7sOxbqtzC2NLKEzhTPRl0MvZqvKifOjT3gpeWHoxWzxoITxUums7VVezH/PWCXUlGXXTW8l1RBRbJwS9t3Vp1eSIiKOUcIjb8BIJBc+Ynzz9Zu5gvUc7KhvnVb74HfbPYTO26rrl1Czb7AunZAR1/TtqSXnrLlczm61V7PvpryNuFh+CY+UxGx/wNAR9czC4Dm7Pc0dOdNrxMV23iafhJo85xMw7O0mMKGScWZWcNdm8kmYyLTMghud97u7ux/Wb0yb/1nq5RDXyTglVDJX7PJt47iY3bMTGm1y1fWg/Bev8k0zYSso4exJJZyPxi6aCQvuhMXM3vRxpFV1X+p11x7zydjHhFXuZBI2BxOWlgfvs3+2kjLukPFn9U+Fgv2nTuedl0r1zzut05DQsJbdsgJ6Ou+DbPbKKUkY1NMMaQU8uoTJyUooyfKX4yWsVOx9yglJGNe0c8fx9mveLjYhCUMgIQn/CwmliU/os9f2l740hH9IeDdcBR/Ofmk6Gm2bQ721RdRomat6tjXchE7XllOT++EqeHn3vCPzRjP8rXHYXefsuUbK33eshV34T3gwoVb/0K1QsBdW6Y2NcvlHQ9A3mX3fW5hylcrhpq74LOWMgGE/4IGER74t4EpFyN5l/3dPlk7qoVTyW62mU+ph2JIDCdfkdZ8Nk14jG05wwm7EgVnMqerX0CXHJ6FUS/RF7N4DQs/g6BPKwQmlmncWBVyDBmcXz064ONSEfb/FMM3ErMV3qZhpOaM/YzEBM9hV1Ave8xX17wPvoftqyKeSzfN7Gkuz6fdqsy3qQVzb7DvfH98DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAJPoFBrqbbGI2a38AAAAASUVORK5CYII="
+                            width="204px" alt="">
+                    </div>
+                    <div class="pan">
+                        <h2>&#91;로-파이 채널&#93;</h2>
+                        <p>제작기간 2021. 03. 17 ~ </p>
+                        <p>심신을 안정하는 채널</p>
+                        <span>
+                            <button class="btn" id="btn5" onclick="window.open('')" value="hjhjh">모바일</button>
+                            <button class="btn" id="btn6" onclick="window.open('html/index_03low-fi.html')"
+                                value="jhkjhk">PC/데스크탑</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="main_dv main_dv4">
+                <div>
+                    <div class="dv_pic dv_pic_r">
+                        <img src="https://static.wixstatic.com/media/81d82f_402ebb81ae164e3a9f603cf9f89d2816~mv2.png/v1/fit/w_2500,h_1330,al_c/81d82f_402ebb81ae164e3a9f603cf9f89d2816~mv2.png"
+                            width="322px" alt="">
+                    </div>
+                    <div class="pan">
+                        <h2>&#91;훈스파이&#93;</h2>
+                        <p>제작기간 2021. 06. 16 ~ </p>
+
+                        <a href="https://www.hoonspie.com/">https://www.hoonspie.com/</a>
+
+                        <span>
+                            <button class="btn" id="btn7" onclick="window.open('')" value="hjhjh">모바일</button>
+                            <button class="btn" id="btn8" onclick="window.open('html/index_04hoonspie.html')"
+                                value="jhkjhk">PC/데스크탑</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="main_dv main_dv5">
+                <div>
+                    <div class="dv_pic">
+                        <iframe src="html/index_05yellowbox.html" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="pan">
+                        <h2>&#91;YELLOW-BOX&#93;</h2>
+                        <p>제작기간 2021. 06. 23 ~ </p>
+                        <p>제작사유</p>
+                        <span>
+                            <button class="btn" id="btn9" onclick="window.open('')" value="hjhjh">모바일</button>
+                            <button class="btn" id="btn10" onclick="window.open('html/index_05yellowbox.html')"
+                                value="jhkjhk">PC/데스크탑</button>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
-        <!--main end-->
         <div class="footer">
             <div class="ft_hd">
-                <ul class="ft_hd_container">
-                    <li onclick="location.href=''">점포개설문의</li>
-                    <li onclick="location.href=''">채용문의</li>
-                    <li onclick="location.href=''">윤리신고센터</li>
-                    <li onclick="location.href=''">이용약관</li>
-                    <li onclick="location.href=''">개인정보처리방침</li>
-                    <li onclick="location.href=''">영상정보처리기기운영관리방침</li>
-                    <li onclick="location.href=''">거래희망회사사전등록</li>
-                </ul>
-            </div>
-            <div class="ft_md">
-                <div class="ft_md_container">
-                    <div class="ft_md_sponsor_container">
-                        <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/btn_happypoint.png?raw=true"
-                            alt="">
-                        <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/btn_happymarket.png?raw=true"
-                            alt="">
-                        <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/btn_spc_story.png?raw=true"
-                            alt="">
-                        <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/btn_norton.gif?raw=true"
-                            alt="">
-                        <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/btn_ccm.gif?raw=true"
-                            alt="">
-                        <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/btn_ksa.png?raw=true"
-                            alt="">
-                    </div>
-                    <div class="ft_md_famselect">
-                        <select id="famsite">
-                            <optgroup label="Family Site">
-                                <option value="">Family Site</option>
-                                <option value="">배스킨 스쿨</option>
-                                <option value="">SPC그룹사이트</option>
-                                <option value="">SPC MAGAZINE</option>
-                                <option value="">BR코리아</option>
-                                <option value="">해피포인트카드</option>
-                                <option value="">파스쿠찌</option>
-                                <option value="">삼립</option>
-                                <option value="">파리바게트</option>
-                                <option value="">던킨도너츠</option>
-                            </optgroup>
-                        </select>
-                    </div>
+                <div class="ft_hd_container">
+                    <input type="text" name="" id="">
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="ft_bd">
-                <div class="ft_bd_container">
-                    <a href="index_01mobile_baskin.html">
-                        <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/baskinlogoblack.png?raw=true"
-                            width="239px" alt="">
-                    </a>
-                    <span>
-                        사업자 등록번호 : 303-81-09535 비알코리아(주) 대표이사 김창대 서울특별시 서초구 남부순환로 2620(양재동 11-149번지)<br>
-                        TEL : 080-555-3131 개인정보관리책임자 : 김경우<br>
-                        Copyright ⓒ 2016 BRKOREA Company. All Rights Reserved.
-                    </span>
-                </div>
+                <a href="index_mobile.html">모바일 버전으로 전환</a>
             </div>
-            <!-- <div class="ft_pctrans" style="height: 95px; background-color: #fff67c;"></div> -->
         </div>
-        <!--footer end-->
     </div>
-    <!--wrap end-->
 </body>
 
 </html>
