@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>래스킨바빈스</title>
+    <!-- 파비콘 -->
+    <link rel="stylesheet" href="https://sdb1226.github.io/PORTFOLIO_GALLERY/">
+    <link rel="stylesheet" href="index_01mobile_baskin.html">
+    <link rel="shortcut icon"
+        href="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/icon_baskicon.png?raw=true">
+
+    <!-- FontAwesome5, 구글 폰트(폰트, 아이콘) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <!-- Jquary, Swiper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <style>
+        @font-face {
+            src: url(../font/배스킨라빈스\ B.ttf);
+            font-family: 'brb';
+        }
+
+        @font-face {
+            src: url(../font/배스킨라빈스\ R.ttf);
+            font-family: 'brr';
+        }
+
+        @font-face {
+            src: url(../font/NanumGothic.ttf);
+            font-family: 'nanumgo';
+        }
+
+        @font-face {
+            src: url(../font/NanumSquareRoundR.ttf);
+            font-family: 'NanumSquareRoundr';
+        }
+
+        @font-face {
+            src: url(../font/NanumSquareRoundB.ttf);
+            font-family: 'NanumSquareRoundb';
+        }
+
+        @font-face {
+            src: url(../font/NanumSquareRoundEB.ttf);
+            font-family: 'NanumSquareRoundeb';
+        }
+
+        @font-face {
+            src: url(../font/NanumSquareRoundL.ttf);
+            font-family: 'NanumSquareRoundl';
+        }
+
+        @font-face {
+            src: url(../font/Maplestory\ Bold.ttf);
+            font-family: 'maple_b';
+        }
+
+        @font-face {
+            src: url(../font/Maplestory\ Light.ttf);
+            font-family: 'maple_l';
+        }
+
+
+
+        /* font-family: 'Gothic A1', sans-serif; */
+        /* font-family: 'Black Han Sans', sans-serif; */
+        /* font-family: 'Cute Font', cursive; */
+        /* font-family: 'Do Hyeon', sans-serif; */
+
+        @media only screen and (max-width: 640px) {
+            .wrap {
+                width: 100%;
+                background-color: aqua;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background: #fff6e6;
+        }
+
+        .wrap {
+            position: relative;
+            overflow: hidden;
+            background: #f7f7f7;
+            min-width: 1100px;
+        }
+
+        /* 헤더 구간 시작 */
+
+        .header {
+            border-top: 3px solid #DF3E9C;
+            background-color: #ffffff;
+        }
+
+        .logoandlogincontainer {
+            margin: 0 74px;
+            height: 100px;
+            /* background-color: rgb(150, 150, 150); */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logincontainer {
+            margin-right: 50px;
+            /* background-color: darkturquoise; */
+        }
+
+        .logincontain {
+            margin: 0 12px;
+            float: left;
+        }
+
+        .logincontain>a {
+            font-size: 15px;
+            font-family: 'NanumSquareRoundr';
+            color: #381F12;
+        }
+
+        .logincontain:nth-child(4)>a>i {
+            color: #DF3E9C;
+            /* color: #1f4c9a; */
+        }
+
+        .nav {
+            position: relative;
+            z-index: 100;
+            background-color: #DF3E9C;
+        }
+
+        .nav_mainmenu_container {
+            margin: 0 auto;
+            width: 1056px;
+            /* margin: 0 152px; */
+            /* background-color: darkslategray; */
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav_mainmenu {
+            height: 48px;
+            line-height: 48px;
+            font-family: 'NanumSquareRoundeb';
+            font-weight: bold;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .backboard {
+            position: absolute;
+            left: 0;
+            top: 48px;
+            width: 100%;
+            height: 0;
+            background-color: #ffffff;
+            transition: all 0.5s;
+            box-shadow: 0 10px 20px #381F1266;
+            border-bottom: 1px solid #381F12;
+        }
+
+        .nav_mainmenu_container:hover .backboard {
+            height: 210px;
+        }
+
+        .backboard_container {
+            margin: 0 auto;
+            width: 1056px;
+            /* margin: 0 152px; */
+            /* background-color: aqua; */
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .backboard_submenu {
+            /* background-color: rgb(204, 204, 83); */
+            font-family: 'NanumSquareRoundl';
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .backboard_submenu_box {
+            height: 28px;
+            line-height: 28px;
+        }
+
+        .backboard_submenu_container:nth-child(2),
+        .backboard_submenu_container:nth-child(3),
+        .backboard_submenu_container:nth-child(4),
+        .backboard_submenu_container:nth-child(5) {
+            margin-top: 19px;
+        }
+
+        .nav_mainmenu:nth-child(1),
+        .backboard_submenu_container:nth-child(1) {
+            width: 256px;
+        }
+
+        .nav_mainmenu:nth-child(2),
+        .backboard_submenu_container:nth-child(2) {
+            width: 130px;
+        }
+
+        .nav_mainmenu:nth-child(3),
+        .nav_mainmenu:nth-child(5),
+        .backboard_submenu_container:nth-child(3),
+        .backboard_submenu_container:nth-child(5) {
+            width: 127px;
+        }
+
+        .nav_mainmenu:nth-child(4),
+        .backboard_submenu_container:nth-child(4) {
+            width: 80px;
+        }
+
+        .backboard_submenu_icepic {
+            cursor: pointer;
+        }
+
+        .backboard_submenu>a {
+            color: #381F12;
+            font-weight: normal;
+        }
+
+        .backboard_submenu>a:hover {
+            color: #DF3E9C;
+            border-bottom: 1px solid #DF3E9C;
+        }
+
+        /* 헤더 구간 종료, 메인 구간 시작 */
+
+        .main {
+            background-color: #ffffff;
+            margin: 0 auto;
+            width: 1080px;
+            height: 720px;
+        }
+
+        
+        .footer {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .ft_hd {
+            background-color: #545454;
+        }
+
+        .ft_hd_container {
+            margin: 0 auto;
+            width: 1032px;
+            height: 70px;
+            /* background-color: lightpink; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .ft_hd_container>li {
+            color: #ffffff;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+
+
+        .ft_md {
+            height: 65px;
+            background-color: #ffffff;
+        }
+
+        .ft_md_container {
+            /* margin: 0 50px; */
+            margin: 0 auto;
+            width: 1100px;
+
+            /* background-color: cyan; */
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .ft_md_sponsor_container>img {
+            padding: 0 16px;
+        }
+
+        .ft_md_famselect {
+            /* background-color: rgb(60, 29, 88); */
+            width: 200px;
+            height: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        select#famsite {
+            width: 172px;
+            height: 37px;
+            border: 1px solid #AAAAAA;
+            text-indent: 5px;
+        }
+
+
+
+        .ft_bd {
+            background-color: #ffffff;
+        }
+
+        .ft_bd_container {
+            margin: 0 auto;
+            width: 1100px;
+            height: 200px;
+            /* background-color: darkcyan; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .ft_bd_container>a {
+            margin-top: 5px;
+            width: 239px;
+            /* background-color: darkgrey; */
+        }
+
+        .ft_bd_container>span {
+
+            font-size: 13px;
+            color: #999999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logoandlogincontainer">
+                <a href="index_01baskin.html">
+                    <img src="https://logos-download.com/wp-content/uploads/2016/04/Baskin-Robbins-logo_2.png"
+                        width="329px" height="auto" alt="홈">
+                </a>
+                <ul class="logincontainer">
+                    <li class="logincontain"><a href="">로그인&#183;회원가입</a></li>
+                    <li class="logincontain"><a href="">고객센터</a></li>
+                    <li class="logincontain"><a href="">CONTACT US</a></li>
+                    <li class="logincontain"><a href=""><i class="fas fa-search"></i></a></li>
+                </ul>
+                <!--logincontainer end-->
+            </div>
+            <!--logoandlogincontainer end-->
+            <div class="nav">
+                <ul class="nav_mainmenu_container">
+                    <li class="nav_mainmenu">FLAVOR OF THE MONTH</li>
+                    <li class="nav_mainmenu">MENU</li>
+                    <li class="nav_mainmenu">EVENT</li>
+                    <li class="nav_mainmenu">STORE</li>
+                    <li class="nav_mainmenu">ABOUT</li>
+                    <li class="backboard">
+                        <div class="backboard_container">
+                            <ul class="backboard_submenu_container">
+                                <li class="backboard_submenu backboard_submenu_icepic" onclick="location.href='#'">
+                                    <img src="http://www.baskinrobbins.co.kr/assets/images/common/flavor/img_monthly_fom.png?v=210701"
+                                        height="210px;" alt="">
+                                </li>
+                            </ul>
+
+                            <ul class="backboard_submenu_container">
+                                <li class="backboard_submenu backboard_submenu_box">
+                                    <a href="">아이스크림</a>
+                                </li>
+                                <li class="backboard_submenu backboard_submenu_box">
+                                    <a href="">아이스크림 케이크</a>
+                                </li>
+                                <li class="backboard_submenu backboard_submenu_box">
+                                    <a href="">커피</a>
+                                </li>
+                                <li class="backboard_submenu backboard_submenu_box">
+                                    <a href="">음료</a>
+                                </li>
+                                <li class="backboard_submenu backboard_submenu_box">
+                                    <a href="">디저트</a>
+                                </li>
+                            </ul>
+
+                            <ul class="backboard_submenu_container">
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">진행 중인 이벤트</a></li>
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">당첨자 발표</a></li>
+                            </ul>
+
+                            <ul class="backboard_submenu_container">
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">매장찾기</a></li>
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">고객센터</a></li>
+                            </ul>
+
+                            <ul class="backboard_submenu_container">
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">공지사항</a></li>
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">보도자료</a></li>
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">채용정보</a></li>
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">점포개설문의</a></li>
+                                <li class="backboard_submenu backboard_submenu_box"><a href="">CONTACT US</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <!--nav_mainmenu_container end-->
+            </div>
+            <!--nav end-->
+            <script>
+                const nav = document.querySelector('.nav');
+                const navTopOffset = nav.offsetTop;
+                window.addEventListener('scroll', e => {
+
+                    if (window.pageYOffset >= navTopOffset) {
+                        nav.style.position = 'fixed';
+                        nav.style.top = 0;
+                        nav.style.left = 0;
+                        nav.style.right = 0;
+                    } else {
+                        nav.style.position = '';
+                        nav.style.top = '';
+                    }
+                });
+            </script>
+            <!-- <script>
+                $(window).scroll(function(){
+                    $('.nav').css('left', 0-$(this).scrollLeft());
+                });
+            </script> -->
+
+        </div>
+        <!--header end-->
+        <div class="main">
+            
+        </div>
+        <!--main end-->
+        <div class="footer">
+            <div class="ft_hd">
+                <ul class="ft_hd_container">
+                    <li onclick="location.href=''">점포개설문의</li>
+                    <li onclick="location.href=''">채용문의</li>
+                    <li onclick="location.href=''">윤리신고센터</li>
+                    <li onclick="location.href=''">이용약관</li>
+                    <li onclick="location.href=''">개인정보처리방침</li>
+                    <li onclick="location.href=''">영상정보처리기기운영관리방침</li>
+                    <li onclick="location.href=''">거래희망회사사전등록</li>
+                </ul>
+            </div>
+            <div class="ft_md">
+                <div class="ft_md_container">
+                    <div class="ft_md_sponsor_container">
+                        <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/btn_happypoint.png?raw=true"
+                            alt="">
+                        <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/btn_happymarket.png?raw=true"
+                            alt="">
+                        <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/btn_spc_story.png?raw=true"
+                            alt="">
+                        <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/btn_norton.gif?raw=true"
+                            alt="">
+                        <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/btn_ccm.gif?raw=true"
+                            alt="">
+                        <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/btn_ksa.png?raw=true"
+                            alt="">
+                    </div>
+                    <div class="ft_md_famselect">
+                        <select id="famsite">
+                            <optgroup label="Family Site">
+                                <option value="">Family Site</option>
+                                <option value="">배스킨 스쿨</option>
+                                <option value="">SPC그룹사이트</option>
+                                <option value="">SPC MAGAZINE</option>
+                                <option value="">BR코리아</option>
+                                <option value="">해피포인트카드</option>
+                                <option value="">파스쿠찌</option>
+                                <option value="">삼립</option>
+                                <option value="">파리바게트</option>
+                                <option value="">던킨도너츠</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="ft_bd">
+                <div class="ft_bd_container">
+                    <a href="index_01mobile_baskin.html">
+                        <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/baskinlogoblack.png?raw=true"
+                            width="239px" alt="">
+                    </a>
+                    <span>
+                        사업자 등록번호 : 303-81-09535 비알코리아(주) 대표이사 김창대 서울특별시 서초구 남부순환로 2620(양재동 11-149번지)<br>
+                        TEL : 080-555-3131 개인정보관리책임자 : 김경우<br>
+                        Copyright ⓒ 2016 BRKOREA Company. All Rights Reserved.
+                    </span>
+                </div>
+            </div>
+            <!-- <div class="ft_pctrans" style="height: 95px; background-color: #fff67c;"></div> -->
+        </div>
+        <!--footer end-->
+    </div>
+    <!--wrap end-->
+</body>
+
+</html>
