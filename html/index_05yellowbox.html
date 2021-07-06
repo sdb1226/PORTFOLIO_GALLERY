@@ -68,11 +68,15 @@
             
         }
 
+        #hdlogo {
+            font-family: 'Paytone One', sans-serif;
+        }
+
         .header_container {
             margin: 0 auto;
             width: 1000px;
             /* background-color: brown; */
-            height: 190px;
+            height: 173px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -80,7 +84,7 @@
 
         .header_container_box {
             width: 210px;
-            height: 190px;
+            height: 173px;
             display: flex;
             align-items: center;
         }
@@ -101,12 +105,12 @@
            color: #fff;
            transition: all 0.5s;
            font-weight: 800;
-            
+           font-size: 40px;
+           
         }
 
         .header_container_box:nth-child(3) {
             /* background-color: rgb(118, 122, 60); */
-            
             justify-content: space-evenly;
         }
 
@@ -121,6 +125,14 @@
             border: 2px solid #fff;
             color: #fff;
             transition: all 0.5s;
+        }
+
+        .header_container_box:nth-child(3) > a {
+            color: #fff;
+        }
+
+        .header_container_box:nth-child(3) > i {
+            color: #000;
         }
 
         main {
@@ -138,6 +150,8 @@
         footer {
             height: 123px;
             background-color: beige;
+
+        
         }
 
 
@@ -157,24 +171,24 @@
         <header id="header">
             <div class="header_container">
                 <div class="header_container_box">
-                    <a href=""><i class="fab snsico fa-twitter"></i></a>
+                    <a href=""><i id="snsico1" class="fab snsico fa-twitter"></i></a>
                     
-                    <a href=""><i class="fab snsico fa-facebook-f"></i></a>
+                    <a href=""><i id="snsico2" class="fab snsico fa-facebook-f"></i></a>
                 
-                    <a href=""><i class="fab snsico fa-instagram"></i></a>
+                    <a href=""><i id="snsico3" class="fab snsico fa-instagram"></i></a>
                 
-                    <a href=""><i class="fab snsico fa-youtube"></i></a>
+                    <a href=""><i id="snsico4" class="fab snsico fa-youtube"></i></a>
                
-                    <a href=""><i class="fab snsico fa-instagram"></i></a>
+                    <a href=""><i id="snsico5" class="fab snsico fa-instagram"></i></a>
                 </div>
                 <div class="header_container_box">
                     <a href="">
-                        <h2 id="hdlogo">YELLOW&#183;BOX</h2>
+                        <h2 id="hdlogo">&#183;YELLOW&#183;BOX&#183;</h2>
                     </a>
                 </div>
                 <div class="header_container_box">
                     <a href="">jkljkl</a>
-                    <a href="">kljkljkl</a>
+                    <a href="">모바일 버전</a>
                     <i class="fas fa-search"></i>
                         
                 </div>
@@ -183,15 +197,28 @@
         <script>
             const header = document.querySelector('#header');
             const hdlogo = document.querySelector('#hdlogo');
-            const snsico = document.querySelector('.snsico');
+            const snsico1 = document.querySelector('#snsico1');
+            const snsico2 = document.querySelector('#snsico2');
+            const snsico3 = document.querySelector('#snsico3');
+            const snsico4 = document.querySelector('#snsico4');
+            const snsico5 = document.querySelector('#snsico5');
             function scrollFunc() {
-                if (pageYOffset >= 288) {
+                if (pageYOffset >= 268) {
                     header.classList.add('on');
-                    header.style.background = '#e4b12c';
+                    header.style.background = '#e3af2bb0';
                     header.style.transition = 'all 0.5s';
                     hdlogo.style.color = '#000';
-                    snsico.style.color = '#000';
-                    snsico.style.border = '2px solid #000';
+                    snsico1.style.color = '#000';
+                    snsico1.style.border = '2px solid #000';
+                    snsico2.style.color = '#000';
+                    snsico2.style.border = '2px solid #000';
+                    snsico3.style.color = '#000';
+                    snsico3.style.border = '2px solid #000';
+                    snsico4.style.color = '#000';
+                    snsico4.style.border = '2px solid #000';
+                    snsico5.style.color = '#000';
+                    snsico5.style.border = '2px solid #000';
+                    
 
                     // header.style.color = '#fff';
 
@@ -199,8 +226,17 @@
                     header.classList.remove('on');
                     header.style.background = 'none';
                     hdlogo.style.color = '#fff';
-                    snsico.style.color = '#fff';
-                    snsico.style.border = '2px solid #fff';
+                    snsico1.style.color = '#fff';
+                    snsico1.style.border = '2px solid #fff';
+                    snsico2.style.color = '#fff';
+                    snsico2.style.border = '2px solid #fff';
+                    snsico3.style.color = '#fff';
+                    snsico3.style.border = '2px solid #fff';
+                    snsico4.style.color = '#fff';
+                    snsico4.style.border = '2px solid #fff';
+                    snsico5.style.color = '#fff';
+                    snsico5.style.border = '2px solid #fff';
+                    
                     
                     // header.style.color = '#444444';
                 }
@@ -208,9 +244,9 @@
             window.addEventListener('scroll', scrollFunc);
         </script>
         <main>
-            <div class="main_at main_at1"></div>
-            <div class="main_at main_at2"></div>
-            <div class="main_at main_at3"></div>
+            <div class="main_at main_at1">1</div>
+            <div class="main_at main_at2">2</div>
+            <div class="main_at main_at3">3</div>
         </main>
         <footer></footer>
     </div>
