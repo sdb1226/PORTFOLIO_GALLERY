@@ -243,7 +243,7 @@ body {
 .main_dv2>div {
     width: 1030px;
     height: 400px;
-    background-color: rgb(210, 214, 248);
+    /* background-color: rgb(210, 214, 248); */
     position: relative;
 }
 
@@ -258,7 +258,7 @@ body {
 .main_dv3>div {
     width: 1030px;
     height: 400px;
-    background-color: rgb(143, 141, 250);
+    /* background-color: rgb(143, 141, 250); */
     position: relative;
 }
 
@@ -274,7 +274,7 @@ body {
 .main_dv4>div {
     width: 1030px;
     height: 400px;
-    background-color: rgb(162, 167, 97);
+    /* background-color: rgb(162, 167, 97); */
     position: relative;
 }
 
@@ -289,7 +289,7 @@ body {
 .main_dv5>div {
     width: 1030px;
     height: 400px;
-    background-color: #e4b12c;
+    /* background-color: #e4b12c;*/
     position: relative;
 }
 
