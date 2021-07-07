@@ -234,7 +234,7 @@ body {
 
 .main_dv2 {
     height: 450px;
-    background-color: rgb(168, 92, 107);
+    /* background-color: rgb(168, 92, 107); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,7 +249,7 @@ body {
 
 .main_dv3 {
     height: 450px;
-    background-color: rgb(47, 61, 109);
+    /* background-color: rgb(47, 61, 109); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -264,7 +264,7 @@ body {
 
 .main_dv4 {
     height: 450px;
-    background-color: rgb(163, 226, 111);
+    /* background-color: rgb(163, 226, 111); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -280,7 +280,7 @@ body {
 
 .main_dv5 {
     height: 450px;
-    background-color: #405c30;
+    /* background-color: #405c30; */
     display: flex;
     align-items: center;
     justify-content: center;
