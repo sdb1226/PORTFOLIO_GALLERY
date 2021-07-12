@@ -311,24 +311,19 @@ body {
     position: relative;
 }
 
+.main_dv5 .dv_pic {
+    background-color: #e4b12c;
+}
+
+.main_dv5 .dv_pic h2 {
+    font-size: 45px;
+    font-family: 'Paytone One', sans-serif;
+}
+
 .main_dv5>div>.pan {
-    background-color: #e4b12c;
+    /* background-color: #e4b12c; */
 }
 
-.main_dv6 {
-    height: 620px;
-    background-color: #405c30;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.main_dv6>div {
-    width: 1030px;
-    height: 620px;
-    background-color: #e4b12c;
-    
-}
 
 
 .footer {
