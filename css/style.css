@@ -172,6 +172,7 @@ body {
     width: 331px;
     height: 336px;
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -187,6 +188,21 @@ body {
 
 /* &#91;
 &#93; */
+
+.p_date {
+    font-size: 15px;
+    color: rgb(116, 116, 116);
+}
+
+.p_info {
+    font-size: 14px;
+
+}
+
+.p_comment {
+    font-size: 10px;
+    color: darkred;
+}
 
 .pan h2 {
     font-size: 30px;
@@ -320,9 +336,9 @@ body {
     font-family: 'Paytone One', sans-serif;
 }
 
-.main_dv5>div>.pan {
-    /* background-color: #e4b12c; */
-}
+/* .main_dv5>div>.pan {
+    background-color: #e4b12c;
+} */
 
 
 
@@ -371,7 +387,7 @@ body {
 
 .ft_bd {
     height: 116px;
-    background-color: rgb(199, 199, 199);
+    background-color: #585858;
     display: flex;
     align-items: center;
     justify-content: center;
