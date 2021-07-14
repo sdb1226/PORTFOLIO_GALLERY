@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>프롬소트프웨어</title>
+    <title>프롬소프트웨어</title>
     <link rel="shortcut icon"
         href="https://steamuserimages-a.akamaihd.net/ugc/924801101773725770/DF441F2F44C34486676FB865989022F7831A54B2/">
 
@@ -30,19 +30,12 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
     <style>
         * {
             box-sizing: border-box;
+            margin: 0;
             padding: 0;
         }
-
-        /* @media all and (max-width: 360px) {
-            .hd_menu_container {
-                display: none;
-            }
-        } */
-
 
         li {
             list-style: none;
@@ -53,33 +46,26 @@
         }
 
         body {
-            background-color: #141414;
-
+            background-color: #000;
         }
 
         .wrap {
             position: relative;
             overflow: hidden;
             min-width: 1100px;
-            /* max-width: 1099px; */
-            /* border: 5px solid red; */
+            /* border: 1px solid cornflowerblue; */
         }
-
-
 
         .header {
+            height: 120px;
             background-color: #ffffff;
-            /* background-image: url(https://c.tenor.com/eT65efTNamoAAAAj/bonfire-darksouls.gif);
-            background-position: 100px bottom center;
-            background-size: auto 100%;
-            background-repeat: no-repeat; */
         }
 
-        .header_container {
-            /* margin: 0 176px; */
+        .hd_container {
             margin: 0 110px;
+            /* width: 1000px; */
             height: 120px;
-            /* background-color: #dadada; */
+            background-color: #fcfcfc;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -99,39 +85,43 @@
             color: #252525;
         }
 
-        nav {
-            position: relative;
-            z-index: 100;
-            margin-top: 5px;
-            background-color: #ffffff;
-
+        .nav {
+            height: 47px;
+            background-color: #b8b8b8;
         }
 
-        .nv_mainmenu_container {
+        .nav_container {
             margin: 0 auto;
             width: 1100px;
-            /* background-color: #58a832; */
+            height: 47px;
+            /* background-color: darkmagenta; */
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 47px;
         }
 
-        .nv_mainmenu {
+        .nav_mainmenu {
             position: relative;
             z-index: 100;
+            padding: 0 40px;
             height: 47px;
-            text-align: center;
-            /* background-color: #c02d2d; */
-            transition: all 0.3s;
-            cursor: pointer;
-            color: #252525;
-            font-size: 19px;
+            /* background-color: #ffffff; */
+            transition: all 0.5s;
             display: flex;
             align-items: center;
             justify-content: center;
-
+            cursor: pointer;
+            color: #252525;
+            color: #ffffff;
+            font-size: 19px;
         }
+
+
+
+
+
+
+
 
         .backboard {
             position: absolute;
@@ -139,85 +129,189 @@
             top: 47px;
             width: 100%;
             height: 0;
-            color: #fff;
             overflow: hidden;
             transition: all 0.5s;
         }
 
-        .backboard_container {
-            margin: 0 auto;
-            width: 1200px;
+        #bkb1,
+        #bkb2,
+        #bkb3,
+        #bkb4,
+        #bkb5 {
+            position: absolute;
+            top: 167px;
+        }
+
+        #bkb1 {
+            /* position: absolute;
+            top: 167px; */
+            background-color: #4e5158;
+        }
+
+        .nav_mainmenu:nth-child(1):hover~#bkb1 {
+            height: 275px;
+        }
+
+        #bkb1::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
             height: 100%;
-            background-color: cornflowerblue;
-        }
-
-        #bakbo1 {
-            background-image: url(https://lh3.googleusercontent.com/proxy/L6QU1ZfeLS--bpnSTvsUkBdQTqvZFo38zXjB5kW2gWRWjtVwn08pDX5TMDJyXzpEGfjQNk1xHT8Li3CM5X1f6LgH5cKFn1qupfO2gHIYcVRhBNROwTppOO_CjBBezm7w7RE);
+            /* border: 1px solid red; */
+            background-image: url(https://careers.fromsoftware.jp/jp/static/img/company/style/fig_style_01.jpg);
             background-repeat: no-repeat;
-            background-position: center center;
             background-size: 100%;
-            background-color: #fff;
+            background-position: center center;
+            opacity: 0.4;
         }
 
-        
 
-        .nv_mainmenu:nth-child(1):hover~#bakbo1 {
-            /* height: 170px; */
-            /* background-color: rgb(58, 78, 116); */
-            height: 250px;
+
+        #bkb2 {
+            /* position: absolute;
+            top: 167px; */
+            background-color: #3f675f;
         }
 
-        #bakbo2 {
+        .nav_mainmenu:nth-child(2):hover~#bkb2 {
+            height: 275px;
+        }
+
+        #bkb2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid red; */
+            background-image: url(https://www.utecs.co.jp/construction/topics/2015.10.16_02.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            opacity: 0.2;
+        }
+
+        #bkb3 {
+            /* position: absolute;
+            top: 167px; */
+            background-color: chartreuse;
+        }
+
+        .nav_mainmenu:nth-child(3):hover~#bkb3 {
+            height: 275px;
+        }
+
+        #bkb3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid red; */
+            background-image: url(https://www.utecs.co.jp/construction/topics/2015.10.16_02.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-position: center center;
+            opacity: 0.4;
+        }
+
+
+
+        #bkb4 {
+            /* position: absolute;
+            top: 167px; */
+            background-color: #dbb86b;
+        }
+
+        .nav_mainmenu:nth-child(4):hover~#bkb4 {
+            height: 275px;
+        }
+
+        #bkb4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid red; */
+            background-image: url(https://wallup.net/wp-content/uploads/2016/01/236993-Dark_Souls_III-Dark_Souls-video_games-castle-fantasy_art-concept_art.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            opacity: 0.6;
+        }
+
+
+
+        #bkb5 {
+            /* position: absolute;
+            top: 167px; */
+            background-color: #3b9ab8;
+        }
+
+        .nav_mainmenu:nth-child(5):hover~#bkb5 {
+            height: 275px;
+        }
+
+        #bkb5::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid red; */
+            background-image: url();
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            opacity: 0.4;
+        }
+
+
+
+
+
+
+        .nav_submenu_container {
+            position: absolute;
+            top: 47px;
+            /* width: 100%;
+            */
+
+            overflow: hidden;
+            transition: all 0.5s;
+        }
+
+        .nav_submenu {
+            padding: 0 50px;
+            font-size: 15px;
+            height: 0;
+            display: flex;
             background-color: #ffffff;
+            color: #343434;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s;
         }
 
-        .nv_mainmenu:nth-child(2):hover~#bakbo2 {
-            /* height: 222px; */
-            height: 250px;
+        .nav_submenu:hover {
+            background-color: rgb(29, 29, 29);
+            color: rgb(231, 231, 231);
         }
 
-        #bakbo3 {
-            background-color: rgb(255, 255, 255);
-        }
-
-        .nv_mainmenu:nth-child(3):hover~#bakbo3 {
-            /* height: 170px; */
-            height: 250px;
-        }
-
-        #bakbo4 {
-            background-color: rgb(255, 255, 255);
-        }
-
-        .nv_mainmenu:nth-child(4):hover~#bakbo4 {
-            /* height: 115px; */
-            height: 250px;
-        }
-
-        #bakbo5 {
-            background-color: #ffffff;
-        }
-
-        .nv_mainmenu:nth-child(5):hover~#bakbo5 {
-            /* height: 115px; */
-            height: 250px;
-        }
-
-        .nv_mainmenu:nth-child(1):hover #mu_txt_g1>.nv_submenu,
-        .nv_mainmenu:nth-child(2):hover #mu_txt_g2>.nv_submenu,
-        .nv_mainmenu:nth-child(3):hover #mu_txt_g3>.nv_submenu,
-        .nv_mainmenu:nth-child(4):hover #mu_txt_g4>.nv_submenu,
-        .nv_mainmenu:nth-child(5):hover #mu_txt_g5>.nv_submenu {
-            height: 47px;
-        }
-
-        .nv_mainmenu:hover .nv_submenu_container {
-            /* padding-top: 10px; */
+        /* .nv_mainmenu:hover .nv_submenu_container {
+            padding-top: 10px;
             border: 1px solid #ffffff;
-        }
+        } */
 
-        .nv_mainmenu:hover .nv_submenu {
-            /* padding-top: 10px; */
+        .nav_mainmenu:hover .nav_submenu {
+            height: 47px;
             border: 1px solid rgb(255, 255, 255);
         }
 
@@ -225,66 +319,27 @@
 
 
 
-        .nv_submenu_container {
-            position: absolute;
-            top: 47px;
-            overflow: hidden;
-            transition: all 0.5s;
-        }
-
-        .nv_submenu {
-            
-            width: fit-content;
-            height: 0;
-            background-color: rgb(231, 231, 231);
-            font-size: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            transition: all 0.5s;
-        }
 
 
-        .nv_mainmenu:nth-child(1),
-        #mu_txt_g1>.nv_submenu {
-            width: 171px;
-            /* background-color: lightgreen; */
-        }
-
-        .nv_mainmenu:nth-child(2),
-        #mu_txt_g2>.nv_submenu {
-            width: 204px;
-        }
-
-        .nv_mainmenu:nth-child(3),
-        #mu_txt_g3>.nv_submenu {
-            width: 208px;
-        }
-
-        .nv_mainmenu:nth-child(4),
-        #mu_txt_g4>.nv_submenu {
-            width: 168px;
-        }
-
-        .nv_mainmenu:nth-child(5),
-        #mu_txt_g5>.nv_submenu {
-            width: 173px;
-        }
-
-        .nv_submenu:hover {
-            background-color: rgb(29, 29, 29);
-            color: rgb(231, 231, 231);
-        }
 
 
-        main {
-            /* margin: 80px auto; */
+        /* .nav_mainmenu:nth-child(1):hover .backboard {
+            height: 250px;
+        } */
+
+
+
+
+        .main {
             margin: 0 auto;
-            width: 1220px;
-            background-color: rgb(255, 255, 255);
-            height: 3100px;
+            width: 1300px;
+
+            background-color: chocolate;
         }
+
+
+
+
 
         .main_company {
             margin: 80px auto;
@@ -296,21 +351,6 @@
             background-size: 100%;
             background-image: url(https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/ER_KEY%20ART.jpg?raw=true);
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         .footer {
@@ -332,9 +372,9 @@
 
 <body>
     <div class="wrap">
-        <header id="wr-hd" class="header">
-            <div class="header_container">
-                <a href="">
+        <div class="header">
+            <div class="hd_container">
+                <a href="index_02fromsoft.html">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Fromsoftware_logo.png" width="321px"
                         alt="">
                 </a>
@@ -353,84 +393,71 @@
                     </li>
                 </ul>
             </div>
-
-        </header>
-        <nav>
-            <ul class="nv_mainmenu_container">
-                <li class="nv_mainmenu" onclick="p(1)">
+        </div>
+        <div class="nav">
+            <ul class="nav_container">
+                <li class="nav_mainmenu">
                     COMPANY&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
-                    <div class="nv_submenu_container" id="mu_txt_g1">
-                        <div class="nv_submenu" onclick="location.href=''">
-                            About
-                        </div>
-                        <div class="nv_submenu" onclick="location.href=''">
-                            History
-                        </div>
-                        <div class="nv_submenu" onclick="location.href=''">
-                            Access
-                        </div>
+                    <div class="nav_submenu_container">
+                        <div class="nav_submenu">About</div>
+                        <div class="nav_submenu">History</div>
+                        <div class="nav_submenu">Access</div>
+
                     </div>
                 </li>
-                <li class="nv_mainmenu" onclick="p(2)">
+                <li class="nav_mainmenu">
                     PRODUCTIONS&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
-                    <div class="nv_submenu_container" id="mu_txt_g2">
-                        <div class="nv_submenu" onclick="location.href=''">All</div>
-                        <div class="nv_submenu" onclick="location.href=''">Platform</div>
-                        <div class="nv_submenu" onclick="location.href=''">Soundtrack</div>
-                        <div class="nv_submenu" onclick="location.href=''">Mobile Apps</div>
+                    <div class="nav_submenu_container">
+                        <div class="nav_submenu">All
+                        </div>
+                        <div class="nav_submenu">Platform
+                        </div>
+                        <div class="nav_submenu">Soundtrack
+                        </div>
+                        <div class="nav_submenu">Mobile Apps</div>
                     </div>
                 </li>
-                <li class="nv_mainmenu" onclick="p(3)">
+                <li class="nav_mainmenu">
                     PRESS RELEASE&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
-                    <div class="nv_submenu_container" id="mu_txt_g3">
-                        <div class="nv_submenu" onclick="location.href=''">2021</div>
-                        <div class="nv_submenu" onclick="location.href=''">2020</div>
-                        <div class="nv_submenu" onclick="location.href=''">other</div>
+                    <div class="nav_submenu_container">
+                        <div class="nav_submenu">2021</div>
+                        <div class="nav_submenu">2020</div>
+                        <div class="nav_submenu">2019</div>
                     </div>
                 </li>
-                <li class="nv_mainmenu" onclick="p(4)">
+                <li class="nav_mainmenu">
                     RECRUIT&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
-                    <div class="nv_submenu_container" id="mu_txt_g4">
-                        <div class="nv_submenu" onclick="location.href=''">Corporate</div>
-                        <div class="nv_submenu" onclick="location.href=''">Portfolio</div>
+                    <div class="nav_submenu_container">
+                        <div class="nav_submenu">Corporate</div>
+                        <div class="nav_submenu">Portfolio</div>
                     </div>
                 </li>
-                <li class="nv_mainmenu" onclick="p(5)">
+                <li class="nav_mainmenu">
                     SUPPORTS&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
-                    <div class="nv_submenu_container" id="mu_txt_g5">
-                        <div class="nv_submenu" onclick="location.href=''">FAQ</div>
-                        <div class="nv_submenu" onclick="location.href=''">Contact</div>
+                    <div class="nav_submenu_container">
+                        <div class="nav_submenu">FAQ</div>
+                        <div class="nav_submenu">Contact</div>
                     </div>
                 </li>
-                <li class="backboard" id="bakbo1">
-                    <div class="backboard_container">
-                        
-                    </div>
-                </li>
-                <li class="backboard" id="bakbo2">2</li>
-                <li class="backboard" id="bakbo3">3</li>
-                <li class="backboard" id="bakbo4">4</li>
-                <li class="backboard" id="bakbo5">5</li>
-                <script>
-
-                </script>
-                <!-- <script>
-                    function p(nb) {
-                        mu_txt_g1.style.display = "none";
-                        mu_txt_g2.style.display = "none";
-                        mu_txt_g3.style.display = "none";
-                        mu_txt_g4.style.display = "none";
-                        mu_txt_g5.style.display = "none";
-                        this["mu_txt_g" + nb].style.display = "block";
-                    }
-                </script> -->
-
+                <li id="bkb1" class="backboard"></li>
+                <li id="bkb2" class="backboard"></li>
+                <li id="bkb3" class="backboard"></li>
+                <li id="bkb4" class="backboard"></li>
+                <li id="bkb5" class="backboard"></li>
             </ul>
-        </nav>
-        <main>
-            <div class="main_company"></div>
 
 
+        </div>
+
+
+
+
+
+
+
+
+        <div class="main">
+            <div class="main_company">1</div>
             <div id="maingames" class="main_games">
                 <div class="main_games_container">
                     <div id="maingamesslide" class="main_games_slide"></div>
@@ -447,7 +474,7 @@
                     height: 720px;
                     position: relative;
                     background-color: cyan;
-                    z-index: 100;
+                    z-index: 1;
                 }
 
                 .main_games_slide {
@@ -481,11 +508,11 @@
                 }
                 window.addEventListener('scroll', scrollFunc);
             </script>
-        </main>
-        <footer class="footer">
+        </div>
+        <div class="footer">
             <div class="ft_column_up"></div>
             <div class="ft_column_down"></div>
-        </footer>
+        </div>
     </div>
 
 </body>
