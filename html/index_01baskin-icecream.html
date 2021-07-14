@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://www.graphicpear.com/modular-illustration-kit/">
 </head>
 
 <body>
@@ -135,7 +136,7 @@
                     }
                 });
             </script>
-            
+
 
         </div>
         <!--header end-->
@@ -143,12 +144,11 @@
         <div class="main">
 
             <div id="baskin-menu-icecream_title">
-                <h1>ICECREAM</h1>
+                <h1>ICE-CREAM</h1>
                 <p>fdfgd</p>
             </div>
 
 
-           
 
 
 
@@ -165,17 +165,17 @@
 
 
 
-            
+
+
 
 
             <div id="baskin-menu-icecream_fotm"></div>
-            
+
 
             <div class="main_fotm_container">
                 <div class="fotm fotm_anima">
 
-                    <img src="http://www.baskinrobbins.co.kr/assets/images/flavoer/ice_material.png?ver=210701"
-                        alt="">
+                    <img src="http://www.baskinrobbins.co.kr/assets/images/flavoer/ice_material.png?ver=210701" alt="">
 
                     <!-- <div class="straw">1</div>
                     <div class="vanillaice">2</div>
@@ -214,11 +214,61 @@
 
             <div id="baskin-menu-icecream_flavor_slide">
 
+
+                <div class="swiper-container baskin-menu-icecream_best_flavor_slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ">1</div>
+                        <div class="swiper-slide ">2</div>
+                        <div class="swiper-slide ">3</div>
+                        <div class="swiper-slide ">4</div>
+                        <div class="swiper-slide ">1</div>
+                        <div class="swiper-slide ">2</div>
+                        <div class="swiper-slide ">3</div>
+                        <div class="swiper-slide ">4</div>
+                        <div class="swiper-slide ">3</div>
+                        <div class="swiper-slide ">4</div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <div class="swiper-button-next">
+                        <i class="far fa-arrow-alt-circle-right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="far fa-arrow-alt-circle-left"></i>
+                    </div>
+                </div>
+
+
+
+
             </div>
+            <script>
+                var swiper = new Swiper('.baskin-menu-icecream_best_flavor_slide', {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                    // slidesPerGroup: 1,
+
+                    autoplay: {
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    },
+
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+
+                });
+            </script>
 
             <div id="baskin-menu-icecream_flavor_list">
-
+                <div class="swiper-container "></div>
             </div>
+
         </div>
         <!--main end-->
         <div class="footer">
