@@ -1001,26 +1001,27 @@ input:focus {
 }
 
 #baskin-menu-icecream_flavor_slide {
-    background-color: #e7423e;
+    background-color: tomato;
+    padding-bottom: 30px;
 }
 
 .baskin-menu-icecream_best_flavor_slide {
     margin: 0 auto;
     width: 1000px;
     height: 400px;
-    
+    /* background-color: violet; */
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .swip {
-    /* width: 200px; */
-    height: 400px;
+    
+    height: 300px;
     background-color: bisque;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
