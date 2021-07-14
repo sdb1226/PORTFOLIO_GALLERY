@@ -780,7 +780,9 @@ input:focus {
 
 
 .main_event_container .swiper-button-next::after,
-.main_event_container .swiper-button-prev::after {
+.main_event_container .swiper-button-prev::after,
+#baskin-menu-icecream_flavor_slide .swiper-button-next::after,
+#baskin-menu-icecream_flavor_slide .swiper-button-prev::after {
     display: none;
 }
 
@@ -921,7 +923,7 @@ input:focus {
 }
 
 .main_at6 {
-    /* background-color: rgb(99, 99, 43); */
+    background-color: rgb(99, 99, 43);
 }
 
 .main_sns {
@@ -976,7 +978,7 @@ input:focus {
 
 #baskin-menu-icecream_title {
     height: 250px;
-    background-color: coral;
+    background-color: #FFFFFD;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -998,15 +1000,28 @@ input:focus {
 
 }
 
-#baskin-menu-icecream_fotm_slide {
+#baskin-menu-icecream_flavor_slide {
+    background-color: #e7423e;
+}
+
+.baskin-menu-icecream_best_flavor_slide {
+    margin: 0 auto;
+    width: 960px;
     height: 400px;
-    background-color: #dabb49;
+    background-color: #b11030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
+
+
+
+
 #baskin-menu-icecream_flavor_list {
-    height: 600px;
-    background-color: burlywood;
+    height: 1400px;
+    background-color: rgb(135, 222, 135);
 }
 
 
