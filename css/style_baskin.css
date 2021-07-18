@@ -966,7 +966,7 @@ input:focus {
 
 
 
-/* 로그인 */
+/* 헤더-로그인 */
 #baskin-login {
     background-color: #ffffff;
 }
@@ -976,7 +976,7 @@ input:focus {
     width: 600px;
     height: 280px;
     border-bottom: 3px solid #e5e5e5;
-    /* background-color: #dd6060; */
+    /* background-color: #dcff9a; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -986,7 +986,22 @@ input:focus {
 #baskin-login_title h2 {
     font-size: 35px;
     font-family: 'Paytone One', sans-serif;
+}
 
+#baskin-login_title p {
+    font-family: 'NanumSquareRoundl';
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#baskin-login_title p.p_normal {
+    margin-top: 30px;
+    color: #000;
+}
+
+#baskin-login_title p.p_pink {
+    margin-top: 20px;
+    color: #FF486D;
 }
 
 /* .baskin-login_idpwbox {
