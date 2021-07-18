@@ -79,6 +79,16 @@ body {
     overflow: hidden;
     background: #f7f7f7;
     min-width: 1100px;
+
+}
+
+@media screen and (max-width:360px) {
+    .wrap {
+        position: relative;
+        overflow: hidden;
+        background: #f7f7f7;
+        max-width: 720px;
+    }
 }
 
 /* 헤더 구간 시작 */
@@ -117,6 +127,26 @@ body {
     color: #DF3E9C;
     /* color: #1f4c9a; */
 }
+
+@media screen and (max-width:360px) {
+    .header {
+        border-top: 3px solid #DF3E9C;
+        background-color: #753333;
+
+    }
+
+    .logoandlogincontainer {
+        margin: 0 30px;
+        height: 105px;
+        background-color: #e7423e;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+}
+
+
 
 .nav {
     position: relative;
