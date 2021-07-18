@@ -40,8 +40,7 @@
             /* border: 1px solid red; */
         }
 
-
-        #header {
+        #article-hd {
             width: 100vw;
             height: 100vh;
             /* width: 100%;
@@ -75,15 +74,10 @@
             align-items: center;
         }
 
-
-
-
         .wallpaler_pixel_art {
             position: relative;
             z-index: 1;
         }
-
-
 
         #wallpaler_pixelart1::after {
             content: '';
@@ -97,7 +91,7 @@
             opacity: 0.5;
             background-image: url(https://i0.wp.com/cdna.artstation.com/p/assets/images/images/022/521/258/original/bogdan-mb0sco-coffee-shop-animationfullhd.gif);
             background-position: center center;
-            background-size: 100% auto;
+            background-size: cover;
             background-repeat: no-repeat;
         }
 
@@ -109,6 +103,7 @@
         #wallpaler_pixelart2::after {
             content: '';
             position: absolute;
+            z-index: -1;
             left: 0;
             top: 0;
             width: 100%;
@@ -129,6 +124,7 @@
         #wallpaler_pixelart3::after {
             content: '';
             position: absolute;
+            z-index: -1;
             left: 0;
             top: 0;
             width: 100%;
@@ -148,6 +144,7 @@
         #wallpaler_pixelart4::after {
             content: '';
             position: absolute;
+            z-index: -1;
             left: 0;
             top: 0;
             width: 100%;
@@ -163,12 +160,14 @@
             /* width: 55%;
             height: 54%; */
             width: 628px;
-            height: 283px;
+            height: 243px;
             /* background-color: chocolate; */
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: space-between;
+            transition: all 0.5s;
+            overflow: hidden;
         }
 
         .button_container {
@@ -183,27 +182,53 @@
             border: none;
             width: 300px;
             height: 62px;
-            background-color: red;
+            background-color: #a8825d;
             cursor: pointer;
             border-radius: 6px;
         }
 
+        @media screen and (max-width: 720px) {
+            .picview {
+                width: 320px;
+                height: 159px;
+                /* background-color: aquamarine; */
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-between;
+            }
 
+            .picview img {
+                width: 160px;
+                height: auto;
+            }
 
+            .button_container {
+                width: 234px;
+                /* background-color: blueviolet; */
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
 
+            }
 
+            .button_container>button {
+                background-color: beige;
+                width: 103px;
+                height: 78px;
+                border-radius: 2px;
+            }
+        }
 
-
-
-        nav {
+        #header {
+            position: absolute;
+            z-index: 100;
             width: 100vw;
             height: 23vh;
             background-color: #00000023;
-            position: absolute;
-            z-index: 100;
         }
 
-        .nv_cont {
+        .hd_cont {
             margin: 0 10%;
             height: 100%;
             background-color: rgba(46, 46, 46, 0.103);
@@ -213,16 +238,27 @@
             justify-content: space-between;
         }
 
-        .nv_cont a {
+        .hd_cont a {
 
 
             color: #af8888;
         }
 
-        .nv_cont i {
-
+        .hd_cont i {
+            cursor: pointer;
             font-size: 2em;
             color: #e6e6e6;
+        }
+
+        @media screen and (max-width: 720px) {
+            .hd_cont img {
+                width: 100px;
+            }
+
+            .hd_cont i {
+                color: #48dd69;
+                font-size: 1em;
+            }
         }
 
 
@@ -232,19 +268,20 @@
 
         main {
             /* height: 5430px; */
+            width: 100%;
             background-color: darkcyan;
         }
 
 
         #main-wif {
-            margin: 0 auto;
-            width: 1000px;
+            margin: 0 3.4%;
             height: 575px;
             background: brown;
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: center;
+            overflow: hidden;
         }
 
         .wif-pic {
@@ -263,18 +300,17 @@
 
 <body>
     <div class="wrap">
-
-        <header id="header">
-            <nav>
-                <div class="nv_cont">
+        <article id="article-hd">
+            <header id="header">
+                <div class="hd_cont">
                     <i class="fas fa-bars" style="opacity: 0;"></i>
                     <a href="index_03lo-fi.html">
                         <img src="https://www.seekpng.com/png/full/780-7800387_blue-wings-logo-illustration.png"
-                            width="193px" alt="">
+                            width="173px" alt="">
                     </a>
                     <i class="fas fa-bars"></i>
                 </div>
-            </nav>
+            </header>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div id="wallpaler_pixelart1" class="swiper-slide wallpaler_pixel_art">
@@ -282,66 +318,68 @@
                             <img src="https://www.seekpng.com/png/full/780-7800387_blue-wings-logo-illustration.png"
                                 height="120px" alt="">
                             <div class="button_container">
-                                <button id="btn1">
-                                    <button id="btn2"></button>
+                                <button id="btn1">소개</button>
+                                <button id="btn2">정보</button>
                             </div>
                         </div>
                     </div>
-                    <div id="wallpaler_pixelart2" class="swiper-slide wallpaler_pixel_art">2</div>
+                    <div id="wallpaler_pixelart2" class="swiper-slide wallpaler_pixel_art">
+                        <div class="picview">
+                            <img src="https://www.seekpng.com/png/full/780-7800387_blue-wings-logo-illustration.png"
+                                height="120px" alt="">
+                            <div class="button_container">
+                                <button id="btn1">기타</button>
+                                <button id="btn2">성우</button>
+                            </div>
+                        </div>
+                    </div>
                     <div id="wallpaler_pixelart3" class="swiper-slide wallpaler_pixel_art">3</div>
                     <div id="wallpaler_pixelart4" class="swiper-slide wallpaler_pixel_art">4</div>
                 </div>
-
                 <div class="swiper-pagination"></div>
                 <!-- <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div> -->
-
-
-
             </div>
-            <style>
-                .swiper-pagination {
-                    margin: 0 auto;
-                }
+
+        </article>
+        <style>
+            .swiper-pagination {
+                margin: 0 auto;
+            }
 
 
-                .swiper-pagination-bullet {
-                    width: 16px;
-                    height: 16px;
-                    text-align: center;
-                    font-size: 12px;
-                    color: #000;
-                    opacity: 1;
-                    border: 2px solid #ffffff;
-                    background-color: #313131;
-                }
+            .swiper-pagination-bullet {
+                width: 10px;
+                height: 10px;
+                text-align: center;
+                font-size: 12px;
+                color: #000;
+                opacity: 1;
+                border: 1px solid #ffffff;
+                background-color: #313131;
+            }
 
-                .swiper-pagination-bullet-active {
-                    color: #fff;
-                    background-color: #f1f1f1;
-                }
-            </style>
-            <script>
-                var swiper = new Swiper('.swiper-container', {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                    slidesPerGroup: 1,
+            .swiper-pagination-bullet-active {
+                color: #fff;
+                background-color: #f1f1f1;
+            }
+        </style>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                slidesPerGroup: 1,
 
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                });
-            </script>
-
-
-        </header>
-
-
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
 
         <main>
             <div id="main-wif">
