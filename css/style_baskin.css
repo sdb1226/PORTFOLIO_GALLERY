@@ -1,3 +1,5 @@
+/*css_baskin_robbins*/
+
 @font-face {
     src: url(../font/배스킨라빈스\ B.ttf);
     font-family: 'brb';
@@ -971,6 +973,8 @@ input:focus {
     background-color: #ffffff;
 }
 
+/* 삭제해도 크게 문제는 없지만 배경색 */
+
 #baskin-login_title {
     margin: 0 auto;
     width: 600px;
@@ -1004,22 +1008,114 @@ input:focus {
     color: #FF486D;
 }
 
-/* .baskin-login_idpwbox {
-    
-    background-color: blue;
-} */
+.baskin-login_idpwbox {
+    margin-bottom: 300px;
+    /* background-color: blue; */
+}
 
 .baskin-login_idpwbox_container {
     margin: 0 auto;
     width: 600px;
-    height: 730px;
-    /* background-color: coral; */
+    height: 510px;
+    /* background-color: #0a5c8b; */
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.idpw_container {
+    width: 400px;
+    height: 150px;
+    /* background-color: #ffec00; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.idpw_container input {
+    border: none;
+    text-indent: 20px;
+    width: 300px;
+    height: 55px;
+    background-color: #d3d3d3;
+    color: rgb(112, 112, 112);
+    border-radius: 10px;
+}
+
+.checkbox_container {
+    width: 300px;
+    height: 50px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'NanumSquareRoundl';
+    font-size: 14px;
+}
+
+.checkbox {
+    width: 91px;
+    height: 24px;
+    /* background-color: #bebebe; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkbox input {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ebebeb;
+    border-radius: 100%;
 }
 
 
 
 
+.loginjoin_container {
+    width: 400px;
+    height: 170px;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.loginjoin_container button {
+    width: 230px;
+    height: 47px;
+}
+
+.findcode_container {
+    width: 400px;
+    height: 30px;
+    /* background-color: #3dc231; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.findcode_container a {
+    font-size: 10px;
+}
+
+
+
+
+
+
 /* 메뉴-아이스크림 */
+
+#baskin-menu-icecream {
+    background-color: #ffffff;
+}
+
+/* 삭제해도 크게 문제는 없지만 배경색 */
 
 #baskin-menu-icecream_title {
     height: 250px;
@@ -1119,6 +1215,12 @@ input:focus {
 }
 
 
+/* 이벤트-진행중인이벤트 */
+
+#baskin-event-eventdu {
+    background-color: #1f4c9a;
+    height: 1432px;
+}
 
 
 
