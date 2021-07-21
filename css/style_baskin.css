@@ -50,13 +50,6 @@
 /* font-family: 'Cute Font', cursive; */
 /* font-family: 'Do Hyeon', sans-serif; */
 
-@media only screen and (max-width: 640px) {
-    .wrap {
-        width: 100%;
-        background-color: aqua;
-    }
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -84,15 +77,6 @@ body {
 
 }
 
-@media screen and (max-width:360px) {
-    .wrap {
-        position: relative;
-        overflow: hidden;
-        background: #f7f7f7;
-        max-width: 720px;
-    }
-}
-
 /* 헤더 구간 시작 */
 
 .header {
@@ -108,6 +92,26 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
+.logocontainer {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_w img {
+    width: auto;
+    height: 55px;
+    display: block;
+}
+
+.logo_m img {
+    width: auto;
+    height: 50px;
+    display: none;
+}
+
 
 .logincontainer {
     margin-right: 50px;
@@ -130,24 +134,32 @@ body {
     /* color: #1f4c9a; */
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width: 512px) {
+
     .header {
-        border-top: 3px solid #DF3E9C;
-        background-color: #753333;
+        border-top: 10px solid #DF3E9C;
 
     }
 
     .logoandlogincontainer {
-        margin: 0 30px;
-        height: 105px;
-        background-color: #e7423e;
+        margin: 0 120px;
+        height: 81px;
+        /* background-color: rgb(150, 150, 150); */
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
 
+    .logo_w img {
+
+        display: none;
+    }
+
+    .logo_m img {
+
+        display: block;
     }
 }
-
 
 
 .nav {
