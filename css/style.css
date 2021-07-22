@@ -38,10 +38,10 @@ body {
 .hd_container {
     margin: 0 5vw;
     height: 100%;
-    /* background-color: thistle; */
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* background-color: thistle; */
 }
 
 .hd_container>a>img {
@@ -87,7 +87,7 @@ body {
 
 
 
-
+/* 모바일_360px_세로 */
 @media screen and (max-width: 512px) {
     .header {
         transition: all 0.5s;
@@ -151,25 +151,6 @@ body {
 }
 
 
-@media screen and (max-width: 512px) {
-    .nav {
-        transition: all 0.5s;
-        height: 240px;
-        /* display: block; */
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
 .main {
     margin: 0 auto;
     width: 1000px;
@@ -210,7 +191,6 @@ body {
 }
 
 .dv_pic {
-    cursor: default;
     width: 595px;
     height: 336px;
     background-color: #fff;
@@ -233,17 +213,26 @@ body {
 }
 
 .pan {
-    width: 331px;
+    width: 329px;
     height: 336px;
     display: flex;
-    text-align: center;
+
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     /* border: 12px solid #797979; */
-    background-color: #fafafa;
+    /* background-color: #442f2f; */
     /* border-radius: 2px; */
     /* transition: all 0.5s; */
+}
+
+.pan_up {
+    /* background-color: #ff0000; */
+
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -256,6 +245,15 @@ body {
     color: rgb(116, 116, 116);
 }
 
+.pan_down {
+    /* background-color: #00ff6a; */
+    height: 120px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .p_info {
     font-size: 14px;
 
@@ -266,7 +264,7 @@ body {
     color: darkred;
 }
 
-.pan h2 {
+.pan b {
     font-size: 30px;
     font-family: 'Paytone One', sans-serif;
 }
@@ -369,11 +367,27 @@ body {
     background-color: #e4b12c;
 } */
 
-
+/* 모바일_640px_가로 */
 @media screen and (max-width: 1024px) {
+    .header {
+        height: 96px;
+    }
+
+    .hd_container>ul>li {
+        padding: 0 5px;
+        height: 100%;
+        line-height: 96px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 19px;
+        font-weight: bold;
+        color: #444444;
+        /* background-color: skyblue; */
+    }
+
     .main {
         margin: 0 auto;
-        width: 480px;
+        width: 512px;
         /* background-color: brown; */
     }
 
@@ -381,17 +395,20 @@ body {
         margin: 183px auto 80px auto;
         height: 84px;
         /* background-color: #55ffc6; */
-        font-size: 84px;
+        font-size: 60px;
     }
 
     .main_dv {
         width: 100%;
-        height: 760px;
+        height: 448px;
         /* background-color: chartreuse; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .main_dv>div {
-        width: 100%;
+        width: 320px;
         height: 100%;
         /* background-color: rgb(53, 27, 124); */
         flex-direction: column;
@@ -401,54 +418,62 @@ body {
     }
 
     .dv_pic {
-        width: 720px;
-        height: 405px;
+        width: 320px;
+        height: 320px;
     }
 
-    .pan {
-        width: 720px;
-        height: 240px;
+    .dv_pic img {
+        width: 240px;
 
     }
 
+    .pan .p_info {
+        font-size: 12px;
+        text-align: left;
+    }
 
+
+    .btn:nth-child(1) {
+        display: none;
+    }
+
+    .btn:nth-child(2) {
+        width: 118px;
+        height: 34px;
+    }
 }
 
-
+/* 모바일_360px_세로 */
 @media screen and (max-width: 512px) {
-
     .main {
-        width: 100%;
+        margin: 0 auto;
+        width: 360px;
+        border-left: none;
+        border-right: none;
     }
 
     .port_title {
-        margin: 154px auto 70px auto;
+        margin: 113px auto 10px auto;
         width: 100%;
         height: 63px;
         /* background-color: #2832b4; */
-        font-size: 63px;
+        font-size: 45px;
     }
-}
-
-
-@media screen and (max-width: 428px) {
-    .main {
-        width: 100%;
-    }
-
-    .port_title {
-        margin: 140px auto 70px auto;
-        height: 42px;
-        /* background-color: #4fcaa1; */
-        font-size: 42px;
-    }
-
 
     .main_dv {
+        padding-bottom: 80px;
         width: 100%;
-        height: 540px;
-        /* background-color: aqua;
-         */
+        height: 448px;
+        /* background-color: #000000; */
+    }
+
+    .main_dv>div {
+        width: 320px;
+        height: 100%;
+        /* background-color: #aa1d1d; */
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     .dv_pic {
@@ -457,37 +482,72 @@ body {
     }
 
     .dv_pic img {
-        width: 200px;
+        width: 230px;
     }
 
-    .main_dv5 .dv_pic b {
-        font-size: 30px;
+    .dv_pic>b {
+        font-size: 12px;
         font-family: 'Paytone One', sans-serif;
     }
 
     .pan {
-        
-        width: 320px;
-        height: 120px;
-        /* background-color: #633838; */
+        width: 287px;
+        height: 78px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: blueviolet; */
+
     }
 
-    .pan h2 {
-        font-size: 20px;
+    .pan_up {
+        width: 287px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        /* background-color: burlywood; */
     }
 
-    .p_date,
+    .pan b {
+        font-size: 24px;
+    }
+
+    .pan .p_date {
+        font-size: 12px;
+        font-family: 'Paytone One', sans-serif;
+    }
+
+
+    .pan .p_info {
+        font-size: 12px;
+        font-family: 'Paytone One', sans-serif;
+        text-align: left;
+    }
+
+    /* .p_date,
     .p_comment {
         display: none;
+    } */
+
+
+    .pan_down {
+        margin: 0 auto;
+        width: 287px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+
+        height: 34px;
     }
 
-    .btn:nth-child(1) {
-        display: none;
-    }
-
-    .btn:nth-child(2) {
-        width: 200px;
-        height: 30px;
+    .main_dv5>div .dv_pic>b {
+        font-size: 30px;
+        color: #fff;
     }
 
 
@@ -558,10 +618,4 @@ body {
     color: #8b8b8b;
     font-size: 15px;
     font-weight: bold;
-}
-
-@media screen and (max-width:360px) {
-    .footer {
-        border-top: 1px solid #fd4141;
-    }
 }
