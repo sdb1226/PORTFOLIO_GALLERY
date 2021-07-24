@@ -642,6 +642,13 @@ body {
     background-color: #ff0000;
 }
 
+.main_dv1>div {
+    width: 1030px;
+    height: 400px;
+    /* background-color: rgb(49, 58, 136); */
+    position: relative;
+}
+
 
 .main_dv2 {
     /* height: 450px; */
@@ -707,7 +714,18 @@ body {
 } */
 
 
+.main_dv6 {
+    /* height: 450px; */
+    background-color: #57b323;
 
+}
+
+.main_dv6>div {
+    width: 1030px;
+    height: 400px;
+    /* background-color: #e4b12c; */
+    position: relative;
+}
 
 
 
