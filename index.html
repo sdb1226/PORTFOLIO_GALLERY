@@ -5,15 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
     <title>포토폴리오 갤러리-포트폴리오</title>
     <link rel="stylesheet" href="https://sdb1226.github.io/PORTFOLIO_GALLERY/">
     <link rel="stylesheet" href="index_mobile.html">
     <link rel="shortcut icon" href="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/pf_logo_b.png?raw=true">
-
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-
     <!-- FontAwesome5, 구글 폰트(폰트, 아이콘) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
@@ -28,7 +25,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
-
     <!-- Jquary, Swiper -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -36,7 +32,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="javascript/js.js"></script>
-
 </head>
 
 <body>
@@ -45,13 +40,12 @@
             <div class="hd_container">
                 <a href="index.html">
                     <img id="logob"
-                        src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/pf_logo_b.png?raw=true"
-                        width="65px" height="65px" alt="">
+                        src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/pf_logo_b.png?raw=true" alt="">
                 </a>
                 <ul>
                     <li onclick="location.href='index.html'">HOME</li>
                     <li onclick="location.href='#'">ABOUT</li>
-                    <li onclick="location.href='index.html'">PORTFOLIO</li>
+                    <li onclick="location.href='#'">PORTFOLIO</li>
                     <li onclick="location.href='#'">CONTACT</li>
                     <li class="gone" onclick="barClick()">
                         <i class="fas fa-bars"></i>
@@ -66,7 +60,6 @@
                 if (pageYOffset > 130) {
                     header.classList.add('on');
                     header.style.background = '#ffffffea';
-
                     // header.style.color = '#fff';
                 } else {
                     header.classList.remove('on');
@@ -76,28 +69,13 @@
             }
             window.addEventListener('scroll', scrollFunc);
         </script>
-        <!-- <div class="nav" id="nav">
-            <ul>
-                <li onclick="location.href='index.html'">HOME</li>
-                <li onclick="location.href='#'">ABOUT</li>
-                <li onclick="location.href='#'">PORTFOLIO</li>
-                <li onclick="location.href='#'">CONTACT</li>
-            </ul>
-        </div> -->
-        <script>
-            function barClick() {
-                nav.style.display = "block";
-
-            }
-        </script>
-
         <div class="main">
             <div class="port_title">
                 Portfolio
             </div>
             <div class="main_dv main_dv1">
                 <div>
-                    <div class="dv_pic">
+                    <div class="dv_pic dv_pic_aft">
                         <img src="https://logos-download.com/wp-content/uploads/2016/04/Baskin-Robbins-logo_2.png"
                             width="374px" alt="">
                     </div>
@@ -107,7 +85,7 @@
                             <p class="p_date">2021. 04 ~ </p>
                         </div>
                         <div class="pan_down">
-                            <p class="p_info">남녀노소 누구에게나 사랑받는 아이스크림 프랜차이즈.</p>
+                            <p class="p_info">남녀노소 누구나 사랑하는<br>아이스크림 브랜드</p>
                             <span>
                                 <button class="btn" id="btn1" onclick="window.open('html/index_01mobile_baskin.html')"
                                     value="hjhjh">모바일</button>
@@ -122,7 +100,7 @@
             </div>
             <div class="main_dv main_dv2">
                 <div>
-                    <div class="dv_pic">
+                    <div class="dv_pic dv_pic_aft">
 
                         <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Fromsoftware_logo.png"
                             width="356px" alt="">
@@ -146,7 +124,7 @@
             </div>
             <div class="main_dv main_dv3">
                 <div>
-                    <div class="dv_pic dv_pic_b">
+                    <div class="dv_pic dv_pic_aft dv_pic_b">
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABMlBMVEUAAAD////o6OgoKCj7+/sAqu8+Pj4ApN+45/tsbGz2AJIcAA/tAI382u3yAI8AsPUAtfj/9fva8v0Ar/BmAD3tI5MAjcAAFByM0/cAu//tAIn71OntAIXt+f4ALz/H7fz3n9DcAIPKAXn6uN04ACGcnJxyAEP96PX/AJptyPQAeaUAwP8NAAcnABPnyNl2xuakAGHydraFAE/6U6yTAE+XW3yinKBSACcAZ4wAHCYzLkb7yeSb2/sAERcZIycAFSYmAA0mCxwnGSFLueYAW3vkMJXn2OHkS6BtAED/o9ScwtEAIzKKAFKagpCPmJwAnNkbND8uEybILYEtV2flhblPoMFPT06hT335r9gAOU4hFiWog5vaH4ktABf/0vEASWk8e5bRnLtbhpgAQFZWADPL4ucJ/6bgAAADj0lEQVR4nO3a+1/SUBjH8WESNmggm10IkCF4CShTKggLi8zsfjWt7Kb9//9CrF3YYKtsBwRfn/dvO7zcw5fjtucckCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDJVa3VzjjutS+OrHB8875Vtd20Rx78fg9NoXVKun5tqqcTeyj09ME0feuRVfR67KoxsqhvP3IdirIq34i4zERjIs8e7LEyN2sXTUfVfHdIzy6Yh+plkZVWlRNJuKisL0UCE6ZEXisnk1BzBzyNCTVlyxVwyAnXltdHnlBzXYOG+aRqRCrKO+ZhShVabrF+s3yrUDg/uoQlOWHN4MzGk3K5/KLReGqMV5/Vn7sOxbqtzC2NLKEzhTPRl0MvZqvKifOjT3gpeWHoxWzxoITxUums7VVezH/PWCXUlGXXTW8l1RBRbJwS9t3Vp1eSIiKOUcIjb8BIJBc+Ynzz9Zu5gvUc7KhvnVb74HfbPYTO26rrl1Czb7AunZAR1/TtqSXnrLlczm61V7PvpryNuFh+CY+UxGx/wNAR9czC4Dm7Pc0dOdNrxMV23iafhJo85xMw7O0mMKGScWZWcNdm8kmYyLTMghud97u7ux/Wb0yb/1nq5RDXyTglVDJX7PJt47iY3bMTGm1y1fWg/Bev8k0zYSso4exJJZyPxi6aCQvuhMXM3vRxpFV1X+p11x7zydjHhFXuZBI2BxOWlgfvs3+2kjLukPFn9U+Fgv2nTuedl0r1zzut05DQsJbdsgJ6Ou+DbPbKKUkY1NMMaQU8uoTJyUooyfKX4yWsVOx9yglJGNe0c8fx9mveLjYhCUMgIQn/CwmliU/os9f2l740hH9IeDdcBR/Ofmk6Gm2bQ721RdRomat6tjXchE7XllOT++EqeHn3vCPzRjP8rXHYXefsuUbK33eshV34T3gwoVb/0K1QsBdW6Y2NcvlHQ9A3mX3fW5hylcrhpq74LOWMgGE/4IGER74t4EpFyN5l/3dPlk7qoVTyW62mU+ph2JIDCdfkdZ8Nk14jG05wwm7EgVnMqerX0CXHJ6FUS/RF7N4DQs/g6BPKwQmlmncWBVyDBmcXz064ONSEfb/FMM3ErMV3qZhpOaM/YzEBM9hV1Ave8xX17wPvoftqyKeSzfN7Gkuz6fdqsy3qQVzb7DvfH98DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAJPoFBrqbbGI2a38AAAAASUVORK5CYII="
                             width="204px" alt="">
                     </div>
@@ -156,7 +134,7 @@
                             <p class="p_date">2021. 03 ~ </p>
                         </div>
                         <div class="pan_down">
-                            <p class="p_info">심신이 안정되는 채널</p>
+                            <p class="p_info">심신을 안정하는 음향 채널</p>
                             <span>
                                 <button class="btn" id="btn5" onclick="window.open('')" value="hjhjh">모바일</button>
                                 <button class="btn" id="btn6" onclick="window.open('html/index_03lo-fi.html')"
@@ -168,7 +146,7 @@
             </div>
             <div class="main_dv main_dv4">
                 <div>
-                    <div class="dv_pic dv_pic_r">
+                    <div class="dv_pic dv_pic_aft dv_pic_r">
                         <img src="https://static.wixstatic.com/media/81d82f_402ebb81ae164e3a9f603cf9f89d2816~mv2.png/v1/fit/w_2500,h_1330,al_c/81d82f_402ebb81ae164e3a9f603cf9f89d2816~mv2.png"
                             width="322px" alt="">
                     </div>
@@ -180,13 +158,13 @@
                         </div>
                         <div class="pan_down">
                             <p class="p_info">
-                                수제 파이 가게<br>
-                                <a href="https://www.hoonspie.com/">https://www.hoonspie.com/</a>
+                                수제 파이 가게
+
                             </p>
                             <span>
                                 <button class="btn" id="btn7" onclick="window.open('')" value="hjhjh">모바일</button>
                                 <button class="btn" id="btn8" onclick="window.open('html/index_04hoonspie.html')"
-                                    value="jhkjhk">PC</button>
+                                    value="jhkjhk">PC/데스크탑</button>
                             </span>
                         </div>
                     </div>
@@ -194,7 +172,7 @@
             </div>
             <div class="main_dv main_dv5">
                 <div>
-                    <div class="dv_pic">
+                    <div class="dv_pic dv_pic_aft">
                         <b>&#183;YELLOW&#183;BOX&#183;</b>
                     </div>
                     <div class="pan">
@@ -207,12 +185,50 @@
                             <span>
                                 <button class="btn" id="btn9" onclick="window.open('')" value="hjhjh">모바일</button>
                                 <button class="btn" id="btn10" onclick="window.open('html/index_05yellowbox.html')"
-                                    value="jhkjhk">PC</button>
+                                    value="jhkjhk">PC/데스크탑</button>
                             </span>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
+
+            <div class="main_dv main_dv6">
+                <div>
+                    <div class="dv_pic dv_pic_aft">
+                        <b>pic</b>
+                    </div>
+                    <div class="pan">
+                        <div class="pan_up">
+                            <b>???</b>
+                            <p class="p_date">0000. 00 ~ </p>
+                        </div>
+                        <div class="pan_down">
+                            <p class="p_info">?</p>
+                            <span>
+                                <button class="btn" id="btn11" onclick="window.open('')">모바일</button>
+                                <button class="btn" id="btn12" onclick="window.open('')">PC/데스크탑</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         </div>
         <div class="footer">
@@ -239,7 +255,6 @@
                 <div class="ft_bd_container">
                     <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/pf_logo_b.png?raw=true"
                         width="65px" height="65px" alt="">
-                    <a href="index_mobile.html">모바일 버전으로 전환</a>
                 </div>
 
             </div>
