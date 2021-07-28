@@ -1,196 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yellowbox</title>
-        <!-- FontAwesome5, 구글 폰트(폰트, 아이콘) -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
-            rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
-    
-        <!-- Jquary, Swiper -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    <!-- FontAwesome5, 구글 폰트(폰트, 아이콘) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
 
-        li {
-            list-style: none;
-            float: left;
-        }
-        a {
-            text-decoration: none;
-        }
+    <!-- Jquary, Swiper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-        body {
-            background: #e4b12c;
-            background-image: url(https://www.transparenttextures.com/patterns/black-paper.png);
-            background-size: 30%;
-        }
+    <link rel="stylesheet" href="../css/style_yellowbox.css">
 
-        body::after {
-            opacity: 0.6;
-        }
-
-        .wrap {
-            position: relative;
-            overflow: hidden;
-            min-width: 1100px;
-            /* border: 1px solid blue; */
-        }
-
-        header {
-            position: fixed;
-            width: 100%;
-            /* background-color: burlywood; */
-            /* border-bottom: 2px solid rgba(255, 255, 255, 0.5); */
-            
-        }
-
-        #hdlogo {
-            font-family: 'Paytone One', sans-serif;
-        }
-
-        .header_container {
-            margin: 0 auto;
-            width: 1000px;
-            /* background-color: brown; */
-            height: 173px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .header_container_box {
-            width: 210px;
-            height: 173px;
-            display: flex;
-            align-items: center;
-        }
-
-        .header_container_box:nth-child(1) {
-            /* background-color: rgba(60, 122, 108, 0.411); */
-            
-            justify-content: space-between;
-        }
-
-        .header_container_box:nth-child(2) {
-            /* background-color: khaki; */
-            justify-content: center;
-            
-        }
-
-        .header_container_box:nth-child(2) h2 {
-           color: #fff;
-           transition: all 0.5s;
-           font-weight: 800;
-           font-size: 40px;
-           
-        }
-
-        .header_container_box:nth-child(3) {
-            /* background-color: rgb(118, 122, 60); */
-            justify-content: space-evenly;
-        }
-
-        .header_container_box a i {
-            /* background-color: rgb(255, 255, 255); */
-            width: 38px;
-            height: 38px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 100%;
-            border: 2px solid #fff;
-            color: #fff;
-            transition: all 0.5s;
-        }
-
-        .header_container_box:nth-child(3) > a {
-            color: #fff;
-        }
-
-        .header_container_box:nth-child(3) > i {
-            color: #000;
-        }
-
-        main {
-            /* height: 2500px; */
-            /* border: 1px solid turquoise; */
-            background-color: none;
-        }
-
-        .main_at {
-            height: 800px;
-            border: 1px solid rgb(255, 255, 255);
-            
-        }
-
-        footer {
-            height: 123px;
-            background-color: beige;
-
-        
-        }
-
-
-
-
-
-        
-
-
-
-
-        
-    </style>
 </head>
+
 <body>
     <div class="wrap">
         <header id="header">
             <div class="header_container">
-                <div class="header_container_box">
-                    <a href=""><i id="snsico1" class="fab snsico fa-twitter"></i></a>
-                    
-                    <a href=""><i id="snsico2" class="fab snsico fa-facebook-f"></i></a>
-                
-                    <a href=""><i id="snsico3" class="fab snsico fa-instagram"></i></a>
-                
-                    <a href=""><i id="snsico4" class="fab snsico fa-youtube"></i></a>
-               
-                    <a href=""><i id="snsico5" class="fab snsico fa-instagram"></i></a>
-                </div>
-                <div class="header_container_box">
-                    <a href="">
-                        <h2 id="hdlogo">&#183;YELLOW&#183;BOX&#183;</h2>
-                    </a>
-                </div>
-                <div class="header_container_box">
-                    <a href="">jkljkl</a>
-                    <a href="">모바일 버전</a>
-                    <i class="fas fa-search"></i>
-                        
-                </div>
+                <ul class="snsbox_container">
+                    <li onclick="location.href='#'" id="snsico1" class="snsbox">
+                        <i class="fab fa-facebook-f"></i>
+                    </li>
+                    <li id="snsico2" class="snsbox">
+                        <i class="fab fa-twitter"></i>
+                    </li>
+                    <li id="snsico3" class="snsbox">
+                        <i class="fab fa-youtube"></i>
+                    </li>
+                    <li id="snsico4" class="snsbox">
+                        <i class="fab fa-instagram"></i>
+                    </li>
+                    <li onclick="popdown()" id="snsico5" class="snsbox snsbox_hide">
+                        <i class="fas fa-angle-down"></i>
+                        <ul class="snsico5_submenu_container">
+                            <li><i class="fab fa-facebook-f"></i></li>
+                            <li><i class="fab fa-twitter"></i></li>
+                            <li><i class="fab fa-youtube"></i></li>
+                            <li><i class="fab fa-instagram"></i></li>
+                        </ul>
+                    </li>
+                </ul>
+                <h2 id="hdlogo">YELLOW BOX</h2>
+                <ul class="hd_search_container">
+                    <li class="hd_search">LOGIN</li>
+                    <li class="hd_search">JOIN</li>
+                    <li class="hd_search"><i class="fas fa-search"></i></li>
+                    <li class="snsbox_hide"><i class="fas fa-bars"></i></li>
+                </ul>
             </div>
         </header>
         <script>
@@ -201,54 +76,75 @@
             const snsico3 = document.querySelector('#snsico3');
             const snsico4 = document.querySelector('#snsico4');
             const snsico5 = document.querySelector('#snsico5');
+            const hdcont = document.querySelector('.header_container_box:nth-child(3)');
+
             function scrollFunc() {
                 if (pageYOffset >= 268) {
                     header.classList.add('on');
                     header.style.background = '#e3af2bb0';
+                    // hdcon.style.height = '120px';
                     header.style.transition = 'all 0.5s';
                     hdlogo.style.color = '#000';
+                    snsico1.style.background = '#ffd15d';
                     snsico1.style.color = '#000';
-                    snsico1.style.border = '2px solid #000';
+                    snsico1.style.border = '1px solid #000';
+                    snsico2.style.background = '#ffd15d';
                     snsico2.style.color = '#000';
-                    snsico2.style.border = '2px solid #000';
+                    snsico2.style.border = '1px solid #000';
+                    snsico3.style.background = '#ffd15d';
                     snsico3.style.color = '#000';
-                    snsico3.style.border = '2px solid #000';
+                    snsico3.style.border = '1px solid #000';
+                    snsico4.style.background = '#ffd15d';
                     snsico4.style.color = '#000';
-                    snsico4.style.border = '2px solid #000';
+                    snsico4.style.border = '1px solid #000';
+                    snsico5.style.background = '#ffd15d';
                     snsico5.style.color = '#000';
-                    snsico5.style.border = '2px solid #000';
-                    
+                    snsico5.style.border = '1px solid #000';
+                    hdcont.style.color = '#000';
 
                     // header.style.color = '#fff';
 
                 } else {
                     header.classList.remove('on');
-                    header.style.background = 'none';
+                    header.style.background = '#ffffff00';
+                    // hdcon.style.height = '173px';
                     hdlogo.style.color = '#fff';
+                    snsico1.style.background = 'none';
                     snsico1.style.color = '#fff';
-                    snsico1.style.border = '2px solid #fff';
+                    snsico1.style.border = '1px solid #fff';
+                    snsico2.style.background = 'none';
                     snsico2.style.color = '#fff';
-                    snsico2.style.border = '2px solid #fff';
+                    snsico2.style.border = '1px solid #fff';
+                    snsico3.style.background = 'none';
                     snsico3.style.color = '#fff';
-                    snsico3.style.border = '2px solid #fff';
+                    snsico3.style.border = '1px solid #fff';
+                    snsico4.style.background = 'none';
                     snsico4.style.color = '#fff';
-                    snsico4.style.border = '2px solid #fff';
+                    snsico4.style.border = '1px solid #fff';
+                    snsico5.style.background = 'none';
                     snsico5.style.color = '#fff';
-                    snsico5.style.border = '2px solid #fff';
-                    
-                    
+                    snsico5.style.border = '1px solid #fff';
+                    hdcont.style.color = '#fff';
+
                     // header.style.color = '#444444';
                 }
             }
             window.addEventListener('scroll', scrollFunc);
+
+            function popdown() {
+
+            }
         </script>
         <main>
-            <div class="main_at main_at1">1</div>
+            <div class="main_at main_at1">
+                <div class="dv_replica">1</div>
+            </div>
             <div class="main_at main_at2">2</div>
             <div class="main_at main_at3">3</div>
         </main>
         <footer></footer>
     </div>
-    
+
 </body>
+
 </html>
