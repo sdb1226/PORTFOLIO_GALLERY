@@ -149,7 +149,7 @@ body {
 @media screen and (max-width: 1024px) {
     .hd_container>ul {
         
-        background-color: #838383;
+        /* background-color: #838383; */
     }
 }
 
