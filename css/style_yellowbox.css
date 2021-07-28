@@ -1,0 +1,290 @@
+/* css_yellowbox */
+
+/* mobile_row(640px) */
+/* @media screen and (max-width: 1024px) {
+
+} */
+
+/* mobile_column(360px) */
+/* @media screen and (max-width: 512px) {
+
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #e4b12c;
+    position: relative;
+    z-index: 1;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-image: url(https://www.transparenttextures.com/patterns/black-paper.png);
+    background-size: 30%;
+
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.wrap {
+    position: relative;
+    overflow: hidden;
+    /* min-width: 1100px; */
+    /* border: 1px solid blue; */
+}
+
+
+/* mobile_row(640px) */
+@media screen and (max-width: 1024px) {
+    /* .wrap {
+        border: 1px solid red;
+    } */
+}
+
+/* mobile_column(360px) */
+@media screen and (max-width: 512px) {
+    /* .wrap {
+        border: 1px solid rgb(30, 74, 92);
+    } */
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    /* font-family: 'Paytone One', sans-serif; */
+    background-color: #ffffff00;
+    border-bottom: 1.5px solid #ffffff80;
+}
+
+#hdlogo {
+    font-family: 'Paytone One', sans-serif;
+    color: #fff;
+    transition: all 0.5s;
+    /* font-size: 30px; */
+}
+
+.header_container {
+    margin: 0 2.8%;
+    /* width: 1000px; */
+    /* border-left: 1px solid rgb(122, 97, 97);
+    border-right: 1px solid rgb(122, 97, 97); */
+    height: 173px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header_container>ul {
+    width: 184px;
+    height: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.header_container>ul>li {
+    width: 35px;
+    height: 35px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #ffe8af; */
+    color: #fff;
+
+}
+
+.snsbox {
+
+    border-radius: 100%;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.header_container>ul>li.snsbox_hide {
+    display: none;
+}
+
+
+.snsico5_submenu_container {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 0px;
+    top: 74.5px;
+    left: 0;
+    transition: all 0.5s;
+    background-color: #8a8a8a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+
+.snsico5_submenu_container>li {
+
+    height: 0;
+    text-align: center;
+    line-height: 20px;
+    /* background-color: #e4b12c; */
+}
+
+#snsico5:hover .snsico5_submenu_container {
+    height: 140px;
+}
+
+#snsico5:hover .snsico5_submenu_container>li {
+    height: 15px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .header_container {
+        height: 123px;
+        transition: all 0.5s;
+    }
+
+    #hdlogo {
+        font-size: 20px;
+    }
+
+    .header_container>ul {
+        width: 163px;
+        /* background-color: brown; */
+        
+    }
+
+
+    
+}
+
+/* mobile_column(360px) */
+@media screen and (max-width: 512px) {
+    /* header {
+        background-color: #225a5a;
+    } */
+
+    .header_container {
+        height: 73px;
+    }
+
+    #hdlogo {
+        font-size: 10px;
+    }
+
+
+    .header_container>ul {
+        width: 73px;
+        
+    }
+
+
+    .header_container>ul>li.snsbox {
+        display: none;
+    }
+
+
+    .header_container>ul>li.snsbox_hide {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .hd_search_container .hd_search {
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    /* height: 2500px; */
+    /* border: 1px solid turquoise; */
+    background-color: none;
+}
+
+.main_at {
+    height: 450px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.main_at1 {
+    height: 1283px;
+    /* background-color: chocolate; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dv_replica {
+    width: 400px;
+    height: 400px;
+
+    background-color: darkmagenta;
+}
+
+
+
+footer {
+    height: 123px;
+    background-color: beige;
+
+
+}
