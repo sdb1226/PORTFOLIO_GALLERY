@@ -181,8 +181,8 @@ body {
 @media screen and (max-width: 1024px) {
     .hd_container>ul>li {
         padding: 0 5px;
-        height: 95px;
-        line-height: 95px;
+        height: 83px;
+        line-height: 83px;
         text-align: center;
         font-size: 14px;
         color: #444444;
