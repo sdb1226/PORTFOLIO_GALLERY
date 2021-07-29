@@ -117,8 +117,8 @@ body {
 /* mobile_row(640px) */
 @media screen and (max-width: 1024px) {
     .hd_container img {
-        width: 56px;
-        height: 56px;
+        width: 48px;
+        height: 48px;
         /* margin-left: 4vw; */
     }
 }
@@ -181,8 +181,8 @@ body {
 @media screen and (max-width: 1024px) {
     .hd_container>ul>li {
         padding: 0 5px;
-        height: 83px;
-        line-height: 83px;
+        height: 74px;
+        line-height: 74px;
         text-align: center;
         font-size: 14px;
         color: #444444;
