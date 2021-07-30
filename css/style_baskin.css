@@ -415,9 +415,9 @@ body {
 }
 
 .fotm img {
-    width: 508px;
+    width: auto;
     height: 167px;
-    /* background-color: blanchedalmond; */
+    /* border: 1px solid red; */
     position: absolute;
     left: -34px;
     top: 30%;
