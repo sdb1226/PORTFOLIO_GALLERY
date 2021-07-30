@@ -415,8 +415,8 @@ body {
 }
 
 .fotm img {
-    width: auto;
-    height: 167px;
+    width: 508px;
+    height: auto;
     /* border: 1px solid red; */
     position: absolute;
     left: -34px;
