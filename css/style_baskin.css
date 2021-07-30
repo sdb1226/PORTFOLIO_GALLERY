@@ -1,5 +1,11 @@
 /*css_baskin_robbins*/
 
+/* 모바일_640px_가로 */
+/* @media screen and (max-width: 1024px) {} */
+
+/* 모바일_360px_세로 */
+/* @media screen and (max-width: 512px) {} */
+
 @font-face {
     src: url(../font/배스킨라빈스\ B.ttf);
     font-family: 'brb';
@@ -74,7 +80,6 @@ body {
     overflow: hidden;
     background: #f7f7f7;
     min-width: 1100px;
-
 }
 
 /* 헤더 구간 시작 */
@@ -102,25 +107,29 @@ body {
 
 .logo_w img {
     width: auto;
-    height: 55px;
+    height: 50px;
     display: block;
 }
 
 .logo_m img {
     width: auto;
-    height: 50px;
+    height: 40px;
     display: none;
 }
 
 
 .logincontainer {
+    height: 100%;
     margin-right: 50px;
     /* background-color: darkturquoise; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .logincontain {
     margin: 0 12px;
-    float: left;
 }
 
 .logincontain>a {
@@ -129,34 +138,49 @@ body {
     color: #381F12;
 }
 
-.logincontain:nth-child(4)>a>i {
+.logincontain:nth-child(4) i {
     color: #DF3E9C;
     /* color: #1f4c9a; */
 }
 
+.logincontain_gone {
+    display: none;
+    position: relative;
+
+}
+
+.logincontain_gone ul {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #1f4c9a;
+
+}
+
 @media screen and (max-width: 512px) {
-
-    .header {
-        border-top: 10px solid #DF3E9C;
-
-    }
-
     .logoandlogincontainer {
-        margin: 0 120px;
+        margin: 0 30px;
         height: 81px;
         /* background-color: rgb(150, 150, 150); */
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
 
     .logo_w img {
-
         display: none;
     }
 
     .logo_m img {
 
+        display: block;
+    }
+
+    .logincontain {
+        display: none;
+    }
+
+    .logincontain_gone {
         display: block;
     }
 }
@@ -166,6 +190,8 @@ body {
     position: relative;
     z-index: 100;
     background-color: #DF3E9C;
+    transition: all 0.5s;
+
 }
 
 .nav_mainmenu_container {
@@ -174,7 +200,9 @@ body {
     /* margin: 0 152px; */
     /* background-color: darkslategray; */
     display: flex;
+    align-items: center;
     justify-content: space-around;
+
 }
 
 .nav_mainmenu {
@@ -183,6 +211,7 @@ body {
     font-family: 'NanumSquareRoundeb';
     font-weight: bold;
     font-size: 20px;
+    /* background-color: #FF486D; */
     color: #fff;
     text-align: center;
     cursor: pointer;
@@ -191,6 +220,7 @@ body {
 .backboard {
     position: absolute;
     left: 0;
+    z-index: -1;
     top: 48px;
     width: 100%;
     height: 0;
@@ -199,6 +229,47 @@ body {
     box-shadow: 0 10px 20px #381F1266;
     border-bottom: 1px solid #381F12;
 }
+
+.backboard_submenu_container {
+    height: 0;
+}
+
+.backboard_submenu_icepic {
+    cursor: pointer;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.backboard_submenu_box {
+    height: 0;
+    line-height: 28px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+
+.nav_mainmenu_container:hover .backboard_submenu_icepic {
+    overflow: hidden;
+    height: 209px;
+}
+
+
+.nav_mainmenu_container:hover .backboard_submenu_container {
+    height: fit-content;
+}
+
+
+.nav_mainmenu_container:hover .backboard_submenu_box {
+    height: 28px;
+
+}
+
+
+
+
+
+
 
 .nav_mainmenu_container:hover .backboard {
     height: 210px;
@@ -211,24 +282,25 @@ body {
     /* background-color: aqua; */
     height: 100%;
     overflow: hidden;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
+
 }
 
+
+
 .backboard_submenu {
+
     /* background-color: rgb(204, 204, 83); */
     font-family: 'NanumSquareRoundl';
     font-size: 14px;
     text-align: center;
 }
 
-.backboard_submenu_box {
+/* .backboard_submenu_box {
     height: 28px;
     line-height: 28px;
-}
+} */
 
-.backboard_submenu_container:nth-child(2),
+/* .backboard_submenu_container:nth-child(2),
 .backboard_submenu_container:nth-child(3),
 .backboard_submenu_container:nth-child(4),
 .backboard_submenu_container:nth-child(5) {
@@ -255,11 +327,9 @@ body {
 .nav_mainmenu:nth-child(4),
 .backboard_submenu_container:nth-child(4) {
     width: 80px;
-}
+} */
 
-.backboard_submenu_icepic {
-    cursor: pointer;
-}
+
 
 .backboard_submenu>a {
     color: #381F12;
@@ -270,6 +340,18 @@ body {
     color: #DF3E9C;
     border-bottom: 1px solid #DF3E9C;
 }
+
+
+/* 모바일_360px_세로 */
+@media screen and (max-width: 512px) {}
+
+
+
+
+
+
+
+
 
 /* 헤더 구간 종료, 메인 구간 시작 */
 
