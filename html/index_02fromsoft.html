@@ -53,11 +53,11 @@
             position: relative;
             overflow: hidden;
             min-width: 1100px;
-            /* border: 1px solid cornflowerblue; */
+            border: 1px solid cornflowerblue;
         }
 
+
         .header {
-            height: 120px;
             background-color: #ffffff;
         }
 
@@ -84,6 +84,29 @@
         .hd_menu>a {
             color: #252525;
         }
+
+        @media screen and (max-width:1080px) {}
+
+        @media screen and (max-width:540px) {
+            .hd_container {
+                transition: all 0.6s;
+                margin: 0 40px;
+                /* width: 1000px; */
+                height: 234px;
+                /* background-color: #ff8e8e; */
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .hd_container img {
+                width: 200px;
+                transition: all 0.6s;
+            }
+        }
+
+
+
 
         .nav {
             height: 47px;
@@ -129,6 +152,7 @@
             position: absolute;
             left: 0;
             top: 47px;
+            z-index: 99;
             width: 100%;
             height: 0;
             overflow: hidden;
@@ -157,6 +181,7 @@
         #bkb1::after {
             content: '';
             position: absolute;
+
             left: 0;
             top: 0;
             width: 100%;
@@ -216,7 +241,7 @@
             /* border: 1px solid red; */
             background-image: url(https://www.utecs.co.jp/construction/topics/2015.10.16_02.jpg);
             background-repeat: no-repeat;
-            background-size: 100% auto;
+            background-size: cover;
             background-position: center center;
             opacity: 0.4;
         }
@@ -243,7 +268,7 @@
             /* border: 1px solid red; */
             background-image: url(https://wallup.net/wp-content/uploads/2016/01/236993-Dark_Souls_III-Dark_Souls-video_games-castle-fantasy_art-concept_art.jpg);
             background-repeat: no-repeat;
-            background-size: 100% auto;
+            background-size: cover;
             background-position: center center;
             opacity: 0.3;
         }
@@ -324,7 +349,7 @@
 
         .backboard_container {
             margin: 0 auto;
-            width: 1080px;
+            width: 1055px;
             height: 100%;
             background-color: #3f3f3f62;
 
@@ -351,6 +376,8 @@
             min-width: 1100px;
 
             background-color: chocolate;
+            position: relative;
+            z-index: 10;
         }
 
 
@@ -391,6 +418,43 @@
             border: 1px solid rgb(51, 255, 0);
             background-image: linear-gradient(110deg, #056db398 74%, #ffee0000 50%);
         }
+
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: rgb(214, 214, 214);
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+
+
 
 
         .footer {
@@ -481,7 +545,7 @@
                 </li>
                 <li id="bkb1" class="backboard">
                     <div class="backboard_container">
-                        1
+
                     </div>
                 </li>
                 <li id="bkb2" class="backboard">
@@ -517,7 +581,51 @@
 
 
         <div class="main">
-            <div class="main_company">1</div>
+            <div class="main_company">
+
+
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Swiper JS -->
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        direction: "vertical",
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                    });
+                </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
             <div id="maingames" class="main_games">
                 <div class="main_games_container">
                     <div id="maingamesslide" class="main_games_slide"></div>
