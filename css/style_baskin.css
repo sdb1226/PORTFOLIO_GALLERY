@@ -1309,6 +1309,39 @@ input:focus {
 }
 
 
+.swiper-slide .iceslide_group_container {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.swiper-slide .iceslide_group_container .iceslide_group {
+    height: 240px;
+    background-color: #1f4c9a;
+}
+
+.swiper-slide .iceslide_group_container .iceslide_group .iceslide {
+    
+    width: 110px;
+    
+    display: table-cell;
+    background-color: #8299c0;
+    
+}
+
+.borde {
+    width: 108px;
+    height: 50px;
+    background-color: #1f4c9a;
+}
+
+
+
+
+
+
+
+
 /* 이벤트-진행중인이벤트 */
 
 #baskin-event-eventdu {
