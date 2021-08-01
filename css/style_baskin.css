@@ -362,7 +362,7 @@ body {
 /* 메인 1: 이달의 맛 구간 시작 */
 
 .main_at1 {
-    background-image: linear-gradient(145deg, #efedee 30%, #ffec00 80%);
+    background-image: linear-gradient(145deg, #ece1d8 30%,#cf9870 50%, #361609 80%);
 }
 
 .main_fotm_container {
@@ -502,7 +502,7 @@ body {
     /* font-family: 'NanumSquareRoundr'; */
     font-family: 'Do Hyeon', sans-serif;
     font-size: 36px;
-    color: #dabb49;
+    color: #ece1d8;
 }
 
 .fotm_info>p>b {
@@ -513,7 +513,7 @@ body {
 .fotm_info>b:nth-child(2) {
     font-family: 'Black Han Sans', sans-serif;
     font-size: 70px;
-    color: #f5a300;
+    color: #3b070b;
     font-weight: 450;
 }
 
@@ -607,7 +607,7 @@ input:focus {
     left: 138px;
     width: 138px;
     height: 138px;
-    background-color: #805500c9;
+    background-color: #3b070b8f;
     transition: all 0.4s;
     border-radius: 100%;
     background-position: center center;
@@ -616,7 +616,7 @@ input:focus {
     align-items: center;
     justify-content: center;
     font-family: 'Black Han Sans', sans-serif;
-    color: #f5a300;
+    color: #ece1d8;
     font-size: 30px;
     font-weight: 200;
 }
@@ -752,7 +752,7 @@ input:focus {
     width: 176px;
     height: 176px;
     /* background-color: #faf9eb; */
-    background-color: #fff67c;
+    background-color: #ece1d8;
     border-radius: 100%;
     transition: all 0.5s;
 
