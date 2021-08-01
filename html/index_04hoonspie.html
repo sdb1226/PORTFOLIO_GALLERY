@@ -17,18 +17,12 @@
             padding: 0;
         }
 
-        a {
-            text-decoration: none;
+        li {
+            list-style: none;
         }
 
-        @media screen and (min-width: 640px) {
-            .wrap_inner_l {
-                height: 200px;
-            }
-
-            .wrap_inner_r {
-                height: 200px;
-            }
+        a {
+            text-decoration: none;
         }
 
         body {
@@ -42,6 +36,7 @@
             position: relative;
             overflow: hidden;
             min-width: 1343px;
+
         }
 
         .wrap_inner {
@@ -49,11 +44,21 @@
             width: 1343px;
             height: 1920px;
             /* background-color: rgb(87, 35, 35); */
-            /* border: 3px solid red; */
+            border: 5px solid red;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width:512px) {
+            .wrap_inner {
+                border: 5px solid olivedrab;
+                flex-direction: column;
+            }
         }
 
         .wrap_inner_l {
-            float: left;
             width: 358px;
             height: 1920px;
             /* background-color: sienna; */
@@ -61,6 +66,14 @@
             border-left: 2px solid #c2c2c2;
             border-right: 2px solid #c2c2c2;
         }
+
+        @media screen and (max-width:512px) {
+            .wrap_inner_l {
+                width: 100%;
+            }
+        }
+
+        
 
         .logo {
             height: 180px;
@@ -70,6 +83,15 @@
             text-align: center;
             flex-direction: column;
             justify-content: center;
+        }
+
+        @media screen and (max-width:512px) {
+            .logo {
+                text-indent: 100px;
+            height: 200px;
+            align-items:flex-start;
+            
+        }
         }
 
         .logo i {
@@ -154,9 +176,7 @@
         .hd_ad {
             height: 358px;
             background-color: springgreen;
-            background-image: url(https://static.wixstatic.com/media/81d82f_ce5fe77372964327957546c51aed653c~mv2_d_4032_3024_s_4_2.jpg/v1/fill/w_1270,h_692,al_c,q_85,usm_0.66_1.00_0.01/81d82f_ce5fe77372964327957546c51aed653c~mv2_d_4032_3024_s_4_2.webp);
-            background-size: auto 100%;
-            background-position: center center;
+           
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -164,12 +184,13 @@
         }
 
         .hd_ad>button {
-            width: 270px;
-            height: 60px;
+            width: 330px;
+            height: 70px;
             color: #342216;
             border: 3px dashed rgb(255, 255, 255);
             border-radius: 5px;
             cursor: pointer;
+            font-size: 25px;
         }
 
         .hd_ad>button:hover {
@@ -215,7 +236,7 @@
         }
 
         .wrap_inner_r {
-            float: right;
+            
             width: 949px;
             height: 1920px;
             background-color: blue;
@@ -244,7 +265,7 @@
         <div class="wrap_inner">
             <div class="wrap_inner_l">
                 <div class="logo">
-                    <a href="#">
+                    <a href="index_04hoonspie.html">
                         <h2>
                             <img src="https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/image.png?raw=true"
                                 width="234px" alt="">
