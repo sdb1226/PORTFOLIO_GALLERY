@@ -404,6 +404,7 @@ body {
     background-size: 100% auto;
     /* */
     position: absolute;
+    z-index: 98;
     left: 60px;
     /* */
 }
@@ -1236,7 +1237,7 @@ input:focus {
 }
 
 #baskin-menu-icecream_flavor_slide {
-    background-color: tomato;
+    /* background-color: tomato; */
     padding-bottom: 50px;
 }
 
@@ -1266,7 +1267,7 @@ input:focus {
     background-color: #ffffff;
     border-radius: 100%;
     background-image: url(https://github.com/sdb1226/PORTFOLIO_GALLERY/blob/main/img/bg_icecream_corn_2.png?raw=true);
-    background-size: 40px auto;
+    background-size: 35px auto;
     background-repeat: no-repeat;
     background-position: center bottom;
     display: flex;
@@ -1276,13 +1277,13 @@ input:focus {
 
 .swip_pic img {
     width: 170px;
-    height: auto
+    height: auto;
 }
 
 .swip_pic .pic_s {
-    margin-top: 30px;
-    width: 140px;
-    height: auto
+    margin-top: 55px;
+    width: 130px;
+    height: auto;
 }
 
 
