@@ -362,7 +362,7 @@ body {
 /* 메인 1: 이달의 맛 구간 시작 */
 
 .main_at1 {
-    background-image: linear-gradient(145deg, #ece1d8 30%,#cf9870 50%, #361609 80%);
+    background-image: linear-gradient(145deg, #ece1d8 30%, #cf9870 50%, #361609 80%);
 }
 
 .main_fotm_container {
@@ -682,11 +682,12 @@ input:focus {
 .main_order_title {
     width: 420px;
     height: 240px;
-    /* border: 1px solid rgb(154, 154, 255); */
+    /* border: 1px solid #9a9aff; */
     display: flex;
+    align-items: baseline;
     flex-direction: column;
     justify-content: space-evenly;
-    text-align: center;
+
     cursor: default;
 }
 
@@ -697,7 +698,7 @@ input:focus {
 .main_store_title>h2,
 .main_order_title>h2,
 .main_sns_title>h2 {
-    font-size: 42px;
+    font-size: 30px;
     font-family: 'Paytone One', sans-serif;
 }
 
@@ -721,7 +722,7 @@ input:focus {
 
 .main_store_title>button,
 .main_order_title>button {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     border-radius: 45px;
     width: 155px;
     height: 43px;
@@ -729,7 +730,7 @@ input:focus {
     outline: none;
     background-color: #DF3E9C;
     color: #fff;
-    
+
     font-size: 15px;
 }
 
@@ -954,9 +955,9 @@ input:focus {
 
 .main_store_inner_l,
 .main_order_inner_l {
-    width: 553px;
+    width: 500px;
     height: 300px;
-    background-color: #10a956;
+    /* background-color: #10a956; */
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -966,9 +967,9 @@ input:focus {
 
 .main_store_inner_r,
 .main_order_inner_r {
-    width: 450px;
+    width: 500px;
     height: 300px;
-    background-color: #b8c6ed;
+    /* background-color: #b8c6ed; */
     /* background-image: linear-gradient(135deg, #ffffff 20%, #1f4c9a 20%); */
     display: flex;
     flex-direction: column;
@@ -1325,12 +1326,12 @@ input:focus {
 }
 
 .swiper-slide .iceslide_group_container .iceslide_group .iceslide {
-    
+
     width: 110px;
-    
+
     display: table-cell;
     background-color: #8299c0;
-    
+
 }
 
 .borde {
